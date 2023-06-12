@@ -33,27 +33,33 @@ def path_finder(area: str):
     #           v-- current point
     #                v-- climbed
     #                    v-- visited
-    paths = [[start, 0, {start}]]
+    paths = deque([[start, 0, {start}]])
+    shortest_path = float('inf')
 
     while paths:
-        current_path = paths.pop(0)
+        current_path = paths.popleft()
+        location, height_climbed, visited = current_path
+        row, col = location
+
+        if location == end:
+            shortest_path = min(shortest_path, height_climbed)
+            continue
+
+        if height_climbed >= shortest_path:
+            continue
 
         for x, y in directions:
-            location, height_climbed, visited = current_path
-            row, col = location
             new_row, new_col = row + x, col + y
             new_location = (new_row, new_col)
 
             if 0 <= new_row < N and 0 <= new_col < N and new_location not in visited:
-                height_climbed += abs(int(area[row][col]) - int(area[new_row][new_col]))
-                visited.add(new_location)
+                new_height_climbed = height_climbed + abs(int(area[row][col]) - int(area[new_row][new_col]))
+                new_visited = visited.copy()
+                new_visited.add(new_location)
 
-                paths.append([new_location, height_climbed, visited.copy()])
+                paths.append([new_location, new_height_climbed, new_visited])
 
-
-        paths.sort(key=lambda p: p[1])
-        if paths[0][0] == end:
-            return paths[0][1]
+    return shortest_path
 
 
 if __name__ == '__main__':
@@ -117,6 +123,5 @@ if __name__ == '__main__':
     ])
     print(path_finder(g))  # 4
     # Original solution: 20.784861400003138
+    # Deque solution: 7.182043999997404
     print(time.perf_counter() - st)
-
-
