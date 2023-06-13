@@ -18,7 +18,8 @@ Path Finder Series:
 #5: there's someone here
 """
 import time
-import heapq
+from collections import deque
+
 
 def path_finder(area: str):
     area = area.split()
@@ -29,30 +30,36 @@ def path_finder(area: str):
     start = (0, 0)
     end = (N - 1, N - 1)
 
-    distances = [[float('inf')] * N for _ in range(N)]
-    distances[0][0] = 0
+    #           v-- current point
+    #                v-- climbed
+    #                    v-- visited
+    paths = deque([(start, 0, {start})])
+    shortest_path = float('inf')
 
-    queue = [(0, start)]
+    while paths:
+        current_path = paths.popleft()
+        location, height_climbed, visited = current_path
+        row, col = location
 
-    while queue:
-        dist, curr = heapq.heappop(queue)
+        if location == end:
+            shortest_path = min(shortest_path, height_climbed)
+            continue
 
-        if curr == end:
-            return dist
-
-        row, col = curr
+        if height_climbed >= shortest_path:
+            continue
 
         for x, y in directions:
             new_row, new_col = row + x, col + y
+            new_location = (new_row, new_col)
 
-            if 0 <= new_row < N and 0 <= new_col < N:
-                new_dist = dist + abs(int(area[row][col]) - int(area[new_row][new_col]))
+            if 0 <= new_row < N and 0 <= new_col < N and new_location not in visited:
+                new_height_climbed = height_climbed + abs(int(area[row][col]) - int(area[new_row][new_col]))
+                new_visited = visited.copy()
+                new_visited.add(new_location)
 
-                if new_dist < distances[new_row][new_col]:
-                    distances[new_row][new_col] = new_dist
-                    heapq.heappush(queue, (new_dist, (new_row, new_col)))
+                paths.append((new_location, new_height_climbed, new_visited))
 
-    return -1  # No valid path found
+    return shortest_path
 
 
 if __name__ == '__main__':
@@ -116,6 +123,7 @@ if __name__ == '__main__':
     ])
     print(path_finder(g))  # 4
     # Original solution: 20.784861400003138
-    # Deque solution: 7.182043999997404'
+    # Deque solution: 7.182043999997404
+    # Deque solution with tuple: 6.73987020000277
     # Heapq solution: 0.00012119999882997945
     print(time.perf_counter() - st)
