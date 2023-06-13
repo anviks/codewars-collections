@@ -28,7 +28,7 @@ Example Output:
 
 
 def open_or_senior(data):
-    return ["Senior" * (pair[0] >= 55 and pair[1] > 7) + "Open" * (pair[0] < 55 or pair[1] <= 7) for pair in data]
+    return ["Senior" if pair[0] >= 55 and pair[1] > 7 else "Open" for pair in data]
 
 
 if __name__ == '__main__':
@@ -37,5 +37,5 @@ if __name__ == '__main__':
     print(open_or_senior([(54, 9), (55, 9)]))  # ['Open', 'Senior']
     print(open_or_senior([(59, 12), (55, -1), (12, -2), (12, 12)]))  # ['Senior', 'Open', 'Open', 'Open']
     print(open_or_senior([(16, 24), (50, 23), (57, 2)]))  # ['Open', 'Open', 'Open']
-    print(open_or_senior([(80, 1), (14, 23), (99, 43), (23, 1), (1, 1)]))  # ['Senior', 'Open', 'Senior', 'Open', 'Open']
-    print(open_or_senior([(65, 7), (66, 8), (22, 22), (44, 44)]))  # ['Senior', 'Senior', 'Open', 'Open']
+    print(open_or_senior([(80, 1), (14, 23), (99, 43), (23, 1), (1, 1)]))  # ['Open', 'Open', 'Senior', 'Open', 'Open']
+    print(open_or_senior([(65, 7), (66, 8), (22, 22), (44, 44)]))  # ['Open', 'Senior', 'Open', 'Open']
