@@ -1,8 +1,29 @@
-package org.anviks;
+package me.anviks._6_kyu;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
+
+/**
+ * <a href="https://www.codewars.com/kata/51b62bf6a9c58071c600001b"><h2>Roman Numerals Encoder</h2></a>
+ * <p>
+ * Create a function taking a positive integer as its parameter and returning a string containing the Roman Numeral
+ * representation of that integer.
+ * </p>
+ * <p>
+ * Modern Roman numerals are written by expressing each digit separately starting with the left most digit and skipping
+ * any digit with a value of zero. In Roman numerals 1990 is rendered: 1000=M, 900=CM, 90=XC; resulting in MCMXC.
+ * 2008 is written as 2000=MM, 8=VIII; or MMVIII. 1666 uses each Roman symbol in descending order: MDCLXVI.
+ * </p>
+ * <p>
+ * Example:
+ * </p>
+ * <pre>
+ * <code>conversion.solution(1000); // should return "M"</code>
+ * <code>conversion.solution(1990); // should return "MCMXC"</code>
+ * <code>conversion.solution(2007); // should return "MMVII"</code>
+ * </pre>
+ */
 public class RomanNumerals {
 
     public static String toRoman(int n) {

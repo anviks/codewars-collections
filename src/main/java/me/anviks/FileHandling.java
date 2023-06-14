@@ -1,4 +1,4 @@
-package org.anviks;
+package me.anviks;
 
 import java.io.*;
 import java.util.Scanner;

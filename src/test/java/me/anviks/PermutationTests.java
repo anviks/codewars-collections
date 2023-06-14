@@ -1,13 +1,10 @@
-package org.anviks;
+package me.anviks;
 
+import me.anviks._4_kyu.Permutations;
 import org.junit.Test;
-
-import java.util.List;
-
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsInAnyOrder;
-import static org.junit.Assert.assertEquals;
 
 public class PermutationTests {
 

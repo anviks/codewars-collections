@@ -1,4 +1,4 @@
-package org.anviks;
+package me.anviks;
 
 public class User {
 
@@ -42,7 +42,7 @@ public class User {
         checkRankUp();
     }
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         User user = new User();
         user.incProgress(-8);
         user.incProgress(-8); // will add 90 progress

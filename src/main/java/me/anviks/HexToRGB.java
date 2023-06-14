@@ -1,4 +1,4 @@
-package org.anviks;
+package me.anviks;
 
 import java.util.Arrays;
 

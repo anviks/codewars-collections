@@ -1,10 +1,6 @@
-package org.anviks;
+package me.anviks;
 
-import java.lang.annotation.ElementType;
 import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 
 public class Ungabunga {
@@ -18,7 +14,6 @@ public class Ungabunga {
         System.out.println(list.stream().filter(element -> element instanceof Integer).toList());
         System.out.println(accum("fuck"));
         StringBuilder u = new StringBuilder();
-        System.out.println(solution(1666));
         System.out.println(System.currentTimeMillis());
         HashSet<Integer> set = new HashSet<Integer>();
         set.add(4);
@@ -49,8 +44,6 @@ public class Ungabunga {
         System.out.println(Math.pow(2, 5));
         ArrayList<Integer> ssda = new ArrayList<>();
 
-        System.out.println(josephusSurvivor(7, 3));
-
         System.out.println("sda" + 2);
 
         System.out.println(Integer.parseInt("1234".charAt(1) + ""));
@@ -64,50 +57,6 @@ public class Ungabunga {
             r.append("-");
         }
         return r.substring(0, r.length() - 1);
-    }
-
-    public static String solution(int n) {
-        StringBuilder b = new StringBuilder();
-        b.append("M".repeat(n / 1000));
-        n %= 1000;
-        b.append("CM".repeat(n / 900));
-        n %= 900;
-        b.append("D".repeat(n / 500));
-        n %= 500;
-        b.append("CD".repeat(n / 400));
-        n %= 400;
-        b.append("C".repeat(n / 100));
-        n %= 100;
-        b.append("XC".repeat(n / 90));
-        n %= 90;
-        b.append("L".repeat(n / 50));
-        n %= 50;
-        b.append("XL".repeat(n / 40));
-        n %= 40;
-        b.append("X".repeat(n / 10));
-        n %= 10;
-        b.append("IX".repeat(n / 9));
-        n %= 9;
-        b.append("V".repeat(n / 5));
-        n %= 5;
-        b.append("IV".repeat(n / 4));
-        n %= 4;
-        b.append("I".repeat(n));
-        return b.toString();
-    }
-
-    public static int josephusSurvivor(final int n, final int k) {
-        ArrayList<Integer> survivors = new ArrayList<>();
-        for (int i = 1; i <= n; i++) {
-            survivors.add(i);
-        }
-        for (int i = k - 1; i > -1; i += k - 1) {
-            if (survivors.size() == 1) {
-                break;
-            }
-            survivors.remove(i %= (survivors.size()));
-        }
-        return survivors.get(0);
     }
 }
 

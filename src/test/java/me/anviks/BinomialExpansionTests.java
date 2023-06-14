@@ -1,5 +1,6 @@
-package org.anviks;
+package me.anviks;
 
+import me.anviks._3_kyu.BinomialExpansion;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
