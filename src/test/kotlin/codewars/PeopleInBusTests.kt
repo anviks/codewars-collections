@@ -1,6 +1,7 @@
 package codewars
 
 import junit.framework.TestCase.assertEquals
+import me.anviks._7_kyu.people
 import org.junit.Test
 
 class TestExample {

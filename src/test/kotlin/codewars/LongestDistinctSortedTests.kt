@@ -1,5 +1,6 @@
 package codewars
 
+import me.anviks.codewars.longest
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
