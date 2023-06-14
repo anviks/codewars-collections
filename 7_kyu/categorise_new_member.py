@@ -1,7 +1,7 @@
 """
 https://www.codewars.com/kata/5502c9e7b3216ec63c0001aa/python
 
-Categorize New Member
+**Categorize New Member**
 
 The Western Suburbs Croquet Club has two categories of membership, Senior and Open. They would like your help with an
 application form that will tell prospective members which category they will be placed.
@@ -16,14 +16,14 @@ member. Information consists of an integer for the person's age and an integer f
 Note for F#: The input will be of (int list list) which is a List<List>
 
 Example Input:
-[[18, 20],[45, 2],[61, 12],[37, 6],[21, 21],[78, 9]]
+    [[18, 20],[45, 2],[61, 12],[37, 6],[21, 21],[78, 9]]
 
 Output:
 Output will consist of a list of string values (in Haskell: Open or Senior) stating whether the respective member is
 to be placed in the senior or open category.
 
 Example Output:
-["Open", "Open", "Senior", "Open", "Open", "Senior"]
+    ["Open", "Open", "Senior", "Open", "Open", "Senior"]
 """
 
 

@@ -1,7 +1,7 @@
 """
 https://www.codewars.com/kata/57658bfa28ed87ecfa00058a
 
-Path Finder #2: shortest path
+**Path Finder #2: shortest path**
 
 Task
 You are at position [0, 0] in maze NxN and you can only move in one of the four cardinal directions

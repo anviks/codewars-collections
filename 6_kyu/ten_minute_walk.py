@@ -1,7 +1,7 @@
 """
 https://www.codewars.com/kata/54da539698b8a2ad76000228/python
 
-Ten Minute Walk
+**Ten Minute Walk**
 
 You live in the city of Cartesia where all roads are laid out in a perfect grid. You arrived ten minutes too early to an
 appointment, so you decided to take the opportunity to go for a short walk. The city provides its citizens with a Walk
@@ -15,10 +15,10 @@ Note: you will always receive a valid array containing a random assortment of di
 only). It will never give you an empty array (that's not a walk, that's standing still!).
 
 Examples:
-['n','s','n','s','n','s','n','s','n','s'] -> True
-['w','e','w','e','w','e','w','e','w','e','w','e'] -> False
-['w'] -> False
-['n','n','n','s','n','s','n','s','n','s'] -> False
+    ``['n','s','n','s','n','s','n','s','n','s'] -> True``\n
+    ``['w','e','w','e','w','e','w','e','w','e','w','e'] -> False``\n
+    ``['w'] -> False``\n
+    ``['n','n','n','s','n','s','n','s','n','s'] -> False``
 """
 
 

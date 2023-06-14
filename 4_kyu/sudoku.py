@@ -1,4 +1,8 @@
 """
+https://www.codewars.com/kata/540afbe2dc9f615d5e000425
+
+**Validate Sudoku with size `NxN`**
+
 Given a Sudoku data structure with size NxN, N > 0 and √N == integer, write a method to validate if it has been filled out correctly.
 
 The data structure is a multi-dimensional Array, i.e:
@@ -16,12 +20,12 @@ The data structure is a multi-dimensional Array, i.e:
   [2,4,3,  5,6,1,  9,7,8],
   [1,9,5,  2,8,7,  6,3,4]
 ]
-Rules for validation
 
-Data structure dimension: NxN where N > 0 and √N == integer
-Rows may only contain integers: 1..N (N included)
-Columns may only contain integers: 1..N (N included)
-'Little squares' (3x3 in example above) may also only contain integers: 1..N (N included)
+Rules for validation:
+    - Data structure dimension: NxN where N > 0 and √N == integer
+    - Rows may only contain integers: 1..N (N included)
+    - Columns may only contain integers: 1..N (N included)
+    - 'Little squares' (3x3 in example above) may also only contain integers: 1..N (N included)
 """
 
 

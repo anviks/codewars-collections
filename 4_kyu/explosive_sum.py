@@ -1,17 +1,33 @@
 """
+https://www.codewars.com/kata/52ec24228a515e620b0005ef
+
+**Explosive Sum**
+
 How many ways can you make the sum of a number?
+
 From wikipedia: https://en.wikipedia.org/wiki/Partition_(number_theory)
 
 In number theory and combinatorics, a partition of a positive integer n, also called an integer partition,
 is a way of writing n as a sum of positive integers. Two sums that differ only in the order of their summands
 are considered the same partition. If order matters, the sum becomes a composition. For example, 4 can be
 partitioned in five distinct ways:
+    4\n
+    3 + 1\n
+    2 + 2\n
+    2 + 1 + 1\n
+    1 + 1 + 1 + 1\n
 
-4
-3 + 1
-2 + 2
-2 + 1 + 1
-1 + 1 + 1 + 1
+Examples:
+    ``exp_sum(1) # 1``\n
+    ``exp_sum(2) # 2  -> 1+1 , 2``\n
+    ``exp_sum(3) # 3 -> 1+1+1, 1+2, 3``\n
+    ``exp_sum(4) # 5 -> 1+1+1+1, 1+1+2, 1+3, 2+2, 4``\n
+    ``exp_sum(5) # 7 -> 1+1+1+1+1, 1+1+1+2, 1+1+3, 1+2+2, 1+4, 5, 2+3``\n
+
+    ``exp_sum(10) # 42``\n
+    ``exp_sum(50) # 204226``\n
+    ``exp_sum(80) # 15796476``\n
+    ``exp_sum(100) # 190569292``\n
 """
 import sys
 import time
@@ -25,6 +41,7 @@ def memoize(func):
         if n not in cache:
             cache[n] = func(n)
         return cache[n]
+
     return wrapper
 
 
