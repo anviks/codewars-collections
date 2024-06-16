@@ -1,0 +1,18 @@
+p0
+  (
+    F2 L F L F0 R F5 R
+  )
+  (
+    (
+      F L2 R3 R0 L4 L0 R5 F6
+    )7
+    (
+      F7 F9 L L4 L R2 R R9
+    )4
+  )9
+  ()0
+q
+
+(
+  P0 P0 P0
+)

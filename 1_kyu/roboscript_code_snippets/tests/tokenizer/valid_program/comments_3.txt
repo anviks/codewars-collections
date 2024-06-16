@@ -1,0 +1,17 @@
+p1
+  p1
+    F R
+  q
+
+  F2 P1 // Refers to "inner" (locally defined) P1 so no infinite recursion results
+q
+
+(
+  F2 P1 // Refers to "outer" (global) P1 since the
+  // global scope can"t "see" local P1
+)4
+
+/*
+  Equivalent to executing the following raw commands:
+  F F F F F R F F F F F R F F F F F R F F F F F R
+*/

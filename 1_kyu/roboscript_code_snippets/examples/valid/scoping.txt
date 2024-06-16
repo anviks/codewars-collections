@@ -1,0 +1,23 @@
+// The global scope can "see" P1 and P2
+p1
+  // P1 can see P2, P3 and P4
+  p3
+    // P3 can see P1, P2 and P4 though invoking
+    // P1 will likely result in infinite recursion
+    F L
+  q
+  p4
+    // Similar rules apply to P4 as they do in P3
+    F P3
+  q
+  
+  F P4
+q
+p2
+  // P2 can "see" P1 and therefore can invoke P1 if it wishes
+  F3 R
+q
+
+(
+  P1 P2
+)2 // Execute both globally defined patterns twice

@@ -1,0 +1,55 @@
+p871752
+  p84314
+    F8 R16 F10 F L R14 F F13 L F
+  q
+  p171530
+    R11 R L F19 F L7 R R R F
+  q
+  
+  P84314 F19 R15 F17 L2 P171530 R2 F P84314 F
+q
+p654511
+  p301324
+    R13 L3 R15 L L19 F7 F1 L13 L17 F
+  q
+  p727407
+    R0 F15 L1 F18 F R1 R L R F
+  q
+  p408463
+    R L F5 F R F5 R11 L F F12
+  q
+  p511640
+    F1 F10 F F9 L L15 L F R13 F12
+  q
+  p676028
+    R F F L L L7 R0 R L R13
+  q
+  
+  (
+    R L10 R R4 R15 F F2 R8 R R
+  )9 R8 F F R2 F F14 R (
+    L L L R19 R L F L19 L R
+  )6 F
+q
+
+L13 (
+  F F15 R2 F19 (
+    R R5 R L7 R2 L10 R14 R L7 L
+  )9 (
+    R L7 F1 R8 F R3 F1 R19 R17 F
+  ) R L R F13
+) L6 L13 P871752 P871752 (
+  F (
+    R4 L R L R R R L8 L L
+  )5 (
+    F19 F R5 R R3 R F17 L L8 L6
+  ) (
+    R R F R2 L5 L0 R R18 R2 F
+  ) F (
+    R F L R L R F12 F R8 F
+  ) L L10 (
+    L3 R5 F2 L L F14 R R R R
+  )7 (
+    L R R L R L R L13 L L17
+  )
+)0 P871752 P654511 R
