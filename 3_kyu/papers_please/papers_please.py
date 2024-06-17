@@ -105,7 +105,7 @@ class Immigrant:
 
 class Inspector:
     def __init__(self):
-        self.allow = set()
+        self.allowed_countries = set()
         self.required_documents = defaultdict(set)
         self.criminal = ''
 
@@ -113,9 +113,9 @@ class Inspector:
         for action, cities in re.findall(r'(Allow|Deny) citizens of (.+)', bulletin):
             city_set = set(cities.split(', '))
             if action == 'Allow':
-                self.allow.update(city_set)
+                self.allowed_countries.update(city_set)
             else:
-                self.allow.difference_update(city_set)
+                self.allowed_countries.difference_update(city_set)
 
         for nations, no_longer, requirement in re.findall(
                 r'(?:Citizens of )?(.+?) (no longer )?require (.+)', bulletin):
@@ -183,7 +183,7 @@ class Inspector:
         if nationality == DESTINATION_COUNTRY:
             return f'Glory to {DESTINATION_COUNTRY}.'
 
-        if nationality not in self.allow:
+        if nationality not in self.allowed_countries:
             return 'Entry denied: citizen of banned nation.'
 
         return 'Cause no trouble.'
