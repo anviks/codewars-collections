@@ -12,6 +12,7 @@ NUMBER_P = r'-?\d*\.?\d+'  # Find integers and floats
 DOUBLE_NEG_PATTERN = re.compile(fr'({OPERATOR_P}|^)--')  # Use to replace double negations like --5+--3 with 5+3
 PARENTHESES_PATTERN = re.compile(r'\(([^()]*)\)')  # Find content inside innermost parentheses
 BIN_OPERATOR_PATTERN = re.compile(fr'(?<=\d)({OPERATOR_P})')  # Find operators. Excludes unary '-' and assumes parentheses have been removed.
+MUL_DIV_PATTERN = re.compile(fr'(?<!\d){NUMBER_P}(?:[*/]{NUMBER_P})+')  # Find multiplication and division expressions
 
 
 def calc(expression: str):
@@ -29,7 +30,7 @@ def eval_expr(expression: str) -> str:
 
     # If there are operators of different precedence, split the expression into sub-expressions and evaluate them separately
     if ('+' in operators or '-' in operators) and ('*' in operators or '/' in operators):
-        sub_expressions = re.findall(fr'(?<!\d){NUMBER_P}(?:[*/]{NUMBER_P})+', expression)
+        sub_expressions = MUL_DIV_PATTERN.findall(expression)
         for sub_expr in sub_expressions:
             expression = expression.replace(sub_expr, eval_expr(sub_expr))
 
