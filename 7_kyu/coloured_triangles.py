@@ -8,15 +8,11 @@ def triangle(row: str):
     colours = ord('R') + ord('G') + ord('B')
 
     while len(row) > 1:
-        new_row = []
-
         for i in range(1, len(row)):
-            if row[i - 1] == row[i]:
-                new_row.append(row[i])
-            else:
-                new_row.append(chr(colours - ord(row[i - 1]) - ord(row[i])))
-
-        row = new_row
+            if row[i - 1] != row[i]:
+                row[i - 1] = chr(colours - ord(row[i - 1]) - ord(row[i]))
+        
+        row.pop()
 
     return row[0]
 
