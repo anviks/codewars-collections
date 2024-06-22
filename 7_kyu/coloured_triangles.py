@@ -4,22 +4,23 @@ from utils_anviks import stopwatch
 
 @stopwatch
 def triangle(row: str):
-    colours = 0b111
+    colours = 0b11
     mapper = {
-        'R': 1 << 0,
-        'G': 1 << 1,
-        'B': 1 << 2
+        'R': 0,
+        'G': 1,
+        'B': 2
     }
     row = [mapper[char] for char in row]
     len_row = len(row)
 
     for j in range(len_row, 0, -1):
         for i in range(1, j):
-            if row[i - 1] != row[i]:
-                # row[i - 1] = chr(colours - ord(row[i - 1]) - ord(row[i]))
-                row[i - 1] = colours - (row[i - 1] | row[i])
+            a = row[i - 1]
+            b = row[i]
+            if a != b:
+                row[i - 1] = colours - a - b
 
-    return list(mapper.keys())[row[0] >> 1]
+    return list(mapper.keys())[row[0]]
 
 
 def main():
