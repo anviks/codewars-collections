@@ -13,9 +13,9 @@ def triangle(row: str):
         for i in range(1, len(row)):
             pair_colours = set(row[i - 1:i + 1])
             if len(pair_colours) == 1:
-                new_row.append(*pair_colours)
+                new_row.append(pair_colours.pop())
             else:
-                new_row.append(*(colours - pair_colours))
+                new_row.append((colours - pair_colours).pop())
             
         row = new_row
     
