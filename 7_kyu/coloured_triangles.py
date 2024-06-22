@@ -6,13 +6,12 @@ from utils_anviks import stopwatch
 def triangle(row: str):
     row = list(row)
     colours = ord('R') + ord('G') + ord('B')
+    len_row = len(row)
 
-    while len(row) > 1:
-        for i in range(1, len(row)):
+    for j in range(len_row, 0, -1):
+        for i in range(1, j):
             if row[i - 1] != row[i]:
                 row[i - 1] = chr(colours - ord(row[i - 1]) - ord(row[i]))
-        
-        row.pop()
 
     return row[0]
 
