@@ -8,19 +8,16 @@ def triangle(row: str):
     chunk_sizes = (3 ** i + 1 for i in range(9, -1, -1))
     mapper = {'R': 0, 0: 'R', 'G': 1, 1: 'G', 'B': 2, 2: 'B'}
     row = [mapper[char] for char in row]
+    len_row = len(row)
     
     for size in chunk_sizes:
-        while len(row) >= size:
-            new_row = []
-            
-            for i in range(len(row) - size + 1):
-                if row[i] == row[i + size - 1]:
-                    new_row.append(row[i])
-                else:
-                    new_row.append(3 - row[i] - row[i + size - 1])
-                    
-            row = new_row
-            
+        while len_row >= size:
+            # Instead of creating a new list every time, modify the original and pretend it's shorter
+            len_row = len_row - size + 1
+            for i in range(len_row):
+                if row[i] != row[i + size - 1]:
+                    row[i] = 3 - row[i] - row[i + size - 1]
+
     return mapper[row[0]]
 
 
