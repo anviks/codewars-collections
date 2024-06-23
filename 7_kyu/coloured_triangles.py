@@ -1,27 +1,27 @@
-"""https://www.codewars.com/kata/coloured-triangles"""
+"""https://www.codewars.com/kata/5a25ac6ac5e284cfbe000111"""
+
 from utils_anviks import stopwatch
 
 
 @stopwatch
 def triangle(row: str):
-    print(len(row) % 3 == 1)
-    colours = 0b11
-    mapper = {
-        'R': 0,
-        'G': 1,
-        'B': 2
-    }
+    chunk_sizes = (3 ** i + 1 for i in range(9, -1, -1))
+    mapper = {'R': 0, 0: 'R', 'G': 1, 1: 'G', 'B': 2, 2: 'B'}
     row = [mapper[char] for char in row]
-    len_row = len(row)
-
-    for j in range(len_row, 0, -1):
-        for i in range(1, j):
-            a = row[i - 1]
-            b = row[i]
-            if a != b:
-                row[i - 1] = colours - a - b
-
-    return list(mapper.keys())[row[0]]
+    
+    for size in chunk_sizes:
+        while len(row) >= size:
+            new_row = []
+            
+            for i in range(len(row) - size + 1):
+                if row[i] == row[i + size - 1]:
+                    new_row.append(row[i])
+                else:
+                    new_row.append(3 - row[i] - row[i + size - 1])
+                    
+            row = new_row
+            
+    return mapper[row[0]]
 
 
 def main():
@@ -29,9 +29,12 @@ def main():
     print(triangle('RRR'), 'R')
     print(triangle('RGBG'), 'B')
     print(triangle('RBRGBRB'), 'G')
-    print(triangle('RBRGBRBGGRRRBGBBBGG'), 'G')
+    print(triangle('RBRGBRBGGRRRBGBBBG'), 'G')
+    print(triangle('BBRGBRBGGGRG'))
+    print(triangle('BBRGBRBGGGG'))
     print(triangle('BBRGBRBGGG'))
-    print(triangle('GRRBRRGGGGGGBBGBRRGRRGBGGRBBGBBGBRRBGBBGGBRRRRRGBBBBRRGBRBBBBBGGRBGBBRRRGRRBBGGBRBRGBRGRGGGGGRRBRG'))
+    print(
+        triangle('GRRBRRGGGGGGBBGBRRGRRGBGGRBBGBBGBRRBGBBGGBRRRRRGBBBBRRGBRBBBBBGGRBGBBRRRGRRBBGGBRBRGBRGRGGGGGRRBRG'))
     print(triangle('B'), 'B')
     print(triangle(
         'BRRBRRGGGGGGBBGBRRGRRGBGGRBBGBBGBRRBGBBGGBRRRRRGBBBBRRGBRBBBBBGGRBGBBRRRGRRBBGGBRBRGBRGRGGGGGRRBRGGBRBRBBGGGRBGRRBRBBRRBRBGBGBRRGGBRGRGBGRGBBBRRGBRRGGGRRBRRBRGRBRBBGBGGGBGRBRGRBGRBGRRRBRGRBGBGRRBBRGBRBRRGRRGGGGBGBBGRRGBGGGRBBGGBBBGRRBBGRBRBBRBRGGGBRRGRGRRRGBGBBRGRGBGGGBBRRRGRRBRBGGBBRGB'))
