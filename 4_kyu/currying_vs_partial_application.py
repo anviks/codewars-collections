@@ -1,3 +1,5 @@
+"""https://www.codewars.com/kata/currying-vs-partial-application"""
+
 from types import FunctionType
 
 
