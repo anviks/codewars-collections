@@ -5,7 +5,7 @@ from requests import get
 from bs4 import BeautifulSoup
 
 OVERWRITE_EXISTING_FILES = False
-CODEWARS_URL_PATTERN = re.compile(r'(?<=""").*?(https://www\.codewars\.com/kata/\w{24}).*?(?=""")', flags=re.DOTALL)
+CODEWARS_URL_PATTERN = re.compile(r'""".*?(https://www\.codewars\.com/kata/.*?)(?:\n|""")', flags=re.DOTALL)
 
 
 def main():
