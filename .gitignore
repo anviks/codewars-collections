@@ -162,6 +162,7 @@ cython_debug/
 .idea/
 
 /zz.py
+/g.py
 /binary_regex.py
 
 /2_kyu/6_by_6_skyscrapers.*
