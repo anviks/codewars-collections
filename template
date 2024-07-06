@@ -1,0 +1,13 @@
+"""{codewars_url}"""
+
+
+def foo():
+    pass
+
+
+def main():
+    from util_funcs import pretty_compare
+
+
+if __name__ == '__main__':
+    main()
