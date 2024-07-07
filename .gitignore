@@ -161,13 +161,12 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 
-/zz.py
-/g.py
 /binary_regex.py
 
 /2_kyu/6_by_6_skyscrapers.*
 /2_kyu/break_the_pieces.*
 /2_kyu/break_the_pieces_shapes
 /2_kyu/hard_sudoku_solver.*
+/2_kyu/simpler_interactive_interpreter.*
 /4_kyu/4_by_4_skyscrapers.*
 /4_kyu/palindrome_counter.*

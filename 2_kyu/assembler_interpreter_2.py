@@ -121,14 +121,7 @@ def assembler_interpreter(program: str):
 
 
 def main():
-    def pretty_compare(actual, expected):
-        if actual != expected:
-            print('\x1B[0;31m', end='')
-            sign = '!='
-        else:
-            print('\x1B[0;32m', end='')
-            sign = '=='
-        print(repr(actual), sign, repr(expected), '\x1B[0m')
+    from util_funcs import pretty_compare
     
     def compare_code_output(path, expected_output):
         with open(path) as f:
