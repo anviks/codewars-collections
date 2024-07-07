@@ -1,6 +1,6 @@
 """https://www.codewars.com/kata/decode-the-morse-code-advanced"""
 
-from morse import MORSE_CODE
+from preloaded import MORSE_CODE
 
 
 def decode_bits(bits: str):
@@ -21,10 +21,10 @@ def decode_bits(bits: str):
 
     bits_per_dot = min(consecutive_bit_counts)
 
-    return bits.replace('0000000' * bits_per_dot, "   ")\
-        .replace('111' * bits_per_dot, '-')\
-        .replace('000' * bits_per_dot, ' ')\
-        .replace('1' * bits_per_dot, '.')\
+    return bits.replace('0000000' * bits_per_dot, "   ") \
+        .replace('111' * bits_per_dot, '-') \
+        .replace('000' * bits_per_dot, ' ') \
+        .replace('1' * bits_per_dot, '.') \
         .replace('0' * bits_per_dot, '')
 
 

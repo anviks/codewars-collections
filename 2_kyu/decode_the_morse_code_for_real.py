@@ -1,6 +1,6 @@
 """https://www.codewars.com/kata/decode-the-morse-code-for-real"""
 
-from morse import MORSE_CODE
+from preloaded import MORSE_CODE
 
 MORSE_CODE[""] = ""
 
@@ -25,7 +25,8 @@ def decode_bits_advanced(bits: str):
     consecutive_bit_counts.append(consecutive_count)
 
     bits_per_dot = min(consecutive_bit_counts)
-    print(consecutive_bit_counts.count(bits_per_dot - 1), consecutive_bit_counts.count(bits_per_dot), consecutive_bit_counts.count(bits_per_dot + 1))
+    print(consecutive_bit_counts.count(bits_per_dot - 1), consecutive_bit_counts.count(bits_per_dot),
+          consecutive_bit_counts.count(bits_per_dot + 1))
 
     return bits.replace('0000000' * bits_per_dot, '   ') \
         .replace('000000' * bits_per_dot, '   ') \
@@ -39,7 +40,8 @@ def decode_bits_advanced(bits: str):
 
 def decode_morse(morse_code):
     return " ".join(
-        ["".join([str(MORSE_CODE.get(letter)) for letter in word.split(" ")]) for word in morse_code.split("   ")]).strip()
+        ["".join([str(MORSE_CODE.get(letter)) for letter in word.split(" ")]) for word in
+         morse_code.split("   ")]).strip()
 
 
 if __name__ == '__main__':

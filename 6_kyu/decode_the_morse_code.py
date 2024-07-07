@@ -1,6 +1,6 @@
 """https://www.codewars.com/kata/54b724efac3d5402db00065e"""
 
-from morse import MORSE_CODE
+from preloaded import MORSE_CODE
 
 MORSE_CODE[""] = ""
 

@@ -69,7 +69,7 @@ def is_solved(puzzle):
     return True
 
 
-if __name__ == '__main__':
+def main():
     puzzle = [[5, 3, 0, 0, 7, 0, 0, 0, 0],
               [6, 0, 0, 1, 9, 5, 0, 0, 0],
               [0, 9, 8, 0, 0, 0, 0, 6, 0],
@@ -98,3 +98,7 @@ if __name__ == '__main__':
                          [3, 4, 5, 2, 8, 6, 1, 7, 9]]
 
     assert solution == expected_solution
+
+
+if __name__ == '__main__':
+    main()

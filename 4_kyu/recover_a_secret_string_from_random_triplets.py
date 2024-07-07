@@ -43,7 +43,7 @@ def __get_next_letter(result, triplets) -> str:
     return potential_next_letters.pop() if len(potential_next_letters) == 1 else ""
 
 
-if __name__ == '__main__':
+def main():
     triplets = [
         ['t', 'u', 'p'],
         ['w', 'h', 'i'],
@@ -92,4 +92,8 @@ if __name__ == '__main__':
         ['o', 'a', 's']
     ]
 
-    print(recover_secret(triplets))  # congrats
+    print(recover_secret(triplets))  # congrats    
+
+
+if __name__ == '__main__':
+    main()

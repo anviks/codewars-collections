@@ -1,3 +1,6 @@
+"""https://www.codewars.com/kata/63d1bac72de941033dbf87ae"""
+
+
 def validate_sudoku(board):
     for row in board:
         row_vals = set(row)
