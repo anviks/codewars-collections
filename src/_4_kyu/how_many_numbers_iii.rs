@@ -1,52 +1,10 @@
-/**
-# [How many numbers III?](https://www.codewars.com/kata/5877e7d568909e5ff90017e6)
-
-We want to generate all the numbers of three digits where:
-
-- the sum of their digits is equal to `10`
-- their digits are in increasing order (the numbers may have two or more equal contiguous digits)
-
-The numbers that fulfill the two above constraints are: `[118, 127, 136, 145, 226, 235, 244, 334]`.
-There are `8` numbers in total with `118` being the lowest and `334` being the greatest.
-
----
-
-## Task
-
-Implement a function which receives two arguments:
-
-1. the sum of digits (`sum_dig`)
-2. the number of digits (`digs`)
-
-This function should return three values:
-
-1. the total number of values which have `digs` digits that add up to `sum_dig` and are in increasing order
-2. the lowest such value
-3. the highest such value
-
-*Note*: if there're no values which satisfy these constaints, you should return an empty value (refer to the examples to see what exactly is expected).
-
-## Examples
-
-```rust
-find_all(10, 3) == Some((8, 118, 334))
-find_all(27, 3) == Some((1, 999, 999))
-find_all(84, 4) == None
-```
-
----
-
-Features of the random tests:
-
-- Number of tests: `112`
-- Sum of digits value between `20` and `65`
-- Amount of digits between `2` and `17`
-*/
+/*
+ * https://www.codewars.com/kata/5877e7d568909e5ff90017e6
+ */
 
 
 use std::cmp::min;
 use std::ops::Add;
-use std::time::Instant;
 
 
 fn sol1(sum_dig: u8, digs: u8) -> Option<(usize, u64, u64)> {
@@ -162,46 +120,61 @@ fn get_ascending_digits(digs: u8, minimum: u8) -> Vec<Vec<u8>> {
     result
 }
 
-pub fn main() {
-    let mut start = Instant::now();
-    println!("{:?}", sol1(13, 3));  // Some((8, 118, 334)), because [118, 127, 136, 145, 226, 235, 244, 334]
-    println!("{:?}", start.elapsed());
-
-    start = Instant::now();
-    println!("{:?}", sol2(13, 3));
-    println!("{:?}", start.elapsed());
-
-    start = Instant::now();
-    println!("{:?}", find_all(13, 3));
-    println!("{:?}\n\n", start.elapsed());
 
 
+// Add your tests here.
+// See https://doc.rust-lang.org/stable/rust-by-example/testing/unit_testing.html
 
-    start = Instant::now();
-    println!("{:?}", sol1(13, 6));
-    println!("{:?}", start.elapsed());
+#[cfg(test)]
+mod tests {
+    use std::time::Instant;
+    use super::{find_all, sol1, sol2};
 
-    start = Instant::now();
-    println!("{:?}", sol2(13, 6));
-    println!("{:?}", start.elapsed());
+    #[test]
+    fn sample_tests() {
+        assert_eq!(find_all(10, 3), Some((8, 118, 334)));
+        assert_eq!(find_all(27, 3), Some((1, 999, 999)));
+        assert_eq!(find_all(84, 4), None);
+        assert_eq!(find_all(35, 6), Some((123, 116999, 566666)));
+    }
+    
+    #[test]
+    fn performance_tests() {
+        let mut start = Instant::now();
+        println!("{:?}", sol1(13, 3));  // Some((8, 118, 334)), because [118, 127, 136, 145, 226, 235, 244, 334]
+        println!("{:?}", start.elapsed());
 
-    start = Instant::now();
-    println!("{:?}", find_all(13, 6));
-    println!("{:?}\n\n", start.elapsed());
+        start = Instant::now();
+        println!("{:?}", sol2(13, 3));
+        println!("{:?}", start.elapsed());
 
-
-
-    start = Instant::now();
-    println!("{:?}", sol2(13, 8));
-    println!("{:?}", start.elapsed());
-
-    start = Instant::now();
-    println!("{:?}", find_all(13, 8));
-    println!("{:?}\n\n", start.elapsed());
+        start = Instant::now();
+        println!("{:?}", find_all(13, 3));
+        println!("{:?}\n\n", start.elapsed());
 
 
 
-    start = Instant::now();
-    println!("{:?}", find_all(56, 17));  // 10 sec
-    println!("{:?}\n\n", start.elapsed());
+        start = Instant::now();
+        println!("{:?}", sol1(13, 6));
+        println!("{:?}", start.elapsed());
+
+        start = Instant::now();
+        println!("{:?}", sol2(13, 6));
+        println!("{:?}", start.elapsed());
+
+        start = Instant::now();
+        println!("{:?}", find_all(13, 6));
+        println!("{:?}\n\n", start.elapsed());
+
+
+
+        start = Instant::now();
+        println!("{:?}", sol2(13, 8));
+        println!("{:?}", start.elapsed());
+
+        start = Instant::now();
+        println!("{:?}", find_all(13, 8));
+        println!("{:?}\n\n", start.elapsed());
+    }
 }
+

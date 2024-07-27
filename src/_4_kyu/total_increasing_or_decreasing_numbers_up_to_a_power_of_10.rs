@@ -1,5 +1,9 @@
+/*
+ * https://www.codewars.com/kata/55b195a69a6cc409ba000053
+ */
+
+
 use std::collections::HashSet;
-use std::time::Instant;
 
 fn generate_inc(digits: u32, start: u8) -> Vec<Vec<u8>> {
     let mut increasing_nums = vec![];
@@ -56,11 +60,25 @@ fn total_inc_dec(n: u32) -> u64 {
     distinct.len() as u64
 }
 
-pub fn main() {
-    let start = Instant::now();
-    println!("{}", total_inc_dec(0));  // below 1 -> 1
-    println!("{}", total_inc_dec(2));  // below 100 -> 100
-    println!("{}", total_inc_dec(3));  // below 1000 -> 475
-    println!("{}", total_inc_dec(6));  // below 1_000_000 -> 12952
-    println!("{:?}", start.elapsed());
+
+// Add your tests here.
+// See https://doc.rust-lang.org/stable/rust-by-example/testing/unit_testing.html
+#[cfg(test)]
+mod tests {
+    use super::total_inc_dec;
+
+    fn dotest(n: u32, expected: u64) {
+        let actual = total_inc_dec(n);
+        assert_eq!(actual, expected, "With n = {n}\nExpected {expected} but got {actual}")
+    }
+
+    #[test]
+    fn fixed_tests() {
+        dotest(0, 1);
+        dotest(1, 10);
+        dotest(2, 100);
+        dotest(3, 475);
+        dotest(4, 1675);
+    }
 }
+
