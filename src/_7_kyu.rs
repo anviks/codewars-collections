@@ -1,1 +1,1 @@
-mod ends_with;
+mod string_ends_with;
