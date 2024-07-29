@@ -1,7 +1,10 @@
-package codewars
+package me.anviks.codewars._7kyu.number_of_people_in_the_bus
 
-import junit.framework.TestCase.assertEquals
-import me.anviks._7_kyu.people
+/*
+ * https://www.codewars.com/kata/5648b12ce68d9daa6b000099
+ */
+
+import kotlin.test.assertEquals
 import org.junit.Test
 
 class TestExample {
