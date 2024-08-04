@@ -1,8 +1,8 @@
-package me.anviks.codewars._4kyu.so_many_permutations;
-
 /*
  * https://www.codewars.com/kata/5254ca2719453dcc0b00027d
  */
+
+package me.anviks.codewars._4kyu.so_many_permutations;
 
 import org.junit.Test;
 

@@ -1,8 +1,8 @@
-package me.anviks.codewars._6kyu.build_tower;
-
 /*
  * https://www.codewars.com/kata/576757b1df89ecf5bd00073b
  */
+
+package me.anviks.codewars._6kyu.build_tower;
 
 public class Kata {
     public static String[] towerBuilder(int nFloors) {

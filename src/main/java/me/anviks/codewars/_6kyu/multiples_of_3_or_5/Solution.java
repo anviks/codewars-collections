@@ -1,8 +1,8 @@
-package me.anviks.codewars._6kyu.multiples_of_3_or_5;
-
 /*
  * https://www.codewars.com/kata/514b92a657cdc65150000006
  */
+
+package me.anviks.codewars._6kyu.multiples_of_3_or_5;
 
 import java.util.stream.IntStream;
 

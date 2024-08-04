@@ -1,8 +1,8 @@
-package me.anviks.codewars._6kyu.create_phone_number;
-
 /*
  * https://www.codewars.com/kata/525f50e3b73515a6db000b83
  */
+
+package me.anviks.codewars._6kyu.create_phone_number;
 
 import org.junit.Test;
 

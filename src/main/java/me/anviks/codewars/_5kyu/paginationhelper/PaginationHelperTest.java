@@ -1,8 +1,8 @@
-package me.anviks.codewars._5kyu.paginationhelper;
-
 /*
  * https://www.codewars.com/kata/515bb423de843ea99400000a
  */
+
+package me.anviks.codewars._5kyu.paginationhelper;
 
 import org.junit.jupiter.api.*;
 

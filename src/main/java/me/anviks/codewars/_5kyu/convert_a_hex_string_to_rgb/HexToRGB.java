@@ -1,8 +1,8 @@
-package me.anviks.codewars._5kyu.convert_a_hex_string_to_rgb;
-
 /*
  * https://www.codewars.com/kata/5282b48bb70058e4c4000fa7
  */
+
+package me.anviks.codewars._5kyu.convert_a_hex_string_to_rgb;
 
 import java.util.Map;
 

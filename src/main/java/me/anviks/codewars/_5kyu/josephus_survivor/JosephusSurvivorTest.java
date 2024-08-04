@@ -1,8 +1,8 @@
-package me.anviks.codewars._5kyu.josephus_survivor;
-
 /*
  * https://www.codewars.com/kata/555624b601231dc7a400017a
  */
+
+package me.anviks.codewars._5kyu.josephus_survivor;
 
 import org.junit.Test;
 

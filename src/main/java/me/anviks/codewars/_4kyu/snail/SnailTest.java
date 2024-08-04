@@ -1,8 +1,8 @@
-package me.anviks.codewars._4kyu.snail;
-
 /*
  * https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1
  */
+
+package me.anviks.codewars._4kyu.snail;
 
 import org.junit.Assert;
 import org.junit.Test;

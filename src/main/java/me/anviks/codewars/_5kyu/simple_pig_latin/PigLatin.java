@@ -1,8 +1,8 @@
-package me.anviks.codewars._5kyu.simple_pig_latin;
-
 /*
  * https://www.codewars.com/kata/520b9d2ad5c005041100000f
  */
+
+package me.anviks.codewars._5kyu.simple_pig_latin;
 
 public class PigLatin {
     public static String pigIt(String str) {

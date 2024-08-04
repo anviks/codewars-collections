@@ -1,8 +1,8 @@
-package me.anviks.codewars._4kyu.codewars_style_ranking_system;
-
 /*
  * https://www.codewars.com/kata/51fda2d95d6efda45e00004e
  */
+
+package me.anviks.codewars._4kyu.codewars_style_ranking_system;
 
 import org.junit.Test;
 

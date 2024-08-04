@@ -1,8 +1,8 @@
-package me.anviks.codewars._6kyu.sum_of_digits_digital_root;
-
 /*
  * https://www.codewars.com/kata/541c8630095125aba6000c00
  */
+
+package me.anviks.codewars._6kyu.sum_of_digits_digital_root;
 
 import org.junit.Test;
 

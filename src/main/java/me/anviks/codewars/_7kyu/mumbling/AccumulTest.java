@@ -1,8 +1,8 @@
-package me.anviks.codewars._7kyu.mumbling;
-
 /*
  * https://www.codewars.com/kata/5667e8f4e3f572a8f2000039
  */
+
+package me.anviks.codewars._7kyu.mumbling;
 
 import org.junit.Test;
 

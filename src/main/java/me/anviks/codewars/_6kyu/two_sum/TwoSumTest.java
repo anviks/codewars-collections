@@ -1,8 +1,8 @@
-package me.anviks.codewars._6kyu.two_sum;
-
 /*
  * https://www.codewars.com/kata/52c31f8e6605bcc646000082
  */
+
+package me.anviks.codewars._6kyu.two_sum;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;

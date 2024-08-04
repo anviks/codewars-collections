@@ -1,8 +1,8 @@
-package me.anviks.codewars._6kyu.two_sum;
-
 /*
  * https://www.codewars.com/kata/52c31f8e6605bcc646000082
  */
+
+package me.anviks.codewars._6kyu.two_sum;
 
 public class Solution {
     public static int[] twoSum(int[] numbers, int target) {

@@ -1,8 +1,8 @@
-package me.anviks.codewars._7kyu.valid_parentheses;
-
 /*
  * https://www.codewars.com/kata/6411b91a5e71b915d237332d
  */
+
+package me.anviks.codewars._7kyu.valid_parentheses;
 
 import java.util.Stack;
 

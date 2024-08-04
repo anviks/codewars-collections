@@ -1,8 +1,8 @@
-package me.anviks.codewars._6kyu.roman_numerals_encoder;
-
 /*
  * https://www.codewars.com/kata/51b62bf6a9c58071c600001b
  */
+
+package me.anviks.codewars._6kyu.roman_numerals_encoder;
 
 import org.junit.Test;
 
