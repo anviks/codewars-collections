@@ -1,8 +1,8 @@
-package me.anviks.codewars._6kyu.bouncing_balls
-
 /*
  * https://www.codewars.com/kata/5544c7a5cb454edb3c000047
  */
+
+package me.anviks.codewars._6kyu.bouncing_balls
 
 fun bouncingBall(h: Double, bounce: Double, window: Double): Int {
     if (h <= 0 || bounce <= 0 || bounce >= 1 || window >= h) {

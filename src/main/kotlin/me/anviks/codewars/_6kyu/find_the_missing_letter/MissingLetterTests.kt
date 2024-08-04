@@ -1,8 +1,8 @@
-package me.anviks.codewars._6kyu.find_the_missing_letter
-
 /*
  * https://www.codewars.com/kata/5839edaa6754d6fec10000a2
  */
+
+package me.anviks.codewars._6kyu.find_the_missing_letter
 
 import org.junit.Test
 import kotlin.test.assertEquals

@@ -1,8 +1,8 @@
-package me.anviks.codewars._6kyu.stop_gninnips_my_sdrow
-
 /*
  * https://www.codewars.com/kata/5264d2b162488dc400000001
  */
+
+package me.anviks.codewars._6kyu.stop_gninnips_my_sdrow
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

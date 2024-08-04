@@ -1,8 +1,8 @@
-package me.anviks.codewars._6kyu.lottery_ticket
-
 /*
  * https://www.codewars.com/kata/57f625992f4d53c24200070e
  */
+
+package me.anviks.codewars._6kyu.lottery_ticket
 
 import kotlin.test.assertEquals
 import org.junit.Test

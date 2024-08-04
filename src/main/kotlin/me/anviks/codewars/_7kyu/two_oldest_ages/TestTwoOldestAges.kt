@@ -1,8 +1,8 @@
-package me.anviks.codewars._7kyu.two_oldest_ages
-
 /*
  * https://www.codewars.com/kata/511f11d355fe575d2c000001
  */
+
+package me.anviks.codewars._7kyu.two_oldest_ages
 
 import io.kotlintest.matchers.shouldBe
 import io.kotlintest.specs.StringSpec

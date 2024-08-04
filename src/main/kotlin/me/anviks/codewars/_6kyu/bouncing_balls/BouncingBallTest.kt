@@ -1,8 +1,8 @@
-package me.anviks.codewars._6kyu.bouncing_balls
-
 /*
  * https://www.codewars.com/kata/5544c7a5cb454edb3c000047
  */
+
+package me.anviks.codewars._6kyu.bouncing_balls
 
 import org.junit.Assert.*
 import org.junit.Test

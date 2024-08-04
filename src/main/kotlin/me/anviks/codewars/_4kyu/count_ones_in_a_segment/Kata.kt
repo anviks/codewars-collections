@@ -1,8 +1,8 @@
-package me.anviks.codewars._4kyu.count_ones_in_a_segment
-
 /*
  * https://www.codewars.com/kata/596d34df24a04ee1e3000a25
  */
+
+package me.anviks.codewars._4kyu.count_ones_in_a_segment
 
 import kotlin.math.floor
 import kotlin.math.log2

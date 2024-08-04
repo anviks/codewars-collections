@@ -1,8 +1,8 @@
-package me.anviks.codewars._5kyu.buddy_pairs
-
 /*
  * https://www.codewars.com/kata/59ccf051dcc4050f7800008f
  */
+
+package me.anviks.codewars._5kyu.buddy_pairs
 
 import kotlin.math.sqrt
 

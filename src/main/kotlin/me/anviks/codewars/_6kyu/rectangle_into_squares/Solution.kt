@@ -1,8 +1,8 @@
-package me.anviks.codewars._6kyu.rectangle_into_squares
-
 /*
  * https://www.codewars.com/kata/55466989aeecab5aac00003e
  */
+
+package me.anviks.codewars._6kyu.rectangle_into_squares
 
 fun sqInRect(lng: Int, wdth: Int): List<Int>? {
     return if (lng == wdth) null

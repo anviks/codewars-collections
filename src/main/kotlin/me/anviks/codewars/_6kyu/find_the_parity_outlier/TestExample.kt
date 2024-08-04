@@ -1,8 +1,8 @@
-package me.anviks.codewars._6kyu.find_the_parity_outlier
-
 /*
  * https://www.codewars.com/kata/5526fc09a1bbd946250002dc
  */
+
+package me.anviks.codewars._6kyu.find_the_parity_outlier
 
 import kotlin.test.assertEquals
 import org.junit.Test

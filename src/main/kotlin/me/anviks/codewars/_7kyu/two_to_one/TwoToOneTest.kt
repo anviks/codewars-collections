@@ -1,8 +1,8 @@
-package me.anviks.codewars._7kyu.two_to_one
-
 /*
  * https://www.codewars.com/kata/5656b6906de340bd1b0000ac
  */
+
+package me.anviks.codewars._7kyu.two_to_one
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

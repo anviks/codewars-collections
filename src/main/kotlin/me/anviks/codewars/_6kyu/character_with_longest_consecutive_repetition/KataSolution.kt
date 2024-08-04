@@ -1,8 +1,8 @@
-package me.anviks.codewars._6kyu.character_with_longest_consecutive_repetition
-
 /*
  * https://www.codewars.com/kata/586d6cefbcc21eed7a001155
  */
+
+package me.anviks.codewars._6kyu.character_with_longest_consecutive_repetition
 
 object KataSolution {
     fun longestRepetition(s: String): Pair<Char?,Int> {

@@ -1,8 +1,8 @@
-package me.anviks.codewars._6kyu.sum_consecutives
-
 /*
  * https://www.codewars.com/kata/55eeddff3f64c954c2000059
  */
+
+package me.anviks.codewars._6kyu.sum_consecutives
 
 fun sumConsecutives(s: List<Int>): List<Int> =
     s.foldIndexed<Int, MutableList<Int>>(mutableListOf()) { i, acc, element ->

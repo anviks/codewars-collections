@@ -1,8 +1,8 @@
-package me.anviks.codewars._6kyu.sum_consecutives
-
 /*
  * https://www.codewars.com/kata/55eeddff3f64c954c2000059
  */
+
+package me.anviks.codewars._6kyu.sum_consecutives
 
 import org.junit.Test
 import kotlin.test.assertEquals

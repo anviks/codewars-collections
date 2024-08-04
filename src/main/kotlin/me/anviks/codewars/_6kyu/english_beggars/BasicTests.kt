@@ -1,8 +1,8 @@
-package me.anviks.codewars._6kyu.english_beggars
-
 /*
  * https://www.codewars.com/kata/59590976838112bfea0000fa
  */
+
+package me.anviks.codewars._6kyu.english_beggars
 
 import kotlin.test.Test
 import kotlin.test.assertEquals
