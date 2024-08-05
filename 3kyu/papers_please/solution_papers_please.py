@@ -1,3 +1,5 @@
+"""https://www.codewars.com/kata/59d582cafbdd0b7ef90000a0"""
+
 import re
 from collections import defaultdict
 from typing import TypeVar
@@ -86,7 +88,8 @@ class Immigrant:
         return next((doc for doc in self.documents if doc.exp < '1982.11.22'), None)
 
     def get_invalid_document(self) -> Document | None:
-        return next((doc for doc in self.documents if isinstance(doc, DiplomaticAuthorization) and DESTINATION_COUNTRY not in doc.access), None)
+        return next((doc for doc in self.documents if
+                     isinstance(doc, DiplomaticAuthorization) and DESTINATION_COUNTRY not in doc.access), None)
 
     def compare_documents(self) -> str | None:
         comparisons = tuple(set() for _ in range(4))
@@ -135,7 +138,8 @@ class Inspector:
 
     def inspect(self, documents: dict[str, str]):
         immigrant = Immigrant()
-        doc_classes = (Passport, AccessPermit, AsylumGrant, DiplomaticAuthorization, IdCard, VaccinationCertificate, WorkPass)
+        doc_classes = (
+        Passport, AccessPermit, AsylumGrant, DiplomaticAuthorization, IdCard, VaccinationCertificate, WorkPass)
 
         for doc_type in doc_classes:
             doc_info = documents.get(doc_type.get_document_underscore_name())
@@ -167,7 +171,8 @@ class Inspector:
         has_required_vaccinations = True
         for doc in required_docs:
             if doc.replace(' ', '_') not in documents:
-                if doc == 'access permit' and ('diplomatic_authorization' in documents or 'grant_of_asylum' in documents):
+                if doc == 'access permit' and (
+                        'diplomatic_authorization' in documents or 'grant_of_asylum' in documents):
                     continue
                 if 'vaccination' in doc:
                     disease = doc[:doc.rfind(' vaccination')]

@@ -1,4 +1,4 @@
-from papers_please import Inspector
+from solution_papers_please import Inspector
 
 
 def test():
