@@ -1,5 +1,5 @@
 /*
- * https://www.codewars.com/kata/515decfd9dcfc23bb6000006
+ * https://www.codewars.com/kumite/66af6f1bb66160c4c3456f66?sel=66af6f1bb66160c4c3456f66
  */
 
 package me.anviks.codewars.translations._6kyu.ip_validation
