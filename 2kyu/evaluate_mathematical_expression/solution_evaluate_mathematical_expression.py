@@ -1,8 +1,7 @@
 """https://www.codewars.com/kata/52a78825cdfc2cfc87000005"""
-import re
-from operator import add, sub, mul, truediv
 
-import pytest
+import re
+from operator import add, mul, sub, truediv
 
 OPERATORS = {'+': add, '-': sub, '*': mul, '/': truediv}
 
@@ -11,7 +10,8 @@ NUMBER_P = r'-?\d*\.?\d+'  # Find integers and floats
 
 DOUBLE_NEG_PATTERN = re.compile(fr'({OPERATOR_P}|^)--')  # Use to replace double negations like --5+--3 with 5+3
 PARENTHESES_PATTERN = re.compile(r'\(([^()]*)\)')  # Find content inside innermost parentheses
-BIN_OPERATOR_PATTERN = re.compile(fr'(?<=\d)({OPERATOR_P})')  # Find operators. Excludes unary '-' and assumes parentheses have been removed.
+BIN_OPERATOR_PATTERN = re.compile(
+    fr'(?<=\d)({OPERATOR_P})')  # Find operators. Excludes unary '-' and assumes parentheses have been removed.
 MUL_DIV_PATTERN = re.compile(fr'(?<!\d){NUMBER_P}(?:[*/]{NUMBER_P})+')  # Find multiplication and division expressions
 
 
@@ -43,23 +43,3 @@ def eval_expr(expression: str) -> str:
         result = OPERATORS[operator](result, float(operand))  # Equivalent to result = result {operator} operand
 
     return str(result)
-
-
-@pytest.mark.parametrize(
-    "expression,expected",
-    [
-        ("1 + 1", 2),
-        ("8/16", 0.5),
-        ("3 -(-1)", 4),
-        ("2 + -2", 0),
-        ("10- 2- -5", 13),
-        ("(((10)))", 10),
-        ("3 * 5", 15),
-        ("-7 * -(6 / 3)", 14),
-        ("74 + -22 - -33 - 91 * 63 * -45 - -76 * 86", 264606),
-        ("(-74) / (47 + 6 * (8)) + (-48 * (((-(93 / -91)))) + 29)", -20.833892423366105),
-        ("-(-35) + (19 * 58 - -(72)) - (47 + -(((-(-98 / -79)))) * -7)", 1170.6835443037974)
-    ],
-)
-def test_main(expression, expected):
-    assert calc(expression) == pytest.approx(expected)

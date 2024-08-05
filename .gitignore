@@ -165,10 +165,10 @@ cython_debug/
 /s.py
 /get_task_descriptions.py
 
-/2_kyu/6_by_6_skyscrapers.*
-/2_kyu/break_the_pieces.*
-/2_kyu/break_the_pieces_shapes
-/2_kyu/hard_sudoku_solver.*
-/2_kyu/simpler_interactive_interpreter.*
 /4_kyu/4_by_4_skyscrapers.*
 /4_kyu/palindrome_counter.*
+
+/2kyu/break_the_pieces
+/2kyu/decode_the_morse_code_for_real
+/2kyu/hard_sudoku_solver
+/2kyu/simpler_interactive_interpreter

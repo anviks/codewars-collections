@@ -1,4 +1,5 @@
-"""https://www.codewars.com/kata/assembler-interpreter-part-ii/"""
+"""https://www.codewars.com/kata/assembler-interpreter-part-ii"""
+
 import re
 from operator import add, sub, mul, floordiv, eq, ne, lt, le, gt, ge
 from typing import Callable
@@ -16,17 +17,17 @@ class Assembler:
         self.lines: list[str] = []
         self.cache = None
         self.output = ''
-    
+
     @property
     def call_stack(self):
         if len(self._call_stack) >= 1000:
             raise RecursionError('Maximum recursion depth exceeded')
         return self._call_stack
-    
+
     @property
     def line_no(self):
         return self._call_stack[-1]
-    
+
     @line_no.setter
     def line_no(self, value):
         self._call_stack[-1] = value
@@ -45,7 +46,7 @@ class Assembler:
 
     def dec(self, reg: str):
         self.registers[reg] -= 1
-        
+
     def alter_registry_value(self, reg: str, value: str, operation: Callable[[int, int], int]):
         self.registers[reg] = operation(self.registers[reg], self.get_real_value(value))
 
@@ -71,11 +72,11 @@ class Assembler:
     jg = lambda *args: Assembler.jump_if(*args, cmp_func=gt)
     jle = lambda *args: Assembler.jump_if(*args, cmp_func=le)
     jl = lambda *args: Assembler.jump_if(*args, cmp_func=lt)
-    
+
     def call(self, label: str):
         self.call_stack.append(self.line_no)
         self.line_no = self.labels[label]
-        
+
     def msg(self, *args):
         for arg in args:
             if arg[0] == arg[-1] == "'":
@@ -93,12 +94,12 @@ class Assembler:
             self.labels[name] = line_no
 
         self.lines = [line.strip() for line in program.splitlines()]
-        
+
     def execute(self):
         while self.line_no < len(self.lines):
             current_line = self.lines[self.line_no]
             cmd, *args = CMD_ARGS_PATTERN.findall(current_line)
-            
+
             if not args:
                 if cmd == 'ret':
                     self.call_stack.pop()
@@ -107,22 +108,22 @@ class Assembler:
             else:
                 # This approach implicitly asserts, that command is valid and the correct number of arguments is passed
                 getattr(self, cmd)(*args)
-                
+
             self.line_no += 1
-            
+
         return -1
 
 
 def assembler_interpreter(program: str):
     assembler = Assembler()
     assembler.parse(program)
-    
+
     return assembler.execute()
 
 
 def main():
     from util_funcs import pretty_compare
-    
+
     def compare_code_output(path, expected_output):
         with open(path) as f:
             pretty_compare(assembler_interpreter(f.read()), expected_output)
