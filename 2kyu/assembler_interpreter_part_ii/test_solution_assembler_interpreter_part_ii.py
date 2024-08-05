@@ -1,5 +1,5 @@
 """https://www.codewars.com/kata/assembler-interpreter-part-ii"""
-
+import os.path
 import unittest
 
 from parameterized import parameterized
@@ -18,5 +18,5 @@ class SampleTests(unittest.TestCase):
         ['assembler_code_snippets/power', '2^10 = 1024'],
     ])
     def test_examples(self, file_path, expected_output):
-        with open(file_path) as f:
+        with open(os.path.join(os.path.dirname(__file__), file_path)) as f:
             self.assertEqual(expected_output, assembler_interpreter(f.read()))
