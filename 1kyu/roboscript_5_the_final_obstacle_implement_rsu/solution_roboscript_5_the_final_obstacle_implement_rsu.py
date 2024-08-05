@@ -130,9 +130,9 @@ class RSUProgram:
         while group_pattern.search(code):
             code = group_pattern.sub(RSUProgram.expand_match, code)
         code = re.sub(r'([FRL])(\d+)', RSUProgram.expand_match, code)
-    
+
         return code
-    
+
     @staticmethod
     def expand_match(match: re.Match) -> str:
         group_one = match.group(1)
@@ -142,7 +142,7 @@ class RSUProgram:
     def execute(self):
         tokens_ = self.get_tokens()
         raw = self.convert_to_raw(tokens_)
-        
+
         return self.execute_raw(raw)
 
     @staticmethod
@@ -151,24 +151,24 @@ class RSUProgram:
         location = 0
         direction = 1j
         visited: set[complex] = {location}
-    
+
         for char in cmds:
             if char == 'F':
                 location += direction
                 visited.add(location)
             else:
                 direction /= mapper[char]
-    
+
         coords = set(map(lambda im: (int(im.real), int(im.imag)), visited))
-    
+
         min_x = min(coords)[0]
         min_y = min(coords, key=lambda c: c[1])[1]
         max_x = max(coords)[0]
         max_y = max(coords, key=lambda c: c[1])[1]
-    
-        matrix = [['*' if complex(x, y) in visited else ' ' for y in range(min_y, max_y + 1)] 
+
+        matrix = [['*' if complex(x, y) in visited else ' ' for y in range(min_y, max_y + 1)]
                   for x in range(min_x, max_x + 1)]
-    
+
         return '\r\n'.join(''.join(line) for line in matrix)
 
 
@@ -179,7 +179,7 @@ class SemanticTreeConstructor:
 
     def get_scope_tree(self, scope) -> dict:
         tree = self.tree
-        
+
         for i in range(len(scope)):
             tree = tree.get(scope[i], {})
 
@@ -228,7 +228,7 @@ class SemanticTreeConstructor:
                 tokens.extend(more_tokens)
             else:
                 tokens.append(token)
-                
+
         return tokens
 
     def __repr__(self):
