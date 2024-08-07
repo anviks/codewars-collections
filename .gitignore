@@ -165,10 +165,10 @@ cython_debug/
 /s.py
 /get_task_descriptions.py
 
-/2kyu/break_the_pieces
-/2kyu/decode_the_morse_code_for_real
-/2kyu/hard_sudoku_solver
-/2kyu/simpler_interactive_interpreter
+/solutions/2kyu/break_the_pieces
+/solutions/2kyu/decode_the_morse_code_for_real
+/solutions/2kyu/hard_sudoku_solver
+/solutions/2kyu/simpler_interactive_interpreter
 
-/4kyu/palindrome_counter
-/4kyu/4_by_4_skyscrapers
+/solutions/4kyu/palindrome_counter
+/solutions/4kyu/4_by_4_skyscrapers
