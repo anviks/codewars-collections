@@ -1,0 +1,7 @@
+F(P7)0
+    p7
+        RLRL1L6FL2
+        P7
+        F1(R3(R2LFR)FL)9R
+    q
+    LF7RRF

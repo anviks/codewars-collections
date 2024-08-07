@@ -1,0 +1,10 @@
+p0
+  (//FFR ( // this should be erased successfully too
+    F2 L
+  )2 (
+    F2 R
+  )2
+q
+(
+  P0
+)2

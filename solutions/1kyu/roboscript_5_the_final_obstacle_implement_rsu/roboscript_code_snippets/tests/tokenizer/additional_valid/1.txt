@@ -1,0 +1,12 @@
+p0
+  (/* This is a comment // but that is not a new one!
+// this one should not remove the end of the previous one*/
+    F2 L
+  )2 (
+    F2 R
+  )2
+q
+
+(
+  P0
+)2

@@ -1,0 +1,11 @@
+p0
+  (
+    F/* Catch us if you can ;) */2 L
+  )2 (
+    F2 R
+  )2
+q
+
+(
+  P0
+)2

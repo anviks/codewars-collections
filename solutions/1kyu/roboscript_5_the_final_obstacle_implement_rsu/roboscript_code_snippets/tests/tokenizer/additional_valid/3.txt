@@ -1,0 +1,12 @@
+p0
+  (/* This is a comment // but that is not! */
+// */ this shouldn't fail because this is a comment too
+    F2 L
+  )2 (
+    F2 R
+  )2
+q
+
+(
+  P0
+)2
