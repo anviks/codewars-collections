@@ -1,14 +1,14 @@
 #include <iostream>
-#include "7_kyu/sort_numbers.h"
-#include "7_kyu/count_vowels.h"
-#include "7_kyu/count_divisors.h"
-#include "6_kyu/equal_array_sides.h"
-#include "5_kyu/rgb_to_hex.h"
-#include "4_kyu/boggle_word_checker.h"
-#include "4_kyu/ranking_poker_hands.h"
-#include "4_kyu/matrix_determinant.h"
-#include "4_kyu/next_biggest_number.h"
-#include "4_kyu/range_extraction.h"
+#include "solutions/7kyu/sort_numbers.h"
+#include "solutions/7kyu/count_vowels.h"
+#include "solutions/7kyu/count_divisors.h"
+#include "solutions/6kyu/equal_array_sides.h"
+#include "solutions/5kyu/rgb_to_hex.h"
+#include "solutions/4kyu/boggle_word_checker.h"
+#include "solutions/4kyu/ranking_poker_hands.h"
+#include "solutions/4kyu/matrix_determinant.h"
+#include "solutions/4kyu/next_biggest_number.h"
+#include "solutions/4kyu/range_extraction.h"
 #include <chrono>
 #include <functional>
 

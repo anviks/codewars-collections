@@ -1,26 +1,26 @@
 cmake_minimum_required(VERSION 3.26)
-project(codewars_c__)
+project(codewars_cpp)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(codewars_c__ main.cpp
-        7_kyu/sort_numbers.cpp
-        7_kyu/count_vowels.cpp
-        7_kyu/count_vowels.h
-        7_kyu/count_vowels.cpp
-        7_kyu/count_divisors.cpp
-        7_kyu/count_divisors.h
-        6_kyu/equal_array_sides.cpp
-        6_kyu/equal_array_sides.h
-        5_kyu/rgb_to_hex.cpp
-        5_kyu/rgb_to_hex.h
-        4_kyu/boggle_word_checker.cpp
-        4_kyu/boggle_word_checker.h
-        4_kyu/ranking_poker_hands.cpp
-        4_kyu/ranking_poker_hands.h
-        4_kyu/matrix_determinant.cpp
-        4_kyu/matrix_determinant.h
-        4_kyu/next_biggest_number.cpp
-        4_kyu/next_biggest_number.h
-        4_kyu/range_extraction.cpp
-        4_kyu/range_extraction.h)
+add_executable(codewars_cpp main.cpp
+        solutions/7kyu/sort_numbers.cpp
+        solutions/7kyu/count_vowels.cpp
+        solutions/7kyu/count_vowels.h
+        solutions/7kyu/count_vowels.cpp
+        solutions/7kyu/count_divisors.cpp
+        solutions/7kyu/count_divisors.h
+        solutions/6kyu/equal_array_sides.cpp
+        solutions/6kyu/equal_array_sides.h
+        solutions/5kyu/rgb_to_hex.cpp
+        solutions/5kyu/rgb_to_hex.h
+        solutions/4kyu/boggle_word_checker.cpp
+        solutions/4kyu/boggle_word_checker.h
+        solutions/4kyu/ranking_poker_hands.cpp
+        solutions/4kyu/ranking_poker_hands.h
+        solutions/4kyu/matrix_determinant.cpp
+        solutions/4kyu/matrix_determinant.h
+        solutions/4kyu/next_biggest_number.cpp
+        solutions/4kyu/next_biggest_number.h
+        solutions/4kyu/range_extraction.cpp
+        solutions/4kyu/range_extraction.h)
