@@ -1,0 +1,5 @@
+<p>Given an integer, return a string with dash <code>'-'</code> marks before and after each odd digit, but do not begin or end the string with a dash mark.</p>
+<p>Ex:</p>
+<pre><code class="language-javascript"><span class="cm-number">274</span> <span class="cm-operator">-</span><span class="cm-operator">&gt;</span> <span class="cm-string">'2-7-4'</span>
+<span class="cm-number">6815</span> <span class="cm-operator">-</span><span class="cm-operator">&gt;</span> <span class="cm-string">'68-1-5'</span>
+</code></pre>
