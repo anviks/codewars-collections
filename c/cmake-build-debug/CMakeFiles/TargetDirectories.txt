@@ -1,3 +1,0 @@
-C:/Users/Andreas Viks/Projects/codewars-collections/c/cmake-build-debug/CMakeFiles/codewars_c.dir
-C:/Users/Andreas Viks/Projects/codewars-collections/c/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Andreas Viks/Projects/codewars-collections/c/cmake-build-debug/CMakeFiles/rebuild_cache.dir
