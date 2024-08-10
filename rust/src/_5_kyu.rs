@@ -1,6 +1,0 @@
-mod weight_for_weight;
-mod tic_tac_toe_checker;
-mod number_of_trailing_zeros_of_n;
-mod going_to_zero_or_to_infinity;
-mod isbn_10_validation;
-mod program_a_calculator_2_3d_vectors;

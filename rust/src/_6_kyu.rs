@@ -1,7 +1,0 @@
-mod multiples_of_3_or_5;
-mod roman_numerals_decoder;
-mod counting_duplicates;
-mod find_the_missing_term_in_an_arithmetic_progression;
-mod take_a_number_and_sum_its_digits_raised_to_the_consecutive_powers_and_eureka;
-mod make_the_deadfish_swim;
-mod tribonacci_sequence;

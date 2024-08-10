@@ -1,2 +1,0 @@
-mod how_many_numbers_iii;
-mod total_increasing_or_decreasing_numbers_up_to_a_power_of_10;
