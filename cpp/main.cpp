@@ -1,14 +1,4 @@
 #include <iostream>
-#include "solutions/7kyu/sort_numbers.h"
-#include "solutions/7kyu/count_vowels.h"
-#include "solutions/7kyu/count_divisors.h"
-#include "solutions/6kyu/equal_array_sides.h"
-#include "solutions/5kyu/rgb_to_hex.h"
-#include "solutions/4kyu/boggle_word_checker.h"
-#include "solutions/4kyu/ranking_poker_hands.h"
-#include "solutions/4kyu/matrix_determinant.h"
-#include "solutions/4kyu/next_biggest_number.h"
-#include "solutions/4kyu/range_extraction.h"
 #include <chrono>
 #include <functional>
 
@@ -54,7 +44,6 @@ void bubble_sort(int numbers[], size_t size) {
 
 
 int main() {
-    test_range_extraction();
-    
+    cout << "Hello, World!" << endl;
     return 0;
 }

@@ -1,13 +1,13 @@
-//
-// Created by Andreas Viks on 30.05.2024.
-//
+/*
+ * https://www.codewars.com/kata/513e08acc600c94f01000001
+ */
 
 #include <string>
 #include <sstream>
 #include <algorithm>
 #include <iomanip>
 #include <iostream>
-#include "rgb_to_hex.h"
+#include "solution_rgb_to_hex_conversion.h"
 
 using namespace std;
 
@@ -24,10 +24,3 @@ string rgb_to_hex(int r, int g, int b) {
 
     return stream.str();
 }
-
-void test_rgb() {
-    cout << rgb_to_hex(  1,  2,  3) << endl;  // 010203
-    cout << rgb_to_hex(254,253,252) << endl;  // FEFDFC
-    cout << rgb_to_hex(-20,275,125) << endl;  // 00FF7D
-}
-

@@ -1,9 +1,8 @@
-//
-// Created by Andreas Viks on 29.05.2024.
-// https://www.codewars.com/kata/5679aa472b8f57fb8c000047
-//
+/*
+ * https://www.codewars.com/kata/5679aa472b8f57fb8c000047
+ */
 
-#include "equal_array_sides.h"
+#include "solution_equal_sides_of_an_array.h"
 
 #include <numeric>
 #include <vector>
@@ -19,6 +18,6 @@ int find_even_index(const vector<int>& numbers) {
         if (right == left) return i;
         left += numbers[i];
     }
-    
+
     return -1;
 }
