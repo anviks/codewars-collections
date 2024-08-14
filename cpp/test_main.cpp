@@ -1,7 +1,3 @@
-#include <igloo/igloo_alt.h>
+// catch2 tests entry point
 
-using namespace igloo;
-
-int main() {
-    return TestRunner::RunAllTests();
-}
+#define CATCH_CONFIG_MAIN

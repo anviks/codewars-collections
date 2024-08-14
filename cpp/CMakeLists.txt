@@ -3,54 +3,40 @@ project(codewars_cpp)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(codewars_cpp main.cpp
+set(Catch2_DIR vcpkg_installed/x64-windows/share/Catch2)
+
+# Find the Catch2 package
+find_package(Catch2 3 REQUIRED)
+
+# Create an object library to compile solutions once
+add_library(solutions OBJECT
         solutions/6kyu/equal_sides_of_an_array/solution_equal_sides_of_an_array.cpp
-        solutions/6kyu/equal_sides_of_an_array/solution_equal_sides_of_an_array.h
         solutions/5kyu/rgb_to_hex_conversion/solution_rgb_to_hex_conversion.cpp
-        solutions/5kyu/rgb_to_hex_conversion/solution_rgb_to_hex_conversion.h)
+        solutions/4kyu/boggle_word_checker/solution_boggle_word_checker.cpp
+        solutions/4kyu/matrix_determinant/solution_matrix_determinant.cpp
+        solutions/4kyu/next_bigger_number_with_the_same_digits/solution_next_bigger_number_with_the_same_digits.cpp
+        solutions/4kyu/range_extraction/solution_range_extraction.cpp
+        solutions/4kyu/ranking_poker_hands/solution_ranking_poker_hands.cpp
+        solutions/7kyu/count_the_divisors_of_a_number/solution_count_the_divisors_of_a_number.cpp
+        solutions/7kyu/vowel_count/solution_vowel_count.cpp
+        solutions/7kyu/sort_numbers/solution_sort_numbers.cpp
+)
 
-
-# Add Igloo include directory
-find_path(IGLOO_INCLUDE_DIRS "igloo/igloo_alt.h"
-        PATHS ${CMAKE_SOURCE_DIR}/cmake-build-debug/igloo/src/igloo
-        NO_DEFAULT_PATH)
-
-if(NOT IGLOO_INCLUDE_DIRS)
-    set(IGLOO_INCLUDE_DIRS "${CMAKE_SOURCE_DIR}/cmake-build-debug/igloo/src/igloo")
-endif()
-
-find_path(IGLOO_INCLUDE_DIRS "igloo/core/alternativeregistrationaliases.h")
-
+add_executable(codewars_cpp main.cpp $<TARGET_OBJECTS:solutions>)
 
 # Create executable for tests
 add_executable(tests test_main.cpp
+        $<TARGET_OBJECTS:solutions>
         solutions/6kyu/equal_sides_of_an_array/test_equal_sides_of_an_array.cpp
         solutions/5kyu/rgb_to_hex_conversion/test_rgb_to_hex_conversion.cpp
+        solutions/4kyu/boggle_word_checker/test_boggle_word_checker.cpp
+        solutions/4kyu/matrix_determinant/test_matrix_determinant.cpp
+        solutions/4kyu/next_bigger_number_with_the_same_digits/test_next_bigger_number_with_the_same_digits.cpp
+        solutions/4kyu/range_extraction/test_range_extraction.cpp
+        solutions/4kyu/ranking_poker_hands/test_ranking_poker_hands.cpp
+        solutions/7kyu/count_the_divisors_of_a_number/test_count_the_divisors_of_a_number.cpp
+        solutions/7kyu/vowel_count/test_vowel_count.cpp
+        solutions/7kyu/sort_numbers/test_sort_numbers.cpp
 )
 
-# Include directories for the test executable
-target_include_directories(tests PRIVATE ${IGLOO_INCLUDE_DIRS})
-target_include_directories(tests PRIVATE ${CMAKE_SOURCE_DIR})
-
-target_sources(tests PRIVATE
-        solutions/6kyu/equal_sides_of_an_array/solution_equal_sides_of_an_array.cpp
-        solutions/5kyu/rgb_to_hex_conversion/solution_rgb_to_hex_conversion.cpp)
-
-## Add Igloo library
-#add_library(igloo STATIC IMPORTED)
-#set_target_properties(igloo PROPERTIES
-#        IMPORTED_LOCATION ${CMAKE_SOURCE_DIR}/cmake-build-debug/igloo/src/igloo/igloo/igloo_framework.h)
-#
-## Link the test executable with Igloo
-#target_link_libraries(tests PRIVATE igloo)
-
-
-
-#find_package(Catch2 3 REQUIRED)
-## These tests can use the Catch2-provided main
-#add_executable(tests solutions/6kyu/equal_sides_of_an_array/test_equal_sides_of_an_array.cpp)
-#target_link_libraries(tests PRIVATE Catch2::Catch2WithMain)
-#
-## These tests need their own main
-#add_executable(custom-main-tests test.cpp test-main.cpp)
-#target_link_libraries(custom-main-tests PRIVATE Catch2::Catch2)
+target_link_libraries(tests PRIVATE Catch2::Catch2WithMain)

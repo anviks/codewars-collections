@@ -1,0 +1,7 @@
+#ifndef CODEWARS_CPP_SOLUTION_RGB_TO_HEX_CONVERSION_HPP
+#define CODEWARS_CPP_SOLUTION_RGB_TO_HEX_CONVERSION_HPP
+
+#include <string>
+std::string rgb_to_hex(int r, int g, int b);
+
+#endif //CODEWARS_CPP_SOLUTION_RGB_TO_HEX_CONVERSION_HPP
