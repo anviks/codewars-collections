@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_55c04b4cc56a697bb0000048 import scramble
+from solution_scramblies import scramble
 
 
 class Tests(unittest.TestCase):

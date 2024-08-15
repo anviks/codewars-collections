@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_58708934a44cfccca60000c4 import highlight
+from solution_roboscript_1_implement_syntax_highlighting import highlight
 
 message = "Given Code: {}\n\nResults"
 

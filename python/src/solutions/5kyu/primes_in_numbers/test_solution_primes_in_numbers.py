@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_54d512e62a5e54c96200019e import prime_factors
+from solution_primes_in_numbers import prime_factors
 
 
 class Testing(unittest.TestCase):

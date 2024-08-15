@@ -3,7 +3,7 @@
 import inspect
 import unittest
 
-from solution_664bb069388167b5923b1688 import g
+from solution_code_golf_collatz_shortcut_function import g
 
 
 class CodeLengthTest(unittest.TestCase):

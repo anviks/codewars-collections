@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_52549d3e19453df56f0000fe import fib
+from solution_fibonacci_reloaded import fib
 
 
 class FixedTests(unittest.TestCase):

@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_559a28007caad2ac4e000083 import perimeter
+from solution_perimeter_of_squares_in_a_rectangle import perimeter
 
 
 class Testing(unittest.TestCase):

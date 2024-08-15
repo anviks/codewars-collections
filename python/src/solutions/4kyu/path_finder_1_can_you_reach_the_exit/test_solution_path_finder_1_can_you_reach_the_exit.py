@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_5765870e190b1472ec0022a2 import path_finder
+from solution_path_finder_1_can_you_reach_the_exit import path_finder
 
 
 class SolutionTests(unittest.TestCase):

@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_5208f99aee097e6552000148 import *
+from solution_break_camelcase import *
 
 
 class FixedTests(unittest.TestCase):

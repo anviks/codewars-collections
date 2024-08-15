@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_52fba2a9adcd10b34300094c import transpose
+from solution_matrix_transpose import transpose
 
 
 class TestCase(unittest.TestCase):

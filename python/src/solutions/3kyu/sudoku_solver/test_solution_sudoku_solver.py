@@ -1,7 +1,7 @@
 """https://www.codewars.com/kata/5296bc77afba8baa690002d7"""
 import unittest
 
-from solution_5296bc77afba8baa690002d7 import sudoku
+from solution_sudoku_solver import sudoku
 
 
 class SudokuTests(unittest.TestCase):

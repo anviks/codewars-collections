@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_5375f921003bf62192000746 import abbreviate
+from solution_word_a10n_abbreviation import abbreviate
 
 
 class SampleTests(unittest.TestCase):

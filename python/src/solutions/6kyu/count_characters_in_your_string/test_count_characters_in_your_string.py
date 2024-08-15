@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_52efefcbcdf57161d4000091 import count
+from solution_count_characters_in_your_string import count
 
 
 class BasicTests(unittest.TestCase):

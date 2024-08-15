@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_581e014b55f2c52bb00000f8 import decipher_this
+from solution_decipher_this import decipher_this
 
 
 class BasicTests(unittest.TestCase):

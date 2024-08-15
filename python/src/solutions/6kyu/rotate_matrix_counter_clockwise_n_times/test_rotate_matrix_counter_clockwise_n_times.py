@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_5919f3bf6589022915000023 import rotate_against_clockwise
+from solution_rotate_matrix_counter_clockwise_n_times import rotate_against_clockwise
 
 
 class FixedTests(unittest.TestCase):

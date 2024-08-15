@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_54a91a4883a7de5d7800009c import increment_string
+from solution_string_incrementer import increment_string
 
 
 class BasicTests(unittest.TestCase):

@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_52b757663a95b11b3d00062d import to_weird_case
+from solution_weird_string_case import to_weird_case
 
 
 class ToWeirdCase(unittest.TestCase):

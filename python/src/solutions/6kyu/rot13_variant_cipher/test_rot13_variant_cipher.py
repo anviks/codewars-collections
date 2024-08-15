@@ -1,7 +1,7 @@
 """https://www.codewars.com/kata/56fb3cde26cc99c2fd000009"""
 
 import unittest
-from solution_56fb3cde26cc99c2fd000009 import encrypter
+from solution_rot13_variant_cipher import encrypter
 
 
 class SolutionTests(unittest.TestCase):

@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_5842df8ccbd22792a4000245 import expanded_form
+from solution_write_number_in_expanded_form import expanded_form
 
 
 class SampleTests(unittest.TestCase):

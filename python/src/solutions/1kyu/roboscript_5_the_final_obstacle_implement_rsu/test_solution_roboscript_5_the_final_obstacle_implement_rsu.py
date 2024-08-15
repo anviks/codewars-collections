@@ -1,7 +1,7 @@
 """https://www.codewars.com/kata/5a12755832b8b956a9000133"""
 import unittest
 
-from solution_5a12755832b8b956a9000133 import RSUProgram
+from solution_roboscript_5_the_final_obstacle_implement_rsu import RSUProgram
 from tests_data import *
 
 

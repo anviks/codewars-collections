@@ -4,7 +4,7 @@ import unittest
 
 from parameterized import parameterized
 
-from solution_5263c6999e0f40dee200059d import get_pins
+from solution_the_observed_pin import get_pins
 
 
 class SampleTests(unittest.TestCase):

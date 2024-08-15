@@ -14,7 +14,7 @@ import unittest
 
 from parameterized import parameterized
 
-from solution_58b57f984f353b3dc9000030 import palindrome
+from solution_one_line_task_palindrome_string import palindrome
 
 MAX_CHARS = 55
 MIN_CHEAT = 20

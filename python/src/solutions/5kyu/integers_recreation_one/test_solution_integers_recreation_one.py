@@ -2,7 +2,7 @@
 
 
 import unittest
-from solution_55aa075506463dac6600010d import list_squared
+from solution_integers_recreation_one import list_squared
 
 class Tests(unittest.TestCase):
     def test_fixed_tests(self):

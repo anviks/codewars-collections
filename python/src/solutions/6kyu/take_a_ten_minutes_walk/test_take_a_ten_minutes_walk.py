@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_54da539698b8a2ad76000228 import is_valid_walk
+from solution_take_a_ten_minutes_walk import is_valid_walk
 
 
 class WalkValidatorFixedTests(unittest.TestCase):

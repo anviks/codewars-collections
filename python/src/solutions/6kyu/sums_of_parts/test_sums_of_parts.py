@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_5ce399e0047a45001c853c2b import parts_sums
+from solution_sums_of_parts import parts_sums
 
 
 class Tests(unittest.TestCase):

@@ -1,7 +1,7 @@
 """https://www.codewars.com/kata/56a921fa8c5167d8e7000053"""
 import unittest
 
-from solution_56a921fa8c5167d8e7000053 import password
+from solution_password_validator import password
 
 
 class SolutionTests(unittest.TestCase):

@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_57ea70aa5500adfe8a000110 import fold_array
+from solution_fold_an_array import fold_array
 
 sample_test_cases = [
     #             array     runs    expected

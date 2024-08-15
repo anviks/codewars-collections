@@ -1,7 +1,7 @@
 """https://www.codewars.com/kata/530e15517bc88ac656000716"""
 import unittest
 
-from solution_530e15517bc88ac656000716 import rot13
+from solution_rot13 import rot13
 
 
 class FixedTests(unittest.TestCase):

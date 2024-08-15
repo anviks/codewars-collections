@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_59031db02b0070a923000110 import zero_or_one
+from solution_one_line_task_zero_or_one import zero_or_one
 
 sample_test_cases = [
     (1, [[1, 1, 0, 1]], [1, 1, 0, 1]),

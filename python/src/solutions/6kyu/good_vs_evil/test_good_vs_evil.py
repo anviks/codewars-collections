@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_52761ee4cffbc69732000738 import good_vs_evil
+from solution_good_vs_evil import good_vs_evil
 
 
 class SolutionTests(unittest.TestCase):

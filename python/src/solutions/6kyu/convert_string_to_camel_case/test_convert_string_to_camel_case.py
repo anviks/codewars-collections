@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_517abf86da9663f1d2000003 import to_camel_case
+from solution_convert_string_to_camel_case import to_camel_case
 
 
 class SampleTests(unittest.TestCase):
