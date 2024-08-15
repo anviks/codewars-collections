@@ -163,12 +163,5 @@ cython_debug/
 
 /binary_regex.py
 /s.py
+/bb.py
 /get_task_descriptions.py
-
-/src/solutions/2kyu/break_the_pieces
-/src/solutions/2kyu/decode_the_morse_code_for_real
-/src/solutions/2kyu/hard_sudoku_solver
-/src/solutions/2kyu/simpler_interactive_interpreter
-
-/src/solutions/4kyu/palindrome_counter
-/src/solutions/4kyu/4_by_4_skyscrapers
