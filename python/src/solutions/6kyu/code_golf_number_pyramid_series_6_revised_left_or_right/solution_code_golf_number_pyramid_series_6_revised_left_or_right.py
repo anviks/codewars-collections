@@ -10,7 +10,9 @@ def left_righ(n):
     return 'L' if n < center_member else 'R' if n > center_member else 'C'
 
 
+# @formatter:off
 left_right_mine=lambda n:'L'if(g:=n-((((r:=math.ceil((-1+math.sqrt(1+8*n))/2))*(r-1))//2+1)+(r-1)/2))<0else'R'if g>0else'C'
 
 # top answer
 left_right=lambda n:'CLR'[int((8*n-4)**.5%2//-1)]
+# @formatter:on

@@ -119,23 +119,3 @@ def assembler_interpreter(program: str):
     assembler.parse(program)
 
     return assembler.execute()
-
-
-def main():
-    from util_funcs import pretty_compare
-
-    def compare_code_output(path, expected_output):
-        with open(path) as f:
-            pretty_compare(assembler_interpreter(f.read()), expected_output)
-
-    compare_code_output('assembler_code_snippets/simple_program', '(5+1)/2 = 3')
-    compare_code_output('assembler_code_snippets/factorial', '5! = 120')
-    compare_code_output('assembler_code_snippets/fibonacci', 'Term 8 of Fibonacci series is: 21')
-    compare_code_output('assembler_code_snippets/modulo', 'mod(11, 3) = 2')
-    compare_code_output('assembler_code_snippets/gcd', 'gcd(81, 153) = 9')
-    compare_code_output('assembler_code_snippets/failing', -1)
-    compare_code_output('assembler_code_snippets/power', '2^10 = 1024')
-
-
-if __name__ == '__main__':
-    main()
