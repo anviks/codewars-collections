@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_camelcase_method import camel_case
+from solution_587731fda577b3d1b0001196 import camel_case
 
 
 class BasicTests(unittest.TestCase):

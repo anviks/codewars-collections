@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_path_finder_3_the_alpinist import path_finder
+from solution_576986639772456f6f00030c import path_finder
 
 
 class FixedTests(unittest.TestCase):

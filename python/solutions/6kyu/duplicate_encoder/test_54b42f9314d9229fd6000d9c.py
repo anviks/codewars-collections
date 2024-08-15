@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_duplicate_encoder import duplicate_encode
+from solution_54b42f9314d9229fd6000d9c import duplicate_encode
 
 
 class DuplicateEncoder(unittest.TestCase):

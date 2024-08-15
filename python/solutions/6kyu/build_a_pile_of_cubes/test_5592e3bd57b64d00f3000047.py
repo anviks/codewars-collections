@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_build_a_pile_of_cubes import find_nb
+from solution_5592e3bd57b64d00f3000047 import find_nb
 
 
 class FixedTests(unittest.TestCase):

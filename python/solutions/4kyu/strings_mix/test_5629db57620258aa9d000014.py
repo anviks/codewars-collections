@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_strings_mix import mix
+from solution_5629db57620258aa9d000014 import mix
 
 
 class Mix(unittest.TestCase):

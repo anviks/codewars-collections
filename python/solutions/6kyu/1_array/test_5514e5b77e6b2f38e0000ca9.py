@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_1_array import up_array
+from solution_5514e5b77e6b2f38e0000ca9 import up_array
 
 
 class SampleTests(unittest.TestCase):

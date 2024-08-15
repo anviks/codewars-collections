@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_sum_by_factors import sum_for_list
+from solution_54d496788776e49e6b00052f import sum_for_list
 
 
 class FixedTests(unittest.TestCase):

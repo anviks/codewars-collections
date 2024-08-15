@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_nesting_structure_comparison import same_structure_as
+from solution_520446778469526ec0000001 import same_structure_as
 
 
 class SolutionTests(unittest.TestCase):

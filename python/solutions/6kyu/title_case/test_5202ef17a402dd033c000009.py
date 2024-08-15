@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_title_case import title_case
+from solution_5202ef17a402dd033c000009 import title_case
 
 
 class SampleTests(unittest.TestCase):

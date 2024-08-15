@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_valid_phone_number import valid_phone_number
+from solution_525f47c79f2f25a4db000025 import valid_phone_number
 
 
 class PhoneNumberValidations(unittest.TestCase):

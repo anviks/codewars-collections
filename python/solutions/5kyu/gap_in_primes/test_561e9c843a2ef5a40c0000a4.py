@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_gap_in_primes import gap
+from solution_561e9c843a2ef5a40c0000a4 import gap
 
 
 class FixedTests(unittest.TestCase):

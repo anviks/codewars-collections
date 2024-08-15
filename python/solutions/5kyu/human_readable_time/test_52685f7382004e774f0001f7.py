@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_human_readable_time import make_readable
+from solution_52685f7382004e774f0001f7 import make_readable
 
 
 class FixedTests(unittest.TestCase):

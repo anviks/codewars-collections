@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_multi_line_task_hello_world_easy_one import f
+from solution_5e41c408b72541002eda0982 import f
 
 
 class FixedTests(unittest.TestCase):

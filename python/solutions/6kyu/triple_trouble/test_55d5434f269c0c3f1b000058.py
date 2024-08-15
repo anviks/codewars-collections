@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_triple_trouble import triple_double
+from solution_55d5434f269c0c3f1b000058 import triple_double
 
 
 class TripleTrouble(unittest.TestCase):

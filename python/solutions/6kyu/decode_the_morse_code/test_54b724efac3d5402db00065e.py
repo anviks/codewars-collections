@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_decode_the_morse_code import decode_morse
+from solution_54b724efac3d5402db00065e import decode_morse
 
 
 class FixedTests(unittest.TestCase):

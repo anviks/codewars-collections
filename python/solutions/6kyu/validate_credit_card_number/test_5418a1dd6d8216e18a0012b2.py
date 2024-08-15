@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_validate_credit_card_number import validate
+from solution_5418a1dd6d8216e18a0012b2 import validate
 
 
 class SampleTests(unittest.TestCase):

@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_help_the_bookseller import stock_list
+from solution_54dc6f5a224c26032800005c import stock_list
 
 
 class Testing(unittest.TestCase):

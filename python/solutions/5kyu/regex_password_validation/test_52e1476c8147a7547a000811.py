@@ -3,7 +3,7 @@
 import unittest
 from re import fullmatch
 
-from solution_regex_password_validation import regex
+from solution_52e1476c8147a7547a000811 import regex
 
 
 class Tests(unittest.TestCase):

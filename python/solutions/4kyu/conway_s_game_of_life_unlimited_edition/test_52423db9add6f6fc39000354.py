@@ -4,7 +4,7 @@ import unittest
 from copy import deepcopy
 
 from preloaded import htmlize
-from solution_conway_s_game_of_life_unlimited_edition import get_generation
+from solution_52423db9add6f6fc39000354 import get_generation
 
 
 class Tests(unittest.TestCase):

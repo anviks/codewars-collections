@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_moving_zeros_to_the_end import move_zeros
+from solution_52597aa56021e91c93000cb0 import move_zeros
 
 
 class FixedTests(unittest.TestCase):

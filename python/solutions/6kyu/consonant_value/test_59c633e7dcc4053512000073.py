@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_consonant_value import solve
+from solution_59c633e7dcc4053512000073 import solve
 
 
 class FixedTests(unittest.TestCase):

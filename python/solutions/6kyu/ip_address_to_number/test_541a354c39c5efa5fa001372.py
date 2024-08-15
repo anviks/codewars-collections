@@ -1,7 +1,7 @@
 """https://www.codewars.com/kata/541a354c39c5efa5fa001372"""
 import unittest
 
-from solution_ip_address_to_number import ip_to_num, num_to_ip
+from solution_541a354c39c5efa5fa001372 import ip_to_num, num_to_ip
 
 
 class SampleTests(unittest.TestCase):

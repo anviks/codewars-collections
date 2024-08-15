@@ -3,7 +3,7 @@ import unittest
 
 from parameterized import parameterized
 
-from solution_recover_a_secret_string_from_random_triplets import recover_secret
+from solution_53f40dff5f9d31b813000774 import recover_secret
 
 
 class SolutionTests(unittest.TestCase):

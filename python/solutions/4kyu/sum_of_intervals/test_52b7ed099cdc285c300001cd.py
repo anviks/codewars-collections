@@ -1,7 +1,7 @@
 """https://www.codewars.com/kata/52b7ed099cdc285c300001cd"""
 
 
-from solution_sum_of_intervals import sum_of_intervals
+from solution_52b7ed099cdc285c300001cd import sum_of_intervals
 import unittest
 
 class FixedTests(unittest.TestCase):

@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_a_rule_of_divisibility_by_13 import thirt
+from solution_564057bc348c7200bd0000ff import thirt
 
 
 class Thirt(unittest.TestCase):

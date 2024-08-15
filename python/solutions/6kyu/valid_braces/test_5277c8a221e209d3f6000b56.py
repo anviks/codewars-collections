@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_valid_braces import valid_braces
+from solution_5277c8a221e209d3f6000b56 import valid_braces
 
 
 class ValidBraces(unittest.TestCase):
