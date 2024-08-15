@@ -1,23 +1,41 @@
-<h1 id="task">Task</h1>
-<p>An IP address contains four numbers(0-255) and separated by dots. It can be converted to a number by this way:</p>
-<p>Given a string <code>s</code> represents a number or an IP address. Your task is to convert it to another representation(<code>number to IP address</code> or <code>IP address to number</code>).</p>
-<p>You can assume that all inputs are valid.</p>
-<h1 id="example">Example</h1>
-<p>Example IP address: <code>10.0.3.193</code></p>
-<p>Convert each number to a 8-bit binary string
-(may needs to pad leading zeros to the left side):</p>
-<pre><code>10  --&gt;  00001010
-0   --&gt;  00000000
-3   --&gt;  00000011
-193 --&gt;  11000001
-</code></pre>
-<p>Combine these four strings: <code>00001010 00000000 00000011 11000001</code> and then convert them to a decimal number:
-<code>167773121</code></p>
-<h1 id="inputoutput">Input/Output</h1>
-<p><code>[input]</code> string <code>s</code></p>
-<p>A number or IP address in string format.</p>
-<p><code>[output]</code> a string</p>
-<p>A converted number or IP address in string format.</p>
-<h1 id="example-1">Example</h1>
-<p>For <code>s = "10.0.3.193"</code>, the output should be <code>"167773121"</code>.</p>
-<p>For <code>s = "167969729"</code>, the output should be <code>"10.3.3.193"</code>.</p>
+# Task
+
+An IP address contains four numbers(0-255) and separated by dots. It can be converted to a number by this way:
+
+
+Given a string `s` represents a number or an IP address. Your task is to convert it to another representation(`number to IP address` or `IP address to number`).
+
+You can assume that all inputs are valid.
+
+# Example
+
+Example IP address: `10.0.3.193`
+
+Convert each number to a 8-bit binary string
+(may needs to pad leading zeros to the left side):
+```
+10  -->  00001010
+0   -->  00000000
+3   -->  00000011
+193 -->  11000001
+```
+Combine these four strings: `00001010 00000000 00000011 11000001` and then convert them to a decimal number:
+`167773121`
+
+
+# Input/Output
+
+
+`[input]` string `s`
+
+A number or IP address in string format.
+
+`[output]` a string
+
+A converted number or IP address in string format.
+
+# Example
+
+For `s = "10.0.3.193"`, the output should be `"167773121"`.
+
+For `s = "167969729"`, the output should be `"10.3.3.193"`.

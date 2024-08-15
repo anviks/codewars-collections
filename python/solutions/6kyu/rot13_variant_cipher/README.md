@@ -1,10 +1,16 @@
-<p>You have been recruited by an unknown organization for your cipher encrypting/decrypting skills.<br>Being new to the organization they decide to test your skills.<br>Your first test is to write an algorithm that encrypts the given string in the following steps.</p>
-<ol>
-<li><p>The first step of the encryption is a standard ROT13 cipher.
-This is a special case of the caesar cipher where the letter is encrypted with its key that is thirteen letters down the alphabet,<br>i.e. <code>A =&gt; N, B =&gt; O, C =&gt; P, etc..</code></p>
-</li>
-<li><p>Part two of the encryption is to take the ROT13 output and replace each letter with its exact opposite. <code>A =&gt; Z, B =&gt; Y, C =&gt; X</code>.<br>The return value of this should be the encrypted message.</p>
-</li>
-</ol>
-<p>Do not worry about capitalization or punctuation. All encrypted messages should be lower case and punctuation free.<br>As an example, the string <code>"welcome to our organization"</code> should return <code>"qibkyai ty ysv yvgmzenmteyz"</code>.</p>
-<p>Good luck, and congratulations on the new position.</p>
+You have been recruited by an unknown organization for your cipher encrypting/decrypting skills.  
+Being new to the organization they decide to test your skills.  
+Your first test is to write an algorithm that encrypts the given string in the following steps.
+
+1. The first step of the encryption is a standard ROT13 cipher.
+This is a special case of the caesar cipher where the letter is encrypted with its key that is thirteen letters down the alphabet,  
+i.e. `A => N, B => O, C => P, etc..`
+
+1. Part two of the encryption is to take the ROT13 output and replace each letter with its exact opposite. `A => Z, B => Y, C => X`.  
+The return value of this should be the encrypted message.
+
+
+Do not worry about capitalization or punctuation. All encrypted messages should be lower case and punctuation free.  
+As an example, the string `"welcome to our organization"` should return `"qibkyai ty ysv yvgmzenmteyz"`.
+
+Good luck, and congratulations on the new position.

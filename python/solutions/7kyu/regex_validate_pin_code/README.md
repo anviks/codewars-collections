@@ -1,7 +1,10 @@
-<p>ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but <strong>exactly</strong> 4 digits or exactly 6 digits. </p>
-<p>If the function is passed a valid PIN string, return <code>true</code>, else return <code>false</code>.</p>
-<h2 id="examples-input----output">Examples (<strong>Input --&gt; Output)</strong></h2>
-<pre><code>"1234"   --&gt;  true
-"12345"  --&gt;  false
-"a234"   --&gt;  false
-</code></pre>
+ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but **exactly** 4 digits or exactly 6 digits. 
+
+If the function is passed a valid PIN string, return `true`, else return `false`.
+
+## Examples (**Input --> Output)**
+```
+"1234"   -->  true
+"12345"  -->  false
+"a234"   -->  false
+```

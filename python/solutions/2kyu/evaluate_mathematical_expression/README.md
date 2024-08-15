@@ -1,22 +1,34 @@
-<h1 id="instructions">Instructions</h1>
-<p>Given a mathematical expression as a string you must return the result as a number.</p>
-<h2 id="numbers">Numbers</h2>
-<p>Number may be both whole numbers and/or decimal numbers. The same goes for the returned result.</p>
-<h2 id="operators">Operators</h2>
-<p>You need to support the following mathematical operators:</p>
-<ul>
-<li>Multiplication <code>*</code></li>
-<li>Division <code>/</code> (as floating point division)</li>
-<li>Addition <code>+</code></li>
-<li>Subtraction <code>-</code></li>
-</ul>
-<p>Operators are always evaluated from left-to-right, and <code>*</code> and <code>/</code> must be evaluated before <code>+</code> and <code>-</code>.</p>
-<h2 id="parentheses">Parentheses</h2>
-<p>You need to support multiple levels of nested parentheses, ex. <code>(2 / (2 + 3.33) * 4) - -6</code></p>
-<h2 id="whitespace">Whitespace</h2>
-<p>There may or may not be whitespace between numbers and operators.</p>
-<p>An addition to this rule is that the minus sign (<code>-</code>) used for negating numbers and parentheses will <em>never</em> be separated by whitespace. I.e all of the following are <strong>valid</strong> expressions.</p>
-<pre><code>1-1    // 0
+# Instructions
+
+Given a mathematical expression as a string you must return the result as a number.
+
+## Numbers
+
+Number may be both whole numbers and/or decimal numbers. The same goes for the returned result.
+
+## Operators
+
+You need to support the following mathematical operators:
+
+* Multiplication `*`
+* Division `/` (as floating point division)
+* Addition `+`
+* Subtraction `-`
+
+Operators are always evaluated from left-to-right, and `*` and `/` must be evaluated before `+` and `-`.
+
+## Parentheses
+
+You need to support multiple levels of nested parentheses, ex. `(2 / (2 + 3.33) * 4) - -6`
+
+## Whitespace
+
+There may or may not be whitespace between numbers and operators.
+
+An addition to this rule is that the minus sign (`-`) used for negating numbers and parentheses will *never* be separated by whitespace. I.e all of the following are **valid** expressions.
+
+```
+1-1    // 0
 1 -1   // 0
 1- 1   // 0
 1 - 1  // 0
@@ -26,14 +38,21 @@
 
 6 + -(4)   // 2
 6 + -( -4) // 10
-</code></pre>
-<p>And the following are <strong>invalid</strong> expressions</p>
-<pre><code>1 - - 1    // Invalid
+```
+
+And the following are **invalid** expressions
+
+```
+1 - - 1    // Invalid
 1- - 1     // Invalid
 6 + - (4)  // Invalid
 6 + -(- 4) // Invalid
-</code></pre>
-<h2 id="validation">Validation</h2>
-<p>You do not need to worry about validation - you will only receive <strong>valid</strong> mathematical expressions following the above rules.</p>
-<h2 id="restricted-apis">Restricted APIs</h2>
-<p>NOTE: <code>eval</code> and <code>exec</code> are disallowed in your solution.</p>
+```
+
+## Validation
+
+You do not need to worry about validation - you will only receive **valid** mathematical expressions following the above rules.
+
+## Restricted APIs
+
+NOTE: `eval` and `exec` are disallowed in your solution.

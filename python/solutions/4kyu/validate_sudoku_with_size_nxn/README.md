@@ -1,6 +1,9 @@
-<p>Given a Sudoku data structure with size <code>NxN, N &gt; 0 and √N == integer</code>, write a method to validate if it has been filled out correctly.</p>
-<p>The data structure is a multi-dimensional Array, i.e:</p>
-<pre><code>[
+Given a Sudoku data structure with size `NxN, N > 0 and √N == integer`, write a method to validate if it has been filled out correctly.
+
+
+The data structure is a multi-dimensional Array, i.e:
+```
+[
   [7,8,4,  1,5,9,  3,2,6],
   [5,3,9,  6,7,2,  8,4,1],
   [6,1,2,  4,3,8,  7,5,9],
@@ -13,11 +16,11 @@
   [2,4,3,  5,6,1,  9,7,8],
   [1,9,5,  2,8,7,  6,3,4]
 ]
-</code></pre>
-<p><strong>Rules for validation</strong></p>
-<ul>
-<li>Data structure dimension: <code>NxN</code> where <code>N &gt; 0</code> and <code>√N == integer</code></li>
-<li>Rows may only contain integers: <code>1..N (N included)</code></li>
-<li>Columns may only contain integers: <code>1..N (N included)</code></li>
-<li><em>'Little squares'</em> (<code>3x3</code> in example above) may also only contain integers: <code>1..N (N included)</code></li>
-</ul>
+```
+
+**Rules for validation**
+
+- Data structure dimension: `NxN` where `N > 0` and `√N == integer`
+- Rows may only contain integers: `1..N (N included)`
+- Columns may only contain integers: `1..N (N included)`
+- *'Little squares'* (`3x3` in example above) may also only contain integers: `1..N (N included)`

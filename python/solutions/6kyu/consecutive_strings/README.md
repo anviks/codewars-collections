@@ -1,7 +1,9 @@
-<p>You are given an array(list) <code>strarr</code> of strings and an integer <code>k</code>. Your task is to return the <strong>first</strong> longest string
-consisting of k <strong>consecutive</strong> strings taken in the array.</p>
-<h4 id="examples">Examples:</h4>
-<pre><code>strarr = ["tree", "foling", "trashy", "blue", "abcdef", "uvwxyz"], k = 2
+You are given an array(list) `strarr` of strings and an integer `k`. Your task is to return the **first** longest string
+consisting of k **consecutive** strings taken in the array.
+
+#### Examples:
+```
+strarr = ["tree", "foling", "trashy", "blue", "abcdef", "uvwxyz"], k = 2
 
 Concatenate the consecutive strings of strarr by 2, we get:
 
@@ -16,8 +18,9 @@ The first that came is "folingtrashy" so
 longest_consec(strarr, 2) should return "folingtrashy".
 
 In the same way:
-longest_consec(["zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail"], 2) --&gt; "abigailtheta"
-</code></pre>
-<p>n being the length of the string array, if <code>n = 0</code> or <code>k &gt; n</code> or <code>k &lt;= 0</code> return "" (return <code>Nothing</code> in Elm, "nothing" in Erlang).</p>
-<h4 id="note">Note</h4>
-<p>consecutive strings : follow one after another without an interruption</p>
+longest_consec(["zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail"], 2) --> "abigailtheta"
+```
+n being the length of the string array, if `n = 0` or `k > n` or `k <= 0` return "" (return `Nothing` in Elm, "nothing" in Erlang).
+
+#### Note
+consecutive strings : follow one after another without an interruption

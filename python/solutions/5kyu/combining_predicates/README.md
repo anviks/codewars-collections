@@ -1,48 +1,63 @@
-<h1 id="task">Task</h1>
-<p>Create a decorator <code>@predicate</code> which allows boolean functions to be conveniently combined using <code>&amp;</code>, <code>|</code> and <code>~</code> operators:</p>
-<pre><code class="language-python"><span class="cm-meta">@</span><span class="cm-meta">predicate</span>
-<span class="cm-keyword">def</span> <span class="cm-def">is_even</span>(<span class="cm-variable">num</span>):
-    <span class="cm-keyword">return</span> <span class="cm-variable">num</span> <span class="cm-operator">%</span> <span class="cm-number">2</span> <span class="cm-operator">==</span> <span class="cm-number">0</span>
+# Task
 
-<span class="cm-meta">@</span><span class="cm-meta">predicate</span>
-<span class="cm-keyword">def</span> <span class="cm-def">is_positive</span>(<span class="cm-variable">num</span>):
-    <span class="cm-keyword">return</span> <span class="cm-variable">num</span> <span class="cm-operator">&gt;</span> <span class="cm-number">0</span>
+Create a decorator `@predicate` which allows boolean functions to be conveniently combined using `&`, `|` and `~` operators:
 
-(<span class="cm-variable">is_even</span> <span class="cm-operator">&amp;</span> <span class="cm-variable">is_positive</span>)(<span class="cm-number">4</span>)   <span class="cm-comment"># True</span>
-(<span class="cm-variable">is_even</span> <span class="cm-operator">&amp;</span> <span class="cm-variable">is_positive</span>)(<span class="cm-number">3</span>)   <span class="cm-comment"># False</span>
-(<span class="cm-variable">is_even</span> <span class="cm-operator">|</span> <span class="cm-variable">is_positive</span>)(<span class="cm-number">3</span>)   <span class="cm-comment"># True</span>
-(<span class="cm-operator">~</span><span class="cm-variable">is_even</span> <span class="cm-operator">&amp;</span> <span class="cm-variable">is_positive</span>)(<span class="cm-number">3</span>)  <span class="cm-comment"># True</span>
-</code></pre>
-<p>It should work with all functions, regardless of how many arguments they accept:</p>
-<pre><code class="language-python"><span class="cm-meta">@</span><span class="cm-meta">predicate</span>
-<span class="cm-keyword">def</span> <span class="cm-def">to_be</span>():
-    <span class="cm-keyword">return</span> <span class="cm-keyword">True</span>
+```python
+@predicate
+def is_even(num):
+    return num % 2 == 0
 
-(<span class="cm-variable">to_be</span> <span class="cm-operator">|</span> <span class="cm-operator">~</span><span class="cm-variable">to_be</span>)()  <span class="cm-comment"># True</span>
+@predicate
+def is_positive(num):
+    return num > 0
 
-<span class="cm-meta">@</span><span class="cm-meta">predicate</span>
-<span class="cm-keyword">def</span> <span class="cm-def">is_equal</span>(<span class="cm-variable">a</span>, <span class="cm-variable">b</span>):
-    <span class="cm-keyword">return</span> <span class="cm-variable">a</span> <span class="cm-operator">==</span> <span class="cm-variable">b</span>
+(is_even & is_positive)(4)   # True
+(is_even & is_positive)(3)   # False
+(is_even | is_positive)(3)   # True
+(~is_even & is_positive)(3)  # True
+```
 
-<span class="cm-meta">@</span><span class="cm-meta">predicate</span>
-<span class="cm-keyword">def</span> <span class="cm-def">is_less_than</span>(<span class="cm-variable">a</span>, <span class="cm-variable">b</span>):
-    <span class="cm-keyword">return</span> <span class="cm-variable">a</span> <span class="cm-operator">&lt;</span> <span class="cm-variable">b</span>
+It should work with all functions, regardless of how many arguments they accept:
 
-(<span class="cm-variable">is_less_than</span> <span class="cm-operator">|</span> <span class="cm-variable">is_equal</span>)(<span class="cm-number">1</span>, <span class="cm-number">2</span>)      <span class="cm-comment"># True</span>
-</code></pre>
-<p>Keyword arguments should work as well:</p>
-<pre><code class="language-python">(<span class="cm-variable">is_less_than</span> <span class="cm-operator">|</span> <span class="cm-variable">is_equal</span>)(<span class="cm-number">2</span>, <span class="cm-variable">b</span><span class="cm-operator">=</span><span class="cm-number">2</span>)    <span class="cm-comment"># True</span>
-(<span class="cm-variable">is_less_than</span> <span class="cm-operator">|</span> <span class="cm-variable">is_equal</span>)(<span class="cm-variable">a</span><span class="cm-operator">=</span><span class="cm-number">3</span>, <span class="cm-variable">b</span><span class="cm-operator">=</span><span class="cm-number">2</span>)  <span class="cm-comment"># False</span>
-</code></pre>
-<p>Combinations of functions with incompatible signatures (e.g. <code>is_positive &amp; is_less_than</code>) will not be tested.</p>
-<p>A decorated function should be callable by itself (without combining with other predicates) and behave like the original function:</p>
-<pre><code class="language-python"><span class="cm-meta">@</span><span class="cm-meta">predicate</span>
-<span class="cm-keyword">def</span> <span class="cm-def">is_less_than</span>(<span class="cm-variable">a</span>, <span class="cm-variable">b</span>):
-    <span class="cm-keyword">return</span> <span class="cm-variable">a</span> <span class="cm-operator">&lt;</span> <span class="cm-variable">b</span>
+```python
+@predicate
+def to_be():
+    return True
 
-<span class="cm-variable">is_less_than</span>(<span class="cm-number">1</span>, <span class="cm-number">2</span>)  <span class="cm-comment"># True</span>
-<span class="cm-variable">is_less_than</span>(<span class="cm-number">2</span>, <span class="cm-number">2</span>)  <span class="cm-comment"># False</span>
-<span class="cm-variable">is_less_than</span>(<span class="cm-number">3</span>, <span class="cm-number">2</span>)  <span class="cm-comment"># False</span>
-</code></pre>
-<p>Good luck!</p>
-<p>This kata is heavily inspired by <a href="https://www.codewars.com/users/FArekkusu" data-turbolinks="false" target="_blank">FArekkusu</a>'s <a href="https://www.codewars.com/kata/5dc424122c135e001499d0e5" data-turbolinks="false" target="_blank">Readable Specification Pattern</a>, but should be a bit easier. You should try his kata as well!</p>
+(to_be | ~to_be)()  # True
+
+@predicate
+def is_equal(a, b):
+    return a == b
+
+@predicate
+def is_less_than(a, b):
+    return a < b
+
+(is_less_than | is_equal)(1, 2)      # True
+```
+
+Keyword arguments should work as well:
+
+```python
+(is_less_than | is_equal)(2, b=2)    # True
+(is_less_than | is_equal)(a=3, b=2)  # False
+```
+
+Combinations of functions with incompatible signatures (e.g. `is_positive & is_less_than`) will not be tested.
+
+A decorated function should be callable by itself (without combining with other predicates) and behave like the original function:
+
+```python
+@predicate
+def is_less_than(a, b):
+    return a < b
+
+is_less_than(1, 2)  # True
+is_less_than(2, 2)  # False
+is_less_than(3, 2)  # False
+```
+
+Good luck!
+
+This kata is heavily inspired by [FArekkusu](https://www.codewars.com/users/FArekkusu)'s [Readable Specification Pattern](https://www.codewars.com/kata/5dc424122c135e001499d0e5), but should be a bit easier. You should try his kata as well!

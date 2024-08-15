@@ -1,11 +1,11 @@
-<p>Your task, is to create N×N multiplication table, of size provided in parameter.</p>
-<p>For example, when given <code>size</code> is 3:</p>
-<pre><code>1 2 3
+Your task, is to create N×N multiplication table, of size provided in parameter.
+
+For example, when given `size` is 3:
+```
+1 2 3
 2 4 6
 3 6 9
-</code></pre>
-<p>For the given example, the return value should be: </p>
-<pre><code class="language-js">[[1,2,3],[2,4,6],[3,6,9]]
-</code></pre>
-<pre style="display: none;"><code class="language-julia">[<span class="cm-number">1</span> <span class="cm-number">2</span> <span class="cm-number">3</span>; <span class="cm-number">2</span> <span class="cm-number">4</span> <span class="cm-number">6</span>; <span class="cm-number">3</span> <span class="cm-number">6</span> <span class="cm-number">9</span>]
-</code></pre>
+```
+
+For the given example, the return value should be: 
+

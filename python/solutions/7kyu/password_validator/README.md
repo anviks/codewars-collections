@@ -1,25 +1,16 @@
-<h2 id="description">Description</h2>
-<p>Your job is to create a simple password validation function, as seen on many websites. </p>
-<p>The rules for a valid password are as follows:</p>
-<ul>
-<li>There needs to be at least 1 uppercase letter.</li>
-<li>There needs to be at least 1 lowercase letter.</li>
-<li>There needs to be at least 1 number.</li>
-<li>The password needs to be at least 8 characters long.</li>
-</ul>
-<p>You are permitted to use any methods to validate the password.</p>
-<h2 id="examples">Examples:</h2>
-<pre><code class="language-javascript"><span class="cm-variable">password</span>(<span class="cm-string">"Abcd1234"</span>); <span class="cm-operator">===</span><span class="cm-operator">&gt;</span> <span class="cm-atom">true</span>
-<span class="cm-variable">password</span>(<span class="cm-string">"Abcd123"</span>); <span class="cm-operator">===</span><span class="cm-operator">&gt;</span> <span class="cm-atom">false</span>
-<span class="cm-variable">password</span>(<span class="cm-string">"abcd1234"</span>); <span class="cm-operator">===</span><span class="cm-operator">&gt;</span> <span class="cm-atom">false</span>
-<span class="cm-variable">password</span>(<span class="cm-string">"AbcdefGhijKlmnopQRsTuvwxyZ1234567890"</span>); <span class="cm-operator">===</span><span class="cm-operator">&gt;</span> <span class="cm-atom">true</span>
-<span class="cm-variable">password</span>(<span class="cm-string">"ABCD1234"</span>); <span class="cm-operator">===</span><span class="cm-operator">&gt;</span> <span class="cm-atom">false</span>
-<span class="cm-variable">password</span>(<span class="cm-string">"Ab1!@#$%^&amp;*()-_+={}[]|\:;?/&gt;.&lt;,"</span>); <span class="cm-operator">===</span><span class="cm-operator">&gt;</span> <span class="cm-atom">true</span>;
-<span class="cm-variable">password</span>(<span class="cm-string">"!@#$%^&amp;*()-_+={}[]|\:;?/&gt;.&lt;,"</span>); <span class="cm-operator">===</span><span class="cm-operator">&gt;</span> <span class="cm-atom">false</span>;
-</code></pre>
-<h3 id="extra-info">Extra info</h3>
-<ul>
-<li>You will only be passed strings.</li>
-<li>The string can contain any standard keyboard character.</li>
-<li>Accepted strings can be any length, as long as they are 8 characters or more.</li>
-</ul>
+## Description
+Your job is to create a simple password validation function, as seen on many websites. 
+
+The rules for a valid password are as follows:
+- There needs to be at least 1 uppercase letter.
+- There needs to be at least 1 lowercase letter.
+- There needs to be at least 1 number.
+- The password needs to be at least 8 characters long.
+
+You are permitted to use any methods to validate the password.
+
+## Examples:
+### Extra info
+- You will only be passed strings.
+- The string can contain any standard keyboard character.
+- Accepted strings can be any length, as long as they are 8 characters or more.

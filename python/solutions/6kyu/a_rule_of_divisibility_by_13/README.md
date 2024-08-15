@@ -1,39 +1,59 @@
-<p>From Wikipedia:</p>
-<p>"A divisibility rule is a shorthand way of determining whether a given integer is divisible by a fixed divisor without performing the division, usually by examining its digits."</p>
-<p>When you divide the successive powers of <code>10</code> by <code>13</code> you get the following remainders of the integer divisions:  </p>
-<p><code>1, 10, 9, 12, 3, 4</code> because:</p>
-<pre><code>10 ^ 0 -&gt;  1 (mod 13)
-10 ^ 1 -&gt; 10 (mod 13)
-10 ^ 2 -&gt;  9 (mod 13)
-10 ^ 3 -&gt; 12 (mod 13)
-10 ^ 4 -&gt;  3 (mod 13)
-10 ^ 5 -&gt;  4 (mod 13)
-</code></pre>
-<p>(For "mod" you can see:
-<a href="https://en.wikipedia.org/wiki/Modulo_operation" data-turbolinks="false" target="_blank">https://en.wikipedia.org/wiki/Modulo_operation</a>)</p>
-<p>Then the whole pattern repeats. Hence the following method:</p>
-<p>Multiply </p>
-<ul>
-<li>the <em>right</em> most digit of the number with the <em>left</em> most number 
-in the sequence shown above, </li>
-<li>the second <em>right</em> most digit with the second <em>left</em> most digit of the number in the sequence.</li>
-</ul>
-<p>The cycle goes on and you sum all these products. Repeat this process until the sequence of sums is <strong>stationary</strong>.</p>
-<h4 id="example">Example:</h4>
-<p>What is the remainder when <code>1234567</code> is divided by <code>13</code>?</p>
-<pre><code>7      6     5      4     3     2     1  (digits of 1234567 from the right)
+From Wikipedia:
+
+"A divisibility rule is a shorthand way of determining whether a given integer is divisible by a fixed divisor without performing the division, usually by examining its digits."
+
+When you divide the successive powers of `10` by `13` you get the following remainders of the integer divisions:  
+
+`1, 10, 9, 12, 3, 4` because:
+
+```
+10 ^ 0 ->  1 (mod 13)
+10 ^ 1 -> 10 (mod 13)
+10 ^ 2 ->  9 (mod 13)
+10 ^ 3 -> 12 (mod 13)
+10 ^ 4 ->  3 (mod 13)
+10 ^ 5 ->  4 (mod 13)
+```
+
+(For "mod" you can see:
+<https://en.wikipedia.org/wiki/Modulo_operation>)
+
+Then the whole pattern repeats. Hence the following method:
+
+Multiply 
+- the *right* most digit of the number with the *left* most number 
+in the sequence shown above, 
+- the second *right* most digit with the second *left* most digit of the number in the sequence. 
+
+The cycle goes on and you sum all these products. Repeat this process until the sequence of sums is **stationary**.
+
+#### Example:
+What is the remainder when `1234567` is divided by `13`?
+```
+7      6     5      4     3     2     1  (digits of 1234567 from the right)
 ×      ×     ×      ×     ×     ×     ×  (multiplication)
 1     10     9     12     3     4     1  (the repeating sequence)
-</code></pre>
-<p>Therefore following the method we get:</p>
-<p><code> 7×1 + 6×10 + 5×9 + 4×12 + 3×3 + 2×4 + 1×1 = 178</code> </p>
-<p>We repeat the process with the number 178:</p>
-<p><code>8x1 + 7x10 + 1x9 = 87</code></p>
-<p>and again with 87:</p>
-<p><code>7x1 + 8x10 = 87</code></p>
-<p>From now on the sequence is <strong>stationary</strong> (we always get <code>87</code>) and the remainder of <code>1234567</code> by <code>13</code> is 
-the same as the remainder of <code>87</code> by <code>13</code> ( i.e <code>9</code>).</p>
-<h4 id="task">Task:</h4>
-<p>Call <code>thirt</code> the function which processes this sequence of operations on an integer <code>n (&gt;=0)</code>. <code>thirt</code> will return the <strong>stationary</strong> number.</p>
-<p><code>thirt(1234567)</code> calculates 178, then 87, then 87 and returns <code>87</code>.</p>
-<p><code>thirt(321)</code> calculates 48, 48 and returns <code>48</code></p>
+```
+Therefore following the method we get:
+
+``` 7×1 + 6×10 + 5×9 + 4×12 + 3×3 + 2×4 + 1×1 = 178``` 
+
+We repeat the process with the number 178:
+
+`8x1 + 7x10 + 1x9 = 87`
+
+and again with 87:
+
+`7x1 + 8x10 = 87`
+
+From now on the sequence is **stationary** (we always get `87`) and the remainder of `1234567` by `13` is 
+the same as the remainder of `87` by `13` ( i.e `9`).
+
+#### Task:
+
+Call `thirt` the function which processes this sequence of operations on an integer `n (>=0)`. `thirt` will return the **stationary** number.
+
+`thirt(1234567)` calculates 178, then 87, then 87 and returns `87`.
+
+`thirt(321)` calculates 48, 48 and returns `48`
+
