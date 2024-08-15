@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_can_you_get_the_loop import Node, loop_size
+from solution import Node, loop_size
 
 
 def create_chain(tail_size, loop_size_):

@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_simple_rot13_5_cypher import rot_135
+from solution import rot_135
 
 
 class FixedTests(unittest.TestCase):

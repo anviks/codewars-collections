@@ -2,7 +2,7 @@
 
 import unittest
 import inspect
-from solution_code_golf_number_pyramid_series_6_revised_left_or_right import left_right
+from solution import left_right
 
 
 class SampleTests(unittest.TestCase):

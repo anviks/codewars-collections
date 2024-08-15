@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_bit_counting import count_bits
+from solution import count_bits
 
 
 class FixedTests(unittest.TestCase):

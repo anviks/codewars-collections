@@ -4,7 +4,7 @@ import unittest
 
 from parameterized import parameterized
 
-from solution_assembler_interpreter_part_ii import assembler_interpreter
+from solution import assembler_interpreter
 
 
 class SampleTests(unittest.TestCase):

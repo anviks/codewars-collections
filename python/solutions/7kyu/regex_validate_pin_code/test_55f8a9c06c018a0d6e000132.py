@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_regex_validate_pin_code import validate_pin
+from solution import validate_pin
 
 
 class FixedTests(unittest.TestCase):

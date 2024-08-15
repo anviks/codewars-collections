@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_simple_encryption_1_alternating_split import encrypt, decrypt
+from solution import encrypt, decrypt
 
 
 class FixedTests(unittest.TestCase):

@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_disemvowel_trolls import disemvowel
+from solution import disemvowel
 
 
 class FixedTests(unittest.TestCase):

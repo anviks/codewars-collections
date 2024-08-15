@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_duplicate_encoder import duplicate_encode
+from solution import duplicate_encode
 
 
 class DuplicateEncoder(unittest.TestCase):

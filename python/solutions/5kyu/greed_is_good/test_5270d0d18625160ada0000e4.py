@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_greed_is_good import score
+from solution import score
 
 
 class ExampleTests(unittest.TestCase):

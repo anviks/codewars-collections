@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_validate_sudoku_with_size_nxn import Sudoku
+from solution import Sudoku
 
 
 class ValidateSudoku(unittest.TestCase):

@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_fibonacci_reloaded import fib
+from solution import fib
 
 
 class FixedTests(unittest.TestCase):

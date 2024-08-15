@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_nesting_structure_comparison import same_structure_as
+from solution import same_structure_as
 
 
 class SolutionTests(unittest.TestCase):

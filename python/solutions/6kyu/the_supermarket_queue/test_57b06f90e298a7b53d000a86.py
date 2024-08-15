@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_the_supermarket_queue import queue_time
+from solution import queue_time
 
 
 class TheSupermarketQueue(unittest.TestCase):

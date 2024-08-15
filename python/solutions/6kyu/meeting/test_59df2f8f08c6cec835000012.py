@@ -1,7 +1,7 @@
 """https://www.codewars.com/kata/59df2f8f08c6cec835000012"""
 import unittest
 
-from solution_meeting import meeting
+from solution import meeting
 
 
 class FixedTests(unittest.TestCase):

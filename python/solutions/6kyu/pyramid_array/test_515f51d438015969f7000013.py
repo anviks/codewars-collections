@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_pyramid_array import pyramid
+from solution import pyramid
 
 
 class PyramidArray(unittest.TestCase):

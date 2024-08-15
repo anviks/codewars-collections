@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_sudoku_board_validator import validate_sudoku
+from solution import validate_sudoku
 
 fixed_boards = [
     ([[5, 5, 5, 5, 5, 5, 5, 5, 5],

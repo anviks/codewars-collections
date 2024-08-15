@@ -3,7 +3,7 @@ import unittest
 
 from parameterized import parameterized
 
-from solution_roboscript_4_rs3_patterns_to_the_rescue import execute
+from solution import execute
 
 
 class YourRS3Interpreter(unittest.TestCase):

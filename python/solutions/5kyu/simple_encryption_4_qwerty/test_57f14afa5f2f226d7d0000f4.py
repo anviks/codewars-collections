@@ -1,6 +1,6 @@
 """https://www.codewars.com/kata/simple-encryption-number-4-qwerty"""
 import unittest
-from solution_simple_encryption_4_qwerty import encrypt, decrypt
+from solution import encrypt, decrypt
 
 
 class ExampleTests(unittest.TestCase):

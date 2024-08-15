@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_character_counter_and_bars_graph import count_and_print_graph
+from solution import count_and_print_graph
 
 
 class FixedTests(unittest.TestCase):

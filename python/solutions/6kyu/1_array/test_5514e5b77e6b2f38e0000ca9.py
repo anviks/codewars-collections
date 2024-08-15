@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_1_array import up_array
+from solution import up_array
 
 
 class SampleTests(unittest.TestCase):

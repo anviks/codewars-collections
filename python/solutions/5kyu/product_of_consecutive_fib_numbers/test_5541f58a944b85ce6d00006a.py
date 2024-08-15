@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_product_of_consecutive_fib_numbers import product_fib
+from solution import product_fib
 
 
 class FixedTests(unittest.TestCase):

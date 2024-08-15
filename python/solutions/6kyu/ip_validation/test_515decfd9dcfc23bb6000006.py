@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_ip_validation import is_valid_IP
+from solution import is_valid_IP
 
 
 class SampleTests(unittest.TestCase):

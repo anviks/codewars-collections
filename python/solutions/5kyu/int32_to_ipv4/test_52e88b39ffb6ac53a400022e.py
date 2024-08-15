@@ -1,7 +1,7 @@
 """https://www.codewars.com/kata/52e88b39ffb6ac53a400022e"""
 import unittest
 
-from solution_int32_to_ipv4 import int32_to_ip
+from solution import int32_to_ip
 
 
 class SolutionTests(unittest.TestCase):

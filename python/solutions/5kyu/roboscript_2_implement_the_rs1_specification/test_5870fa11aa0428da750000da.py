@@ -1,7 +1,7 @@
 """https://www.codewars.com/kata/5870fa11aa0428da750000da"""
 import unittest
 
-from solution_roboscript_2_implement_the_rs1_specification import execute
+from solution import execute
 
 
 class SolutionTests(unittest.TestCase):

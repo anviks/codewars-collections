@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_consonant_value import solve
+from solution import solve
 
 
 class FixedTests(unittest.TestCase):

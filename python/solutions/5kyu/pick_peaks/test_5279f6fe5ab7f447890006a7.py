@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_pick_peaks import pick_peaks
+from solution import pick_peaks
 
 
 class FixedTests(unittest.TestCase):

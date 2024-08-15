@@ -2,7 +2,7 @@
 import sys
 import unittest
 
-from solution_explosive_sum import exp_sum
+from solution import exp_sum
 
 
 class TestingExpSum(unittest.TestCase):

@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_multiplication_table import multiplication_table
+from solution import multiplication_table
 
 
 class BasicTests(unittest.TestCase):

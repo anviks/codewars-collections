@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_pair_of_gloves import number_of_pairs
+from solution import number_of_pairs
 
 
 class BasicTests(unittest.TestCase):

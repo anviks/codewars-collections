@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_are_they_the_same import comp
+from solution import comp
 
 
 class Same(unittest.TestCase):

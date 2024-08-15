@@ -1,7 +1,7 @@
 """https://www.codewars.com/kata/526156943dfe7ce06200063e"""
 import unittest
 
-from solution_my_smallest_code_interpreter_aka_brainf_k import brain_luck
+from solution import brain_luck
 
 
 # Echo until byte(255) encountered

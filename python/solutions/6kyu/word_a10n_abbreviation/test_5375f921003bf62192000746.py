@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_word_a10n_abbreviation import abbreviate
+from solution import abbreviate
 
 
 class SampleTests(unittest.TestCase):

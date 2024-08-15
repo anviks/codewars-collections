@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_the_vowel_code import encode, decode
+from solution import encode, decode
 
 
 class FixedTests(unittest.TestCase):

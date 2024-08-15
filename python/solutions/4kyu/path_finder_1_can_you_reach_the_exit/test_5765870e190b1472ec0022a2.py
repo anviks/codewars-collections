@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_path_finder_1_can_you_reach_the_exit import path_finder
+from solution import path_finder
 
 
 class SolutionTests(unittest.TestCase):

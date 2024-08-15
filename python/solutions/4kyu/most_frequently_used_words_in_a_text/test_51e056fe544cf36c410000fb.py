@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_most_frequently_used_words_in_a_text import top_3_words
+from solution import top_3_words
 
 
 class Top3Words(unittest.TestCase):

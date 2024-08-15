@@ -2,7 +2,7 @@
 
 
 import unittest
-from solution_simple_assembler_interpreter import simple_assembler
+from solution import simple_assembler
 
 class SampleTests(unittest.TestCase):
     def test_tests(self):

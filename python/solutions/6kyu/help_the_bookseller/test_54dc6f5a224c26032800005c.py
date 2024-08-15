@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_help_the_bookseller import stock_list
+from solution import stock_list
 
 
 class Testing(unittest.TestCase):

@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_is_my_friend_cheating import remov_nb
+from solution import remov_nb
 
 
 class CheatingFriend(unittest.TestCase):

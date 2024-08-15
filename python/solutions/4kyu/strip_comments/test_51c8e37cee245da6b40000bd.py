@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_strip_comments import strip_comments
+from solution import strip_comments
 
 
 class TestCase(unittest.TestCase):

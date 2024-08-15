@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_best_travel import choose_best_sum
+from solution import choose_best_sum
 
 
 class FixedTests(unittest.TestCase):

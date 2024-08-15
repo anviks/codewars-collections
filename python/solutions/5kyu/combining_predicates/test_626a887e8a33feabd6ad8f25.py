@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_combining_predicates import predicate
+from solution import predicate
 
 
 class ExamplesFromTheDescription(unittest.TestCase):

@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_last_digit_of_a_large_number import last_digit
+from solution import last_digit
 
 
 class ExampleTests(unittest.TestCase):

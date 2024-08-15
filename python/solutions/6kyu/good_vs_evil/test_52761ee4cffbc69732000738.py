@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_good_vs_evil import good_vs_evil
+from solution import good_vs_evil
 
 
 class SolutionTests(unittest.TestCase):

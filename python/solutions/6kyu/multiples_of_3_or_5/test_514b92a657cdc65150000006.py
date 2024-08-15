@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_multiples_of_3_or_5 import solution
+from solution import solution
 
 
 class SampleTests(unittest.TestCase):

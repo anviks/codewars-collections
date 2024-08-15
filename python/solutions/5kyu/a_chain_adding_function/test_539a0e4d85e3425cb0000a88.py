@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_a_chain_adding_function import add
+from solution import add
 
 
 class SampleTests(unittest.TestCase):

@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_simple_fun_319_number_and_ip_address import number_and_IP_address
+from solution import number_and_IP_address
 
 
 class BasicTests(unittest.TestCase):

@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_maximum_subarray_sum import max_sequence
+from solution import max_sequence
 
 
 class FixedTests(unittest.TestCase):

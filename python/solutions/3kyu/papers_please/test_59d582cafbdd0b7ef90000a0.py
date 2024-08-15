@@ -1,6 +1,6 @@
 """https://www.codewars.com/kata/59d582cafbdd0b7ef90000a0"""
 import unittest
-from solution_papers_please import Inspector
+from solution import Inspector
 
 inspector = Inspector()
 bulletin = """Entrants require passport

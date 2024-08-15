@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_first_non_repeating_character import first_non_repeating_letter
+from solution import first_non_repeating_letter
 
 
 class SampleTests(unittest.TestCase):

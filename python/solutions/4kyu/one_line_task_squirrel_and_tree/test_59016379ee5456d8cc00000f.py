@@ -1,7 +1,7 @@
 """https://www.codewars.com/kata/one-line-task-squirrel-and-tree"""
 import unittest
 
-from solution_one_line_task_squirrel_and_tree import squirrel
+from solution import squirrel
 
 
 class Tests(unittest.TestCase):

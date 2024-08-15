@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_mexican_wave import wave
+from solution import wave
 
 
 class Testing(unittest.TestCase):

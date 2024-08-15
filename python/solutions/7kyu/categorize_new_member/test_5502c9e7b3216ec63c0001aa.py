@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_categorize_new_member import open_or_senior
+from solution import open_or_senior
 
 
 class FixedTests(unittest.TestCase):

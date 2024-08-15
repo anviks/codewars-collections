@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_title_case import title_case
+from solution import title_case
 
 
 class SampleTests(unittest.TestCase):

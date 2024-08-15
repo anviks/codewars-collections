@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_count_ip_addresses import ips_between
+from solution import ips_between
 
 
 class Tests(unittest.TestCase):

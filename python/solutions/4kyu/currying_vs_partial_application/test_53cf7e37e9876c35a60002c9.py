@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_currying_vs_partial_application import curry_partial
+from solution import curry_partial
 
 
 class SolutionTests(unittest.TestCase):

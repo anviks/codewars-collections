@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_backspaces_in_string import clean_string
+from solution import clean_string
 
 class SolutionTests(unittest.TestCase):
     def test_solution(self):

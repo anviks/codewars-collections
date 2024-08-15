@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_highest_rank_number_in_an_array import highest_rank
+from solution import highest_rank
 
 
 class FixedTests(unittest.TestCase):

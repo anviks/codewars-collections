@@ -4,7 +4,7 @@ import unittest
 
 from parameterized import parameterized
 
-from solution_evaluate_mathematical_expression import calc
+from solution import calc
 
 
 class SampleTests(unittest.TestCase):

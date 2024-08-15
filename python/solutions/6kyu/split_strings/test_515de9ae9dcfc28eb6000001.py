@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_split_strings import *
+from solution import *
 
 
 class FixedTests(unittest.TestCase):

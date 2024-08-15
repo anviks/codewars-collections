@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_alphabet_slice_puzzle import slice
+from solution import slice
 
 
 class SampleTests(unittest.TestCase):

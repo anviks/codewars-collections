@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_your_order_please import order
+from solution import order
 
 
 class YourOrderPlease(unittest.TestCase):

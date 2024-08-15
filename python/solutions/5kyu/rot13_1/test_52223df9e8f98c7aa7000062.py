@@ -1,7 +1,7 @@
 """https://www.codewars.com/kata/52223df9e8f98c7aa7000062"""
 import unittest
 
-from solution_rot13_1 import rot13
+from solution import rot13
 
 
 class ExampleTests(unittest.TestCase):

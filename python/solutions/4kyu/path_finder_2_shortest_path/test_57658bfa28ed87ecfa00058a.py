@@ -1,7 +1,7 @@
 """https://www.codewars.com/kata/57658bfa28ed87ecfa00058a"""
 import unittest
 
-from solution_path_finder_2_shortest_path import path_finder
+from solution import path_finder
 
 a = "\n".join([
     ".W.",

@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_consecutive_strings import longest_consec
+from solution import longest_consec
 
 
 class FixedTests(unittest.TestCase):

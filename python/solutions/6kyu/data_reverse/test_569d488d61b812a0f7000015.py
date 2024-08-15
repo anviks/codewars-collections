@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_data_reverse import data_reverse
+from solution import data_reverse
 
 
 class Testing(unittest.TestCase):

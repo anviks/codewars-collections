@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_the_hashtag_generator import generate_hashtag
+from solution import generate_hashtag
 
 
 class FixedTests(unittest.TestCase):

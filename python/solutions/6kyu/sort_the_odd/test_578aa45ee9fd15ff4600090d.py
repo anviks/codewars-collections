@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_sort_the_odd import sort_array
+from solution import sort_array
 
 
 class FixedTests(unittest.TestCase):

@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_give_me_a_diamond import diamond
+from solution import diamond
 
 
 class FixedTests(unittest.TestCase):

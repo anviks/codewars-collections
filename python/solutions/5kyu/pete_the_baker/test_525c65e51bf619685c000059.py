@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_pete_the_baker import cakes
+from solution import cakes
 
 
 class SampleTests(unittest.TestCase):

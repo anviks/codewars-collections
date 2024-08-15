@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution_simple_fun_79_delete_a_digit import delete_digit
+from solution import delete_digit
 
 
 class FixedTests(unittest.TestCase):

@@ -3,7 +3,7 @@ import unittest
 
 from parameterized import parameterized
 
-from solution_not_very_secure import alphanumeric
+from solution import alphanumeric
 
 
 class SampleTests(unittest.TestCase):
