@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import score
+from solution_5270d0d18625160ada0000e4 import score
 
 
 class ExampleTests(unittest.TestCase):

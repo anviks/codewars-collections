@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import triangle
+from solution_5a25ac6ac5e284cfbe000111 import triangle
 
 
 class FixedTests(unittest.TestCase):

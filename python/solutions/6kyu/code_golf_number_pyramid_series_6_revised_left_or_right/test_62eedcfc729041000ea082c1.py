@@ -2,7 +2,7 @@
 
 import unittest
 import inspect
-from solution import left_right
+from solution_62eedcfc729041000ea082c1 import left_right
 
 
 class SampleTests(unittest.TestCase):

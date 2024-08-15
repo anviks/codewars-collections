@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import clean_string
+from solution_5727bb0fe81185ae62000ae3 import clean_string
 
 class SolutionTests(unittest.TestCase):
     def test_solution(self):

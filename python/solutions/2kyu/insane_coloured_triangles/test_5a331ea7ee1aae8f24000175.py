@@ -4,7 +4,7 @@ import unittest
 
 from parameterized import parameterized
 
-from solution import triangle
+from solution_5a331ea7ee1aae8f24000175 import triangle
 
 
 class InsaneColouredTriangles(unittest.TestCase):

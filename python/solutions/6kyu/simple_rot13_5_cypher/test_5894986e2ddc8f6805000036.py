@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import rot_135
+from solution_5894986e2ddc8f6805000036 import rot_135
 
 
 class FixedTests(unittest.TestCase):

@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import choose_best_sum
+from solution_55e7280b40e1c4a06d0000aa import choose_best_sum
 
 
 class FixedTests(unittest.TestCase):

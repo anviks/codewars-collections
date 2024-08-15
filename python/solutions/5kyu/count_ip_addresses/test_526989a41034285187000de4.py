@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import ips_between
+from solution_526989a41034285187000de4 import ips_between
 
 
 class Tests(unittest.TestCase):

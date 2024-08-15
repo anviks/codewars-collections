@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import is_valid_IP
+from solution_515decfd9dcfc23bb6000006 import is_valid_IP
 
 
 class SampleTests(unittest.TestCase):

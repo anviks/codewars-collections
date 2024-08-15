@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import count
+from solution_52efefcbcdf57161d4000091 import count
 
 
 class BasicTests(unittest.TestCase):

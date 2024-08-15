@@ -1,7 +1,7 @@
 """https://www.codewars.com/kata/simple-encryption-number-2-index-difference"""
 import unittest
 
-from solution import decrypt, encrypt
+from solution_5782b5ad202c0ef42f0012cb import decrypt, encrypt
 
 
 class BasicEncryptTests(unittest.TestCase):

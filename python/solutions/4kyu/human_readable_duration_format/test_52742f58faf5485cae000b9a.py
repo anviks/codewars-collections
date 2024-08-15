@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import format_duration
+from solution_52742f58faf5485cae000b9a import format_duration
 
 
 class FixedTests(unittest.TestCase):

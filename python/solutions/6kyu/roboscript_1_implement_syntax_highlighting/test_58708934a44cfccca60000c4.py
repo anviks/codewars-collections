@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import highlight
+from solution_58708934a44cfccca60000c4 import highlight
 
 message = "Given Code: {}\n\nResults"
 

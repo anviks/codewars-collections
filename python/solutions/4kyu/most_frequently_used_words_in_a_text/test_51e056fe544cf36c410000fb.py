@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import top_3_words
+from solution_51e056fe544cf36c410000fb import top_3_words
 
 
 class Top3Words(unittest.TestCase):

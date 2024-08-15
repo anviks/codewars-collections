@@ -1,7 +1,7 @@
 """https://www.codewars.com/kata/58738d518ec3b4bf95000192"""
 import unittest
 
-from solution import execute
+from solution_58738d518ec3b4bf95000192 import execute
 
 
 class SolutionTests(unittest.TestCase):

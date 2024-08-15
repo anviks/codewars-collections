@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import ip_to_int32
+from solution_52ea928a1ef5cfec800003ee import ip_to_int32
 
 
 class BasicTests(unittest.TestCase):

@@ -1,7 +1,7 @@
 """https://www.codewars.com/kata/56b5afb4ed1f6d5fb0000991"""
 import unittest
 
-from solution import rev_rot
+from solution_56b5afb4ed1f6d5fb0000991 import rev_rot
 
 
 class SolutionTests(unittest.TestCase):

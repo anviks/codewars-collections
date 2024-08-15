@@ -3,7 +3,7 @@ import unittest
 
 from parameterized import parameterized
 
-from solution import execute
+from solution_594b898169c1d644f900002e import execute
 
 
 class YourRS3Interpreter(unittest.TestCase):

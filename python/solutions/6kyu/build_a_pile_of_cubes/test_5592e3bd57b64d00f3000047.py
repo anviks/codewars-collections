@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import find_nb
+from solution_5592e3bd57b64d00f3000047 import find_nb
 
 
 class FixedTests(unittest.TestCase):

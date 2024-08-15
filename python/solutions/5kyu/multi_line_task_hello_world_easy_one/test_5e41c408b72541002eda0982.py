@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import f
+from solution_5e41c408b72541002eda0982 import f
 
 
 class FixedTests(unittest.TestCase):

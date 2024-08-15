@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import number_and_IP_address
+from solution_5936371109ca68fe6900000c import number_and_IP_address
 
 
 class BasicTests(unittest.TestCase):

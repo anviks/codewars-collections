@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import sum_pairs
+from solution_54d81488b981293527000c8f import sum_pairs
 
 
 class SampleTests(unittest.TestCase):

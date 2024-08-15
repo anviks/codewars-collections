@@ -3,7 +3,7 @@
 import unittest
 from re import fullmatch
 
-from solution import regex
+from solution_52e1476c8147a7547a000811 import regex
 
 
 class Tests(unittest.TestCase):

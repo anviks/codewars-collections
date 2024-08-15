@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import encode, decode
+from solution_53697be005f803751e0015aa import encode, decode
 
 
 class FixedTests(unittest.TestCase):

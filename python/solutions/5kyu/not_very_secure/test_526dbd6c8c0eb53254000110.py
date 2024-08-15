@@ -3,7 +3,7 @@ import unittest
 
 from parameterized import parameterized
 
-from solution import alphanumeric
+from solution_526dbd6c8c0eb53254000110 import alphanumeric
 
 
 class SampleTests(unittest.TestCase):

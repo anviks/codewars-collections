@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import thirt
+from solution_564057bc348c7200bd0000ff import thirt
 
 
 class Thirt(unittest.TestCase):

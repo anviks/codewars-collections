@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import last_digit
+from solution_5511b2f550906349a70004e1 import last_digit
 
 
 class ExampleTests(unittest.TestCase):

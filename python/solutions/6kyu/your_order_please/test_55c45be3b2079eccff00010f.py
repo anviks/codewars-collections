@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import order
+from solution_55c45be3b2079eccff00010f import order
 
 
 class YourOrderPlease(unittest.TestCase):

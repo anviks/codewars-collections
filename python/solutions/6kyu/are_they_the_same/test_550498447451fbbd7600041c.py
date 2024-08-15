@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import comp
+from solution_550498447451fbbd7600041c import comp
 
 
 class Same(unittest.TestCase):

@@ -1,7 +1,7 @@
 """https://www.codewars.com/kata/529adbf7533b761c560004e5"""
 import unittest
 
-from solution import fibonacci
+from solution_529adbf7533b761c560004e5 import fibonacci
 
 
 class SolutionTests(unittest.TestCase):

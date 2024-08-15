@@ -4,7 +4,7 @@ import unittest
 
 from parameterized import parameterized
 
-from solution import calc
+from solution_52a78825cdfc2cfc87000005 import calc
 
 
 class SampleTests(unittest.TestCase):

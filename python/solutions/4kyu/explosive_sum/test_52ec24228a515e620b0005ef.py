@@ -2,7 +2,7 @@
 import sys
 import unittest
 
-from solution import exp_sum
+from solution_52ec24228a515e620b0005ef import exp_sum
 
 
 class TestingExpSum(unittest.TestCase):

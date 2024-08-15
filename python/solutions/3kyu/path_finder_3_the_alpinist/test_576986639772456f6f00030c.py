@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import path_finder
+from solution_576986639772456f6f00030c import path_finder
 
 
 class FixedTests(unittest.TestCase):

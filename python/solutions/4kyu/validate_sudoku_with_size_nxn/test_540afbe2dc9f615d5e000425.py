@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import Sudoku
+from solution_540afbe2dc9f615d5e000425 import Sudoku
 
 
 class ValidateSudoku(unittest.TestCase):

@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import count_and_print_graph
+from solution_5826773bfad36332bf0002f9 import count_and_print_graph
 
 
 class FixedTests(unittest.TestCase):

@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import longest_consec
+from solution_56a5d994ac971f1ac500003e import longest_consec
 
 
 class FixedTests(unittest.TestCase):

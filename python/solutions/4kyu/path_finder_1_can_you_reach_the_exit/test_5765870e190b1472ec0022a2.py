@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import path_finder
+from solution_5765870e190b1472ec0022a2 import path_finder
 
 
 class SolutionTests(unittest.TestCase):

@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import perimeter
+from solution_559a28007caad2ac4e000083 import perimeter
 
 
 class Testing(unittest.TestCase):

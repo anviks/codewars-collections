@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import predicate
+from solution_626a887e8a33feabd6ad8f25 import predicate
 
 
 class ExamplesFromTheDescription(unittest.TestCase):

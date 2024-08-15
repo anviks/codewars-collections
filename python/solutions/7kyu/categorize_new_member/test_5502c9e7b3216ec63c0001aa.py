@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import open_or_senior
+from solution_5502c9e7b3216ec63c0001aa import open_or_senior
 
 
 class FixedTests(unittest.TestCase):

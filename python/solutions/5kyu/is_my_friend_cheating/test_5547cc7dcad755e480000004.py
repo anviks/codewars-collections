@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import remov_nb
+from solution_5547cc7dcad755e480000004 import remov_nb
 
 
 class CheatingFriend(unittest.TestCase):

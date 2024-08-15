@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import highest_rank
+from solution_5420fc9bb5b2c7fd57000004 import highest_rank
 
 
 class FixedTests(unittest.TestCase):

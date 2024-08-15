@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import wave
+from solution_58f5c63f1e26ecda7e000029 import wave
 
 
 class Testing(unittest.TestCase):

@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import encrypt_this
+from solution_5848565e273af816fb000449 import encrypt_this
 
 
 class FixedTests(unittest.TestCase):

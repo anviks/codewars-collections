@@ -1,7 +1,7 @@
 """https://www.codewars.com/kata/decode-the-morse-code-advanced"""
 import unittest
 
-from solution import decode_bits, decode_morse
+from solution_54b72c16cd7f5154e9000457 import decode_bits, decode_morse
 
 
 class SolutionTests(unittest.TestCase):

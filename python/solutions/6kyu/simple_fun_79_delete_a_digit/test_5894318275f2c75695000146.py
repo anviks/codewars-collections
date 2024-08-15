@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import delete_digit
+from solution_5894318275f2c75695000146 import delete_digit
 
 
 class FixedTests(unittest.TestCase):

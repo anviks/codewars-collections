@@ -2,7 +2,7 @@
 
 import unittest
 
-from solution import solution
+from solution_514b92a657cdc65150000006 import solution
 
 
 class SampleTests(unittest.TestCase):

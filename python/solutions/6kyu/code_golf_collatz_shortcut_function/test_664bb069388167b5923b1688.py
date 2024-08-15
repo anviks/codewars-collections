@@ -3,7 +3,7 @@
 import inspect
 import unittest
 
-from solution import g
+from solution_664bb069388167b5923b1688 import g
 
 
 class CodeLengthTest(unittest.TestCase):
