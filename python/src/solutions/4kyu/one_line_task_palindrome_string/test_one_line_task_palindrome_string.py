@@ -35,8 +35,8 @@ def test_restrictions():
     source = inspect.getsource(palindrome)
     assert not check_all_chars('\r\n;', source), "Your solution has to be a pure oneliner"
     assert len(source) <= MAX_CHARS, "Solution is too long!"
-    assert len(
-        source) > MIN_CHEAT, "Your code length is smaller than the human being limit, so I guess you are Superman, or you are a cheater. ;-)"
+    assert len(source) > MIN_CHEAT, \
+        "Your code length is smaller than the human being limit, so I guess you are Superman, or you are a cheater. ;-)"
 
 
 @pytest.mark.parametrize('length, strng', [
