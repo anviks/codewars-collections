@@ -12,7 +12,7 @@ find_package(Catch2 3 REQUIRED)
 add_library(solutions OBJECT
         src/solutions/6kyu/equal_sides_of_an_array/solution_equal_sides_of_an_array.cpp
         src/solutions/5kyu/rgb_to_hex_conversion/solution_rgb_to_hex_conversion.cpp
-        src/solutions/4kyu/boggle_word_checker/solution_boggle_word_checker.cpp
+        src/solutions/4kyu/TODO/boggle_word_checker/solution_boggle_word_checker.cpp
         src/solutions/4kyu/matrix_determinant/solution_matrix_determinant.cpp
         src/solutions/4kyu/next_bigger_number_with_the_same_digits/solution_next_bigger_number_with_the_same_digits.cpp
         src/solutions/4kyu/range_extraction/solution_range_extraction.cpp
@@ -29,7 +29,7 @@ add_executable(tests test_main.cpp
         $<TARGET_OBJECTS:solutions>
         solutions/6kyu/equal_sides_of_an_array/test_equal_sides_of_an_array.cpp
         solutions/5kyu/rgb_to_hex_conversion/test_rgb_to_hex_conversion.cpp
-        solutions/4kyu/boggle_word_checker/test_boggle_word_checker.cpp
+        solutions/4kyu/TODO/boggle_word_checker/test_boggle_word_checker.cpp
         solutions/4kyu/matrix_determinant/test_matrix_determinant.cpp
         solutions/4kyu/next_bigger_number_with_the_same_digits/test_next_bigger_number_with_the_same_digits.cpp
         solutions/4kyu/range_extraction/test_range_extraction.cpp

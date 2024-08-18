@@ -2,5 +2,3 @@
 /CMakeFiles
 /.idea
 /vcpkg_installed
-
-/src/solutions/4kyu/boggle_word_checker
