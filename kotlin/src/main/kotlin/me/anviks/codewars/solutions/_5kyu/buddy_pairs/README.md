@@ -1,25 +1,36 @@
-<h3 id="buddy-pairs">Buddy pairs</h3>
-<p>You know what divisors of a number are. The divisors of a positive integer <code>n</code> are said to be <code>proper</code> when you consider only the divisors other than <code>n</code> itself. In the following description, divisors will mean <code>proper</code> divisors.  For example for  <code>100</code> they are <code>1, 2, 4, 5, 10, 20, 25, and 50</code>.</p>
-<p>Let <code>s(n)</code> be the <code>sum</code> of these proper divisors of <code>n</code>.  Call <code>buddy</code> two positive integers such that the <code>sum</code> of the proper divisors of each number is one more than the other number:</p>
-<p><code>(n, m)</code> are a pair of <code>buddy</code> if <code>s(m) = n + 1</code> and <code>s(n) = m + 1</code></p>
-<p>For example 48 &amp; 75 is such a pair:</p>
-<ul>
-<li>Divisors of 48 are: 1, 2, 3, 4, 6, 8, 12, 16, 24 --&gt; sum: 76 = 75 + 1</li>
-<li>Divisors of 75 are: 1, 3, 5, 15, 25 --&gt; sum: 49 = 48 + 1</li>
-</ul>
-<h4 id="task">Task</h4>
-<p>Given two positive integers <code>start</code> and <code>limit</code>, the function <code>buddy(start, limit)</code> should return the <strong>first</strong> pair <code>(n m)</code> of <code>buddy pairs</code>  such that <code>n</code> (positive integer) is between <code>start</code> (inclusive) and <code>limit</code> (inclusive);  <code>m</code> can be greater than <code>limit</code> and has to be <strong>greater</strong> than <code>n</code></p>
-<p>If there is no <code>buddy pair</code> satisfying the conditions, then return <code>"Nothing"</code> or (for <strong>Go</strong> lang) <code>nil</code> or (for <strong>Dart</strong>) <code>null</code>; (for <strong>Lua</strong>, <strong>Pascal</strong>, <strong>Perl</strong>, <strong>D</strong>) <code>[-1, -1]</code>; (for <strong>Erlang</strong> {-1, -1}).</p>
-<h4 id="examples">Examples</h4>
-<p>(depending on the languages)</p>
-<pre><code>buddy(10, 50) returns [48, 75] 
+# [Buddy Pairs](https://www.codewars.com/kata/59ccf051dcc4050f7800008f)
+
+### Buddy pairs
+
+You know what divisors of a number are. The divisors of a positive integer `n` are said to be `proper` when you consider only the divisors other than `n` itself. In the following description, divisors will mean `proper` divisors.  For example for  `100` they are `1, 2, 4, 5, 10, 20, 25, and 50`.
+
+Let `s(n)` be the `sum` of these proper divisors of `n`.  Call `buddy` two positive integers such that the `sum` of the proper divisors of each number is one more than the other number:
+
+`(n, m)` are a pair of `buddy` if `s(m) = n + 1` and `s(n) = m + 1`
+
+
+For example 48 & 75 is such a pair:
+* Divisors of 48 are: 1, 2, 3, 4, 6, 8, 12, 16, 24 --> sum: 76 = 75 + 1
+* Divisors of 75 are: 1, 3, 5, 15, 25 --> sum: 49 = 48 + 1
+
+
+#### Task
+
+Given two positive integers `start` and `limit`, the function `buddy(start, limit)` should return the **first** pair `(n m)` of `buddy pairs`  such that `n` (positive integer) is between `start` (inclusive) and `limit` (inclusive);  `m` can be greater than `limit` and has to be **greater** than `n`
+
+If there is no `buddy pair` satisfying the conditions, then return `"Nothing"` or (for **Go** lang) `nil` or (for **Dart**) `null`; (for **Lua**, **Pascal**, **Perl**, **D**) `[-1, -1]`; (for **Erlang** {-1, -1}).
+#### Examples 
+
+(depending on the languages)
+```
+buddy(10, 50) returns [48, 75] 
 buddy(48, 50) returns [48, 75]
 or
 buddy(10, 50) returns "(48 75)"
 buddy(48, 50) returns "(48 75)"
-</code></pre>
-<h4 id="notes">Notes</h4>
-<ul>
-<li>for C: The returned string will be free'd.</li>
-<li>See more examples in "Sample Tests:" of your language.</li>
-</ul>
+```
+
+#### Notes
+
+- for C: The returned string will be free'd.
+- See more examples in "Sample Tests:" of your language.
