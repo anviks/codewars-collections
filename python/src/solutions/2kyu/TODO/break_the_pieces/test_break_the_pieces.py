@@ -1,4 +1,5 @@
 """https://www.codewars.com/kata/break-the-pieces"""
+import pytest
 from parameterized import parameterized
 
 from solution_break_the_pieces import break_pieces
@@ -97,22 +98,21 @@ test_data = [
           '+-------------------------+\n|                         |\n| +----+                  |\n| |    |     +------------+\n| |    |     |\n+-+    +-----+'])])]
 
 
-@unittest.skip("Skip incomplete kata")
-class SampleTests(unittest.TestCase):
-    @parameterized.expand(test_data)
-    def test_sample_tests(self, name, test_cases):
-        for shape, expected in test_cases:
-            actual = break_pieces(shape)
-            if raw_errors:
-                self.assertEqual(sorted(break_pieces(shape)), expected)
-            else:
-                self.assertIsInstance(actual, list, f'break_pieces should return a list; actual result: {actual}')
-                actual = sorted(actual)
-                if actual == expected:
-                    self.assertTrue(True)
-                    continue
-                message = ['break_pieces failed on this shape:', shape, '', 'Actual result:']
-                message.extend(actual)
-                message.append('\nExpected result:')
-                message.extend(expected)
-                self.fail('\n'.join(message))
+@pytest.mark.skip("Skip incomplete kata")
+@pytest.mark.parametrize('name, test_cases', test_data)
+def test_sample_tests(name, test_cases):
+    for shape, expected in test_cases:
+        actual = break_pieces(shape)
+        if raw_errors:
+            assert sorted(break_pieces(shape)) == expected
+        else:
+            assert isinstance(actual, list), f'break_pieces should return a list; actual result: {actual}'
+            actual = sorted(actual)
+            if actual == expected:
+                continue
+            message = ['break_pieces failed on this shape:', shape, '', 'Actual result:']
+            message.extend(actual)
+            message.append('\nExpected result:')
+            message.extend(expected)
+            pytest.fail('\n'.join(message))
+
