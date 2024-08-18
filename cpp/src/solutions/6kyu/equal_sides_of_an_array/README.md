@@ -1,13 +1,44 @@
-<p>You are going to be given an array of integers. Your job is to take that array and find an index N where the sum of the integers to the left of N is equal to the sum of the integers to the right of N.</p>
-<p>If there is no index that would make this happen, return <code>-1</code>.</p>
-<h3 id="for-example">For example:</h3>
-<p>Let's say you are given the array <code>{1,2,3,4,3,2,1}</code>:<br>Your function will return the index <code>3</code>, because at the 3rd position of the array, the sum of left side of the index (<code>{1,2,3}</code>) and the sum of the right side of the index (<code>{3,2,1}</code>) both equal <code>6</code>.</p>
-<p>Let's look at another one.<br>You are given the array <code>{1,100,50,-51,1,1}</code>:<br>Your function will return the index <code>1</code>, because at the 1st position of the array, the sum of left side of the index (<code>{1}</code>) and the sum of the right side of the index (<code>{50,-51,1,1}</code>) both equal <code>1</code>.</p>
-<p>Last one:<br>You are given the array <code>{20,10,-80,10,10,15,35}</code><br>At index 0 the left side is <code>{}</code><br>The right side is <code>{10,-80,10,10,15,35}</code><br>They both are equal to <code>0</code> when added. (Empty arrays are equal to 0 in this problem)<br>Index 0 is the place where the left side and right side are equal.  </p>
-<p>Note: Please remember that in most languages the index of an array starts at 0.</p>
-<h3 id="input">Input</h3>
-<p>An integer array of length <code>0 &lt; arr &lt; 1000</code>. The numbers in the array can be any integer positive or negative.</p>
-<h3 id="output">Output</h3>
-<p>The lowest index <code>N</code> where the side to the left of <code>N</code> is equal to the side to the right of <code>N</code>. If you do not find an index that fits these rules, then you will return <code>-1</code>.</p>
-<h3 id="note">Note</h3>
-<p>If you are given an array with multiple answers, return the lowest correct index.  </p>
+# [Equal Sides Of An Array](https://www.codewars.com/kata/5679aa472b8f57fb8c000047)
+
+You are going to be given an array of integers. Your job is to take that array and find an index N where the sum of the integers to the left of N is equal to the sum of the integers to the right of N.
+
+If there is no index that would make this happen, return `-1`.
+
+### For example:
+
+Let's say you are given the array `{1,2,3,4,3,2,1}`:  
+Your function will return the index `3`, because at the 3rd position of the array, the sum of left side of the index (`{1,2,3}`) and the sum of the right side of the index (`{3,2,1}`) both equal `6`.
+
+
+Let's look at another one.  
+You are given the array `{1,100,50,-51,1,1}`:  
+Your function will return the index `1`, because at the 1st position of the array, the sum of left side of the index (`{1}`) and the sum of the right side of the index (`{50,-51,1,1}`) both equal `1`.
+
+Last one:  
+You are given the array `{20,10,-80,10,10,15,35}`  
+At index 0 the left side is `{}`  
+The right side is `{10,-80,10,10,15,35}`  
+They both are equal to `0` when added. (Empty arrays are equal to 0 in this problem)  
+Index 0 is the place where the left side and right side are equal.  
+
+Note: Please remember that in most languages the index of an array starts at 0.
+
+### Input
+
+An integer array of length `0 < arr < 1000`. The numbers in the array can be any integer positive or negative.
+
+### Output
+
+The lowest index `N` where the side to the left of `N` is equal to the side to the right of `N`. If you do not find an index that fits these rules, then you will return `-1`.
+
+### Note
+
+If you are given an array with multiple answers, return the lowest correct index.  
+
+### Encodings
+
+purity: `LetRec`  
+numEncoding: custom `NegaBinaryScott`  
+
+Export constructors `nil, cons` for your `List` encoding.  
+`NegaBinaryScott` is just like `BinaryScott`, but uses base `-2` instead of `2`.
