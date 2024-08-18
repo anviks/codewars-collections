@@ -1,3 +1,5 @@
+# [Simple Fun #319: Number And IP Address](https://www.codewars.com/kata/5936371109ca68fe6900000c)
+
 # Task
 
 An IP address contains four numbers(0-255) and separated by dots. It can be converted to a number by this way:

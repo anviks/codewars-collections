@@ -1,3 +1,5 @@
+# [[Code Golf] Collatz Shortcut Function](https://www.codewars.com/kata/664bb069388167b5923b1688)
+
 The Collatz conjecture states that repeated application of the function
 ```
 f(n) = n / 2 if n is even, 3 * n + 1 if n is odd

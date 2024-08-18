@@ -1,3 +1,5 @@
+# [Papers, Please](https://www.codewars.com/kata/59d582cafbdd0b7ef90000a0)
+
 ![Gameplay screencap](https://i.imgur.com/mYgmiOz.jpg)
 
 <p><a href="https://en.wikipedia.org/wiki/Papers%2C_Please" style='color:#9f9;text-decoration:none'><b>Papers, Please</b></a> is an indie video game where the player takes on a the role of a border crossing immigration officer in the fictional dystopian Eastern Bloc-like country of Arstotzka in the year 1982. As the officer, the player must review each immigrant and returning citizen's passports and other supporting paperwork against a list of ever-increasing rules using a number of tools and guides, allowing in only those with the proper paperwork, rejecting those without all proper forms, and at times detaining those with falsified information.</p>
@@ -93,6 +95,7 @@ Example 3: Entry denied: missing required access permit.
 
 <h2 style='color:#f88'>Test Example</h2>
 
+
 ```python
 bulletin = """Entrants require passport
 Allow citizens of Arstotzka, Obristan"""
@@ -112,6 +115,8 @@ entrant1 = {
 
 inspector.inspect(entrant1) #=> 'Glory to Arstotzka.'
 ```
+
+
 <h2 style='color:#f88'>Additional Notes</h2>
 
 - Inputs will always be valid.

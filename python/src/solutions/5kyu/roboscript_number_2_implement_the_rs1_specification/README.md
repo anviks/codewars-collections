@@ -1,3 +1,5 @@
+# [RoboScript #2 - Implement the RS1 Specification](https://www.codewars.com/kata/5870fa11aa0428da750000da)
+
 # RoboScript #2 - Implement the RS1 Specification
 
 ## Disclaimer

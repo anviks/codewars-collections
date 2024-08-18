@@ -1,3 +1,5 @@
+# [Password validator](https://www.codewars.com/kata/56a921fa8c5167d8e7000053)
+
 ## Description
 Your job is to create a simple password validation function, as seen on many websites. 
 
@@ -10,6 +12,8 @@ The rules for a valid password are as follows:
 You are permitted to use any methods to validate the password.
 
 ## Examples:
+
+
 ### Extra info
 - You will only be passed strings.
 - The string can contain any standard keyboard character.

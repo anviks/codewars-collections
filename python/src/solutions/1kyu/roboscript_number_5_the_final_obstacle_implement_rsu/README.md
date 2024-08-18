@@ -1,3 +1,5 @@
+# [RoboScript #5 - The Final Obstacle (Implement RSU)](https://www.codewars.com/kata/5a12755832b8b956a9000133)
+
 *NOTE: It is highly recommended that you complete the first 4 Kata in this Series before attempting this final Kata; otherwise, the description would make little sense.*
 
 ---

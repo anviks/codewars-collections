@@ -1,3 +1,5 @@
+# [4 By 4 Skyscrapers](https://www.codewars.com/kata/4-by-4-skyscrapers)
+
 <style type="text/css">
     table, tr, td {
         border: 0px;
@@ -157,6 +159,17 @@ Example of a 4 by 4 puzzle with the solution:
 <ul>
     <li>Finish:</li>
 </ul>
+
+    
+
+
+
+
+
+
+
+
+
 
 <ul>
     <li>

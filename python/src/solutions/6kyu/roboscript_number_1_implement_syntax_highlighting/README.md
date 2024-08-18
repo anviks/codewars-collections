@@ -1,3 +1,5 @@
+# [RoboScript #1 - Implement Syntax Highlighting](https://www.codewars.com/kata/58708934a44cfccca60000c4)
+
 # RoboScript #1 - Implement Syntax Highlighting
 
 ## Disclaimer
@@ -24,7 +26,23 @@ Your MyRobot-specific (esoteric) scripting language called RoboScript only ever 
 
 For example:
 
+
+
+
+
+
+
+
+
 And for multiple characters with the same color, simply wrap them with a **single** `<span>` tag of the correct color:
+
+
+
+
+
+
+
+
 
 Note that the use of `<span>` tags must be **exactly** the same format as demonstrated above.  Even if your solution produces the same visual result as the expected answers, if you miss a space betwen `"color:"` and `"green"`, for example, you will fail the tests.
 

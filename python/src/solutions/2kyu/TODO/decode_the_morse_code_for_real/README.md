@@ -1,3 +1,5 @@
+# [Decode the Morse code, for real](https://www.codewars.com/kata/decode-the-morse-code-for-real)
+
 <div style="border:1px solid;position:relative;padding:1ex 1ex 1ex 11.1em;"><div style="position:absolute; left:0;top:0;bottom:0; width:10em; padding:1ex;text-align:center;border:1px solid;margin:0 1ex 0 0;color:#000;background-color:#eee;font-variant:small-caps">Part of Series 3/3</div><div>This kata is part of a series on the Morse code. Make sure you solve the [first part](/kata/decode-the-morse-code) and the [second part](/kata/decode-the-morse-code-advanced) and then reuse and advance your code to solve this one.</div></div><br>In this kata you have to deal with "real-life" scenarios, when Morse code transmission speed slightly varies throughout the message as it is sent by a non-perfect human operator. Also the sampling frequency may not be a multiple of the length of a typical "dot".
 
 For example, the message <code>HEY JUDE</code>, that is <code>···· · −·−− &nbsp; ·−−− ··− −·· ·</code> may actually be received as follows:
@@ -21,6 +23,12 @@ That said, your task is to implement two functions:
 **NOTE:** For coding purposes you have to use ASCII characters `.` and `-`, not Unicode characters.
 
 The Morse code table is preloaded for you as <code>MORSE_CODE</code> dictionary, feel free to use it. For C, the function `morse_code` acts like the dictionary. For C++, Scala and Go, a map is used. For C#, it's called <code>Preloaded.MORSE_CODE</code>. For Racket, a hash called MORSE-CODE is used.
+
+
+
+
+
+
 Of course, not all messages may be fully automatically decoded. But you may be sure that all the test strings would be valid to the point that they could be reliably decoded as described above, so you may skip checking for errors and exceptions, just do your best in figuring out what the message is!
 
 Good luck!

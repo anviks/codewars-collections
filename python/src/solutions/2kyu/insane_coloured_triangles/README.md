@@ -1,3 +1,5 @@
+# [Insane Coloured Triangles](https://www.codewars.com/kata/5a331ea7ee1aae8f24000175)
+
 # Disclaimer
 
 This Kata is an insane step-up from [Avanta's Kata](https://www.codewars.com/kata/coloured-triangles),
@@ -39,6 +41,7 @@ The exact number of test cases will be as follows:
 
 # Examples
 
+
 ```python
 triangle('B') == 'B'
 triangle('GB') == 'R'
@@ -47,11 +50,8 @@ triangle('RGBG') == 'B'
 triangle('RBRGBRB') == 'G'
 triangle('RBRGBRBGGRRRBGBBBGG') == 'G'
 ```
-```commonlisp
-(equal (triangle "B") #\B)
-(equal (triangle "GB") #\R)
-(equal (triangle "RRR") #\R)
-(equal (triangle "RGBG") #\B)
-(equal (triangle "RBRGBRB") #\G)
-(equal (triangle "RBRGBRBGGRRRBGBBBGG") #\G)
-```
+
+
+
+
+

@@ -1,3 +1,5 @@
+# [Product of consecutive Fib numbers](https://www.codewars.com/kata/5541f58a944b85ce6d00006a)
+
 The Fibonacci numbers are the numbers in the following integer sequence (Fn):
 >0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, ...
 

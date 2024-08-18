@@ -1,3 +1,5 @@
+# [Character Counter and Bars Graph](https://www.codewars.com/kata/5826773bfad36332bf0002f9)
+
 1) 
 Given some text, count each alphabetic character's occurrence in it, regardless of the case.
 

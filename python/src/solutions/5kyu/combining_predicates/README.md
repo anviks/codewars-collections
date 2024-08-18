@@ -1,3 +1,5 @@
+# [Combining predicates](https://www.codewars.com/kata/626a887e8a33feabd6ad8f25)
+
 # Task
 
 Create a decorator `@predicate` which allows boolean functions to be conveniently combined using `&`, `|` and `~` operators:

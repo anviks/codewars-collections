@@ -1,3 +1,5 @@
+# [Palindrome Counter](https://www.codewars.com/kata/64607242d3560e0043c3de25)
+
 # Background
 
 Palindromes are a special type of number (in this case a non-negative integer) that reads the same backwards as forwards. A number defined this way is called __palindromic__. 

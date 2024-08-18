@@ -1,4 +1,4 @@
-# RoboScript #4 - RS3 Patterns to the Rescue
+# [RoboScript #4 - RS3 Patterns to the Rescue](https://www.codewars.com/kata/594b898169c1d644f900002e)
 
 ## Disclaimer
 

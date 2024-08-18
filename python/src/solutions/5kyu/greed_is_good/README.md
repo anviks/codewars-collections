@@ -1,4 +1,8 @@
+# [Greed is Good](https://www.codewars.com/kata/5270d0d18625160ada0000e4)
+
 Greed is a dice game played with five six-sided dice. Your mission, should you choose to accept it, is to score a throw according to these rules. You will always be given an array with five six-sided dice values.
+
+
 
 A single die can only be counted once in each roll. For example, a given "5" can only count as part of a 
 triplet (contributing to the 500 points) or as a single 50 points, but not both in the same roll.

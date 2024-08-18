@@ -1,3 +1,5 @@
+# [Multiplication table](https://www.codewars.com/kata/534d2f5b5371ecf8d2000a08)
+
 Your task, is to create N×N multiplication table, of size provided in parameter.
 
 For example, when given `size` is 3:
@@ -8,4 +10,7 @@ For example, when given `size` is 3:
 ```
 
 For the given example, the return value should be: 
+
+
+
 

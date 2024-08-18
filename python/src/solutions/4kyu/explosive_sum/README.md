@@ -1,3 +1,5 @@
+# [Explosive Sum](https://www.codewars.com/kata/52ec24228a515e620b0005ef)
+
 # How many ways can you make the sum of a number?
 
 From wikipedia: https://en.wikipedia.org/wiki/Partition_(number_theory)
@@ -15,6 +17,9 @@ From wikipedia: https://en.wikipedia.org/wiki/Partition_(number_theory)
 
 ### Basic
 
+
+
+
 ```python
 exp_sum(1) # 1
 exp_sum(2) # 2  -> 1+1 , 2
@@ -24,11 +29,22 @@ exp_sum(5) # 7 -> 1+1+1+1+1, 1+1+1+2, 1+1+3, 1+2+2, 1+4, 5, 2+3
 
 exp_sum(10) # 42
 ```
+
+
+
+
 ### Explosive
+
+
+
 
 ```python
 exp_sum(50) # 204226
 exp_sum(80) # 15796476
 exp_sum(100) # 190569292
 ```
+
+
+
+
 See [here](http://www.numericana.com/data/partition.htm) for more examples.

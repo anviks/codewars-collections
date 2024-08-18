@@ -1,3 +1,5 @@
+# [Alphabet slice puzzle!](https://www.codewars.com/kata/660d55d0ba01e5016c85cfeb)
+
 In this kata, you need to code a function that takes two parameters, A and B, both representing letters from the English alphabet.
 
 It is guaranteed that:

@@ -1,3 +1,5 @@
+# [String incrementer](https://www.codewars.com/kata/54a91a4883a7de5d7800009c)
+
 Your job is to write a function which increments a string, to create a new string.
 
 - If the string already ends with a number, the number should be incremented by 1.

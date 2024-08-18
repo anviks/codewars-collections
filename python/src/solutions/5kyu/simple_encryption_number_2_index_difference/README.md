@@ -1,3 +1,5 @@
+# [Simple Encryption #2 - Index-Difference](https://www.codewars.com/kata/simple-encryption-number-2-index-difference)
+
 For encrypting strings this region of chars is given (in this order!):
 
 * all letters (ascending, first all UpperCase, then all LowerCase)
@@ -7,10 +9,16 @@ For encrypting strings this region of chars is given (in this order!):
 These are 77 chars! (This region is zero-based.)<br/>
 
 Write two methods: <br/>
+
+
+
 ```python
 def encrypt(text)
 def decrypt(encrypted_text)
 ```
+
+
+
 Prechecks:<br>
 1. If the input-string has chars, that are not in the region, throw an Exception(C#, Python) or Error(JavaScript).<br>
 2. If the input-string is null or empty return exactly this value!<br>

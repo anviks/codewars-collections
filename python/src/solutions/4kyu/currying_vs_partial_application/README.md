@@ -1,3 +1,5 @@
+# [Currying vs. Partial Application](https://www.codewars.com/kata/currying-vs-partial-application)
+
 [Currying and partial application](http://www.2ality.com/2011/09/currying-vs-part-eval.html) are two ways of transforming a function into another function with a generally smaller arity. While they are often confused with each other, they work differently. The goal is to learn to differentiate them.
 
 ## Currying
@@ -30,22 +32,31 @@ then the curried `f'` is invoked as:
 
 Given this function:
 
+
 ```python
 def add(x, y, z):
   return x + y + z
 ```
+
+
 We can call in a normal way:
+
 
 
 ```python
 add(1, 2, 3) # => 6
 ```
+
+
 But we can create a curried version of `add(a, b, c)`function:
+
 
 ```python
 curriedAdd = lambda a: (lambda b: (lambda c: add(a,b,c)))
 curriedAdd(1)(2)(3) # => 6
 ```
+
+
 ## Partial application
 
 > Is the process of fixing a number of arguments to a function, producing another function of smaller arity.
@@ -66,15 +77,19 @@ f': Y → R
 
 ### Example
 
+
 ```python
 partialAdd = lambda a: (lambda *args: add(a,*args))
 partialAdd(1)(2, 3) # => 6
 ```
+
+
 -------------
 
 Your work is to implement a generic `curryPartial()` function allows either currying or partial application.
 
 For example:
+
 
 ```python
 curriedAdd = curryPartial(add)
@@ -83,9 +98,12 @@ curriedAdd(1)(2)(3) # => 6
 partialAdd = curryPartial(add, 1)
 partialAdd(2, 3) # => 6
 ```
+
+
 We want the function be very flexible.
 
 All these examples should produce the same result:
+
 
 ```python
 curryPartial(add)(1)(2)(3) # =>6 
@@ -101,7 +119,10 @@ curryPartial(add)()(1)()()(2)(3) # =>6
 curryPartial(add)()(1)()()(2)(3, 4, 5, 6) # =>6 
 curryPartial(add, 1)(2, 3, 4, 5) # =>6 
 ```
+
+
 And also all of these:
+
 
 ```python
 curryPartial(curryPartial(curryPartial(add, 1), 2), 3) # =>6
@@ -110,12 +131,4 @@ curryPartial(curryPartial(add, 1), 2, 3) # =>6
 curryPartial(curryPartial(add, 1), 2)(3) # =>6
 curryPartial(curryPartial(add, 1)(2), 3) # =>6
 curryPartial(curryPartial(curryPartial(add, 1)), 2, 3) # =>6
-```
-```php
-curryPartial(curryPartial(curryPartial($add, 1), 2), 3); # =>6
-curryPartial(curryPartial($add, 1, 2), 3); # =>6
-curryPartial(curryPartial($add, 1), 2, 3); # =>6
-curryPartial(curryPartial($add, 1), 2)(3); # =>6
-curryPartial(curryPartial($add, 1)(2), 3); # =>6
-curryPartial(curryPartial(curryPartial($add, 1)), 2, 3); # =>6
 ```

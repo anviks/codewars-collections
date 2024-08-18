@@ -1,3 +1,5 @@
+# [Mexican Wave](https://www.codewars.com/kata/58f5c63f1e26ecda7e000029)
+
 # Introduction
 
 <pre style="white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;">
@@ -18,9 +20,15 @@ In this simple Kata your task is to create a function that turns a string into a
 </pre>
 
 # Example
+
+
+
+
+
 ```python
 wave("hello") => ["Hello", "hEllo", "heLlo", "helLo", "hellO"]
 ```
+
 Good luck and enjoy!
 
 # Kata Series

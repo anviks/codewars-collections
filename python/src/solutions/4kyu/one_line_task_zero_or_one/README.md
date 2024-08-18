@@ -1,3 +1,5 @@
+# [One Line Task: Zero Or One](https://www.codewars.com/kata/one-line-task-zero-or-one)
+
 ## Task
  You are given an odd integer `n` and a two-dimensional array `s`, which contains `n` equal-sized arrays of `0s` and `1s`.
 

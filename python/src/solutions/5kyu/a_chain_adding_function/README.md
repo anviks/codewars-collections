@@ -1,10 +1,20 @@
+# [A Chain adding function](https://www.codewars.com/kata/539a0e4d85e3425cb0000a88)
+
 We want to create a function that will add numbers together when called in succession.
+
+
+
+
 
 ```python
 add(1)(2) # equals 3
 ```
 
 We also want to be able to continue to add numbers to our chain.
+
+
+
+
 
 ```python
 add(1)(2)(3) # 6
@@ -16,11 +26,19 @@ and so on.
 
 A single call should be equal to the number passed in.
 
+
+
+
+
 ```python
 add(1) # 1
 ```
 
 We should be able to store the returned values and reuse them.
+
+
+
+
 
 ```python
 addTwo = add(2)

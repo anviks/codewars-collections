@@ -1,3 +1,5 @@
+# [Break the pieces](https://www.codewars.com/kata/break-the-pieces)
+
 You are given a ASCII diagram, comprised of minus signs `-`, plus signs `+`, vertical bars `|` and whitespaces `  `.  Your task is to write a function which breaks the diagram in the minimal pieces it is made of.
 
 For example, if the input for your function is this diagram:
@@ -65,5 +67,6 @@ Have fun!
 
 
 Note : in C++ you are provided with two utility functions :
+
 ###### _Harder version of the kata available here:_ [_Break the Pieces (evilized edition)_](https://www.codewars.com/kata/break-the-pieces-evilized-edition)
 =======

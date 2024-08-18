@@ -1,3 +1,5 @@
+# [Help the bookseller !](https://www.codewars.com/kata/54dc6f5a224c26032800005c)
+
 A bookseller has lots of books classified in 26 categories labeled A, B, ... Z. 
 Each book has a code `c` of 3, 4, 5 or more characters. The **1st** character of a code is a capital letter which defines the book category.
   

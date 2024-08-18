@@ -1,3 +1,5 @@
+# [Fibonacci Reloaded](https://www.codewars.com/kata/52549d3e19453df56f0000fe)
+
 And here is Fibonacci again. This time we want to go one step further. Our `fib()` function must be faster! Can you do it?
 
 In case you don't know, what the Fibonacci number is:

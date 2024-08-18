@@ -1,3 +1,5 @@
+# [Decode the Morse code, advanced](https://www.codewars.com/kata/decode-the-morse-code-advanced)
+
 <div style="border:1px solid;position:relative;padding:1ex 1ex 1ex 11.1em;"><div style="position:absolute; left:0;top:0;bottom:0; width:10em; padding:1ex;text-align:center;border:1px solid;margin:0 1ex 0 0;color:#000;background-color:#eee;font-variant:small-caps">Part of Series 2/3</div>
 <div>
 
@@ -34,6 +36,13 @@ That said, your task is to implement two functions:
 **NOTE:** For coding purposes you have to use ASCII characters `.` and `-`, not Unicode characters.
 
 The Morse code table is preloaded for you (see the solution setup, to get its identifier in your language).
+```scala
+
+Eg:
+  morseCodes(".--") //to access the morse translation of ".--"
+
+```
+
 All the test strings would be valid to the point that they could be reliably decoded as described above, so you may skip checking for errors and exceptions, just do your best in figuring out what the message is!
 
 Good luck!

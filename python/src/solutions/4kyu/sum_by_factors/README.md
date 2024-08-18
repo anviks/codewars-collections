@@ -1,3 +1,5 @@
+# [Sum by Factors](https://www.codewars.com/kata/54d496788776e49e6b00052f)
+
 Given an array of positive or negative integers 
 
 <code> I= [i<sub>1</sub>,..,i<sub>n</sub>]</code>
@@ -11,9 +13,25 @@ The final result has to be given as a string in Java, C#, C, C++ and as an array
 
 #### Example:
 
+
 ```python
 I = [12, 15] # result = [[2, 12], [3, 27], [5, 15]]
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 [2, 3, 5] is the list of all prime factors of the elements of I, hence the result.
 
 **Notes:**

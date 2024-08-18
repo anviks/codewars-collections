@@ -1,3 +1,5 @@
+# [[Code Golf] Number Pyramid Series 6(Revised) - Left or Right](https://www.codewars.com/kata/62eedcfc729041000ea082c1)
+
 _(Revised version from previous series 6)_
 
 # Number Pyramid:

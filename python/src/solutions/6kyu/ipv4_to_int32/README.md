@@ -1,3 +1,5 @@
+# [IPv4 to int32](https://www.codewars.com/kata/52ea928a1ef5cfec800003ee)
+
 Take the following IPv4 address:  `128.32.10.1`. This address has 4 octets where each octet is a single byte (or 8 bits).
 
 * 1st octet 128 has the binary representation: 10000000
@@ -15,4 +17,6 @@ a 32 bit number.
 
 
 ### Example
+
+
 

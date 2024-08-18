@@ -1,3 +1,5 @@
+# [The Supermarket Queue](https://www.codewars.com/kata/57b06f90e298a7b53d000a86)
+
 There is a queue for the self-checkout tills at the supermarket. Your task is write a function to calculate the total time required for all the customers to check out!
 
 ### input
@@ -15,6 +17,8 @@ The function should return an integer, the total time required.
 
 ### Examples
 
+
+
 ```python
 queue_time([5,3,4], 1)
 # should return 12
@@ -28,6 +32,12 @@ queue_time([10,2,3,3], 2)
 queue_time([2,3,10], 2)
 # should return 12
 ```
+
+
+
+
+
+
 ### Clarifications
 
  * There is only ONE queue serving many tills, and

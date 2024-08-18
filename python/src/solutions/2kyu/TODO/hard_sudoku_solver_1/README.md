@@ -1,3 +1,5 @@
+# [Hard Sudoku Solver](https://www.codewars.com/kata/5588bd9f28dbb06f43000085)
+
 There are several difficulty of sudoku games, we can estimate the difficulty of a sudoku game based on how many cells are given of the 81 cells of the game.
 
 - Easy sudoku generally have over 32 givens

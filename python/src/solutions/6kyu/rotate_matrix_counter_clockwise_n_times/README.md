@@ -1,3 +1,5 @@
+# [Rotate matrix counter -  clockwise N - times!](https://www.codewars.com/kata/5919f3bf6589022915000023)
+
 In this kata your mission is to rotate matrix counter - clockwise N-times.
 
 So, you will have 2 inputs:

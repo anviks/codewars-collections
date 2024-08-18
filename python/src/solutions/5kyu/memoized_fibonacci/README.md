@@ -1,6 +1,10 @@
+# [Memoized Fibonacci](https://www.codewars.com/kata/529adbf7533b761c560004e5)
+
 ### Problem Context
 
 The [Fibonacci](http://en.wikipedia.org/wiki/Fibonacci_number) sequence is traditionally used to explain tree recursion.  
+
+
 
 ```python
 def fibonacci(n):
@@ -8,6 +12,10 @@ def fibonacci(n):
         return n
     return fibonacci(n - 1) + fibonacci(n - 2)
 ```
+
+
+
+
 This algorithm serves welll its educative purpose but it's [tremendously inefficient](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-11.html#%_sec_1.2.2), not only because of recursion, but because we invoke the fibonacci function twice, and the right branch of recursion (i.e. `fibonacci(n-2)`) recalculates all the Fibonacci numbers already calculated by the left branch (i.e. `fibonacci(n-1)`).
 
 This algorithm is so inefficient that the time to calculate any Fibonacci number over 50 is simply too much. You may go for a cup of coffee or go take a nap while you wait for the answer. But if you try it here in Code Wars you will most likely get a code timeout before any answers.

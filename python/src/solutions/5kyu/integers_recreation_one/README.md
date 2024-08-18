@@ -1,3 +1,5 @@
+# [Integers: Recreation One](https://www.codewars.com/kata/55aa075506463dac6600010d)
+
 `1, 246, 2, 123, 3, 82, 6, 41` are the divisors of number `246`. Squaring these divisors we get: `1, 60516, 4, 15129, 9, 6724, 36, 1681`. The sum of these squares is `84100` which is `290 * 290`.
 
 #### Task

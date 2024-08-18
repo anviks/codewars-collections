@@ -1,3 +1,5 @@
+# [Simple assembler interpreter](https://www.codewars.com/kata/simple-assembler-interpreter)
+
 This is the first part of this kata series. Second part is [here](https://www.codewars.com/kata/assembler-interpreter-part-ii/).
 
 We want to create a simple interpreter of assembler which will support the following instructions:
@@ -39,7 +41,19 @@ The above code will:
 
 So, the function should return:
 
+
 ```python
 {'a': 1}
 ```
+
+
+
+
+
+
+
+
+
+
+
 This kata is based on the [Advent of Code 2016 - day 12](https://adventofcode.com/2016/day/12)

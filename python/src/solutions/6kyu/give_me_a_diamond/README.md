@@ -1,3 +1,5 @@
+# [Give me a Diamond](https://www.codewars.com/kata/5503013e34137eeeaa001648)
+
 Jamie is a programmer, and James' girlfriend. She likes diamonds, and wants a diamond string from James. Since James doesn't know how to make this happen, he needs your help.
 
 ## Task
