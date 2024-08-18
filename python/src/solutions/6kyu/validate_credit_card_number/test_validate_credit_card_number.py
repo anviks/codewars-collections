@@ -1,16 +1,13 @@
 """https://www.codewars.com/kata/5418a1dd6d8216e18a0012b2"""
 
-import unittest
-
-from solution_validate_credit_card_number import validate
+from solution_validate_credit_card_number import *
 
 
-class SampleTests(unittest.TestCase):
-    def test_some_examples(self):
-        self.assertEqual(validate(1714), False)
-        self.assertEqual(validate(12345), False)
-        self.assertEqual(validate(891), False)
-        self.assertEqual(validate(123), False)
-        self.assertEqual(validate(1), False)
-        self.assertEqual(validate(2121), True)
-        self.assertEqual(validate(1230), True)
+def test_sample_tests__some_examples():
+    assert validate(1714) is False
+    assert validate(12345) is False
+    assert validate(891) is False
+    assert validate(123) is False
+    assert validate(1) is False
+    assert validate(2121) is True
+    assert validate(1230) is True

@@ -1,8 +1,7 @@
 """https://www.codewars.com/kata/63d1bac72de941033dbf87ae"""
+import pytest
 
-import unittest
-
-from solution_sudoku_board_validator import validate_sudoku
+from solution_sudoku_board_validator import *
 
 fixed_boards = [
     ([[5, 5, 5, 5, 5, 5, 5, 5, 5],
@@ -176,21 +175,18 @@ def clone(board):
 
 def stringify(board):
     def strrow(row):
-        return f"{row[0]}{row[1]}{row[2]}|{row[3]}{row[4]}{row[5]}|{row[6]}{row[7]}{row[8]}"
+        return f'{row[0]}{row[1]}{row[2]}|{row[3]}{row[4]}{row[5]}|{row[6]}{row[7]}{row[8]}'
 
     rows = [strrow(row) for row in board]
-    rows.insert(6, "---+---+---")
-    rows.insert(3, "---+---+---")
-    return "\n".join(rows)
+    rows.insert(6, '---+---+---')
+    rows.insert(3, '---+---+---')
+    return '\n'.join(rows)
 
 
-class Tests(unittest.TestCase):
-    def do_test(self, board, expected):
-        input_ = clone(board)
-        actual = validate_sudoku(input_)
-        self.assertEqual(actual, expected, f"Incorrect answer for board:\n\n{stringify(board)}\n")
-        self.assertEqual(input_, board, "Input board must not be modified")
+@pytest.mark.parametrize('board, expected', fixed_boards)
+def test_tests__fixed_tests(board, expected):
+    input_ = clone(board)
+    actual = validate_sudoku(input_)
 
-    def test_fixed_tests(self):
-        for board, expected in fixed_boards:
-            self.do_test(board, expected)
+    assert actual == expected, f'Incorrect answer for board:\n\n{stringify(board)}\n'
+    assert input_ == board, 'Input board must not be modified'

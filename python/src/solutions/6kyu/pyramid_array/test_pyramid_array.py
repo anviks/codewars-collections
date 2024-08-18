@@ -1,13 +1,10 @@
 """https://www.codewars.com/kata/515f51d438015969f7000013"""
 
-import unittest
-
-from solution_pyramid_array import pyramid
+from solution_pyramid_array import *
 
 
-class PyramidArray(unittest.TestCase):
-    def test_sample_tests(self):
-        self.assertEqual(pyramid(0), [])
-        self.assertEqual(pyramid(1), [[1]])
-        self.assertEqual(pyramid(2), [[1], [1, 1]])
-        self.assertEqual(pyramid(3), [[1], [1, 1], [1, 1, 1]])
+def test_pyramid_array__sample_tests():
+    assert pyramid(0) == []
+    assert pyramid(1) == [[1]]
+    assert pyramid(2) == [[1], [1, 1]]
+    assert pyramid(3) == [[1], [1, 1], [1, 1, 1]]

@@ -1,14 +1,11 @@
 """https://www.codewars.com/kata/526571aae218b8ee490006f4"""
 
-import unittest
-
-from solution_bit_counting import count_bits
+from solution_bit_counting import *
 
 
-class FixedTests(unittest.TestCase):
-    def test_basic_tests(self):
-        self.assertEqual(count_bits(0), 0)
-        self.assertEqual(count_bits(4), 1)
-        self.assertEqual(count_bits(7), 3)
-        self.assertEqual(count_bits(9), 2)
-        self.assertEqual(count_bits(10), 2)
+def test_fixed_tests__basic_tests():
+    assert count_bits(0) == 0
+    assert count_bits(4) == 1
+    assert count_bits(7) == 3
+    assert count_bits(9) == 2
+    assert count_bits(10) == 2

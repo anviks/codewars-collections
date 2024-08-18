@@ -1,15 +1,12 @@
 """https://www.codewars.com/kata/660d55d0ba01e5016c85cfeb"""
 
-import unittest
-
-from solution_alphabet_slice_puzzle import slice
+from solution_alphabet_slice_puzzle import *
 
 
-class SampleTests(unittest.TestCase):
-    def test_basic_test_cases(self):
-        self.assertEqual(slice("A", "A"), "A", "")
-        self.assertEqual(slice("A", "F"), "ABCDEF", "")
+def test_sample_tests__basic_test_cases():
+    assert slice('A', 'A') == 'A'
+    assert slice('A', 'F') == 'ABCDEF'
 
-        print("lowercase")
-        self.assertEqual(slice("l", "l"), "l", "")
-        self.assertEqual(slice("a", "z"), "abcdefghijklmnopqrstuvwxyz", "")
+    print('lowercase')
+    assert slice('l', 'l') == 'l'
+    assert slice('a', 'z') == 'abcdefghijklmnopqrstuvwxyz'

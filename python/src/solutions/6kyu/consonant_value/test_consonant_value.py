@@ -1,18 +1,15 @@
 """https://www.codewars.com/kata/59c633e7dcc4053512000073"""
 
-import unittest
-
-from solution_consonant_value import solve
+from solution_consonant_value import *
 
 
-class FixedTests(unittest.TestCase):
-    def test_basic_test_cases(self):
-        self.assertEqual(solve("cozy"), 51)
-        self.assertEqual(solve("xyzzy"), 126)
-        self.assertEqual(solve("zodiac"), 26)
-        self.assertEqual(solve("chruschtschov"), 80)
-        self.assertEqual(solve("khrushchev"), 38)
-        self.assertEqual(solve("strength"), 57)
-        self.assertEqual(solve("catchphrase"), 73)
-        self.assertEqual(solve("twelfthstreet"), 103)
-        self.assertEqual(solve("mischtschenkoana"), 80)
+def test_fixed_tests__basic_test_cases():
+    assert solve('cozy') == 51
+    assert solve('xyzzy') == 126
+    assert solve('zodiac') == 26
+    assert solve('chruschtschov') == 80
+    assert solve('khrushchev') == 38
+    assert solve('strength') == 57
+    assert solve('catchphrase') == 73
+    assert solve('twelfthstreet') == 103
+    assert solve('mischtschenkoana') == 80
