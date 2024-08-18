@@ -1,13 +1,10 @@
 """https://www.codewars.com/kata/strip-comments"""
 
-import unittest
-
-from solution_strip_comments import strip_comments
+from solution_strip_comments import *
 
 
-class TestCase(unittest.TestCase):
-    def test_example(self):
-        self.assertEqual(strip_comments('apples, pears # and bananas\ngrapes\nbananas !apples', ['#', '!']),
-                         'apples, pears\ngrapes\nbananas')
-        self.assertEqual(strip_comments('a #b\nc\nd $e f g', ['#', '$']), 'a\nc\nd')
-        self.assertEqual(strip_comments(' a #b\nc\nd $e f g', ['#', '$']), ' a\nc\nd')
+def test_test_case__example():
+    assert strip_comments('apples, pears # and bananas\ngrapes\nbananas !apples',
+                          ['#', '!']) == 'apples, pears\ngrapes\nbananas'
+    assert strip_comments('a #b\nc\nd $e f g', ['#', '$']) == 'a\nc\nd'
+    assert strip_comments(' a #b\nc\nd $e f g', ['#', '$']) == ' a\nc\nd'

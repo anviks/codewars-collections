@@ -1,7 +1,6 @@
 """https://www.codewars.com/kata/57658bfa28ed87ecfa00058a"""
-import unittest
 
-from solution_path_finder_2_shortest_path import path_finder
+from solution_path_finder_number_2_shortest_path import *
 
 a = "\n".join([
     ".W.",
@@ -34,9 +33,8 @@ d = "\n".join([
 ])
 
 
-class SolutionTests(unittest.TestCase):
-    def test_solution(self):
-        self.assertEqual(path_finder(a), 4)
-        self.assertFalse(path_finder(b))
-        self.assertEqual(path_finder(c), 10)
-        self.assertFalse(path_finder(d))
+def test_example():
+    assert path_finder(a) == 4
+    assert path_finder(b) is False
+    assert path_finder(c) == 10
+    assert path_finder(d) is False

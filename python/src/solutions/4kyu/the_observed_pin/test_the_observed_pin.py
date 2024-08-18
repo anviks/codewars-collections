@@ -1,14 +1,11 @@
 """https://www.codewars.com/kata/5263c6999e0f40dee200059d"""
-
-import unittest
-
-from parameterized import parameterized
+import pytest
 
 from solution_the_observed_pin import get_pins
 
 
-class SampleTests(unittest.TestCase):
-    @parameterized.expand([
+@pytest.mark.parametrize(
+    "pin, expected", [
         ('8', ['5', '7', '8', '9', '0']),
         ('11', ["11", "22", "44", "12", "21", "14", "41", "24", "42"]),
         ('369', [
@@ -16,8 +13,9 @@ class SampleTests(unittest.TestCase):
             "256", "296", "259", "368", "638", "396", "238", "356", "659", "639", "666", "359",
             "336", "299", "338", "696", "269", "358", "656", "698", "699", "298", "236", "239"
         ])
-    ])
-    def test_examples(self, pin, expected):
-        actual = sorted(get_pins(pin))
-        exp = sorted(expected)
-        self.assertEqual(actual, exp, 'PIN: ' + pin)
+    ]
+)
+def test_example(pin, expected):
+    actual = sorted(get_pins(pin))
+    exp = sorted(expected)
+    assert actual == exp, 'PIN: ' + pin
