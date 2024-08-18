@@ -1,16 +1,25 @@
-<p>Given an array (arr) as an argument complete the function <code>countSmileys</code> that should return the total number of smiling faces.  </p>
-<p>Rules for a smiling face:</p>
-<ul>
-<li>Each smiley face must contain a valid pair of eyes. Eyes can be marked as <code>:</code> or <code>;</code></li>
-<li>A smiley face can have a nose but it does not have to. Valid characters for a nose are <code>-</code> or <code>~</code></li>
-<li>Every smiling face must have a smiling mouth that should be marked with either <code>)</code> or <code>D</code></li>
-</ul>
-<p>No additional characters are allowed except for those mentioned.  </p>
-<p><strong>Valid smiley face examples:</strong> <code>:) :D ;-D :~)</code><br><strong>Invalid smiley faces:</strong>  <code>;( :&gt; :} :]</code></p>
-<h2 id="example">Example</h2>
-<pre><code>countSmileys([':)', ';(', ';}', ':-D']);       // should return 2;
+# [Count the smiley faces!](https://www.codewars.com/kata/583203e6eb35d7980400002a)
+
+Given an array (arr) as an argument complete the function `countSmileys` that should return the total number of smiling faces.  
+
+Rules for a smiling face:
+- Each smiley face must contain a valid pair of eyes. Eyes can be marked as `:` or `;`
+- A smiley face can have a nose but it does not have to. Valid characters for a nose are `-` or `~`
+- Every smiling face must have a smiling mouth that should be marked with either `)` or `D`
+
+No additional characters are allowed except for those mentioned.  
+
+**Valid smiley face examples:** `:) :D ;-D :~)`  
+**Invalid smiley faces:**  `;( :> :} :]`
+
+## Example
+
+```
+countSmileys([':)', ';(', ';}', ':-D']);       // should return 2;
 countSmileys([';D', ':-(', ':-)', ';~)']);     // should return 3;
 countSmileys([';]', ':[', ';*', ':$', ';-D']); // should return 1;
-</code></pre>
-<h2 id="note">Note</h2>
-<p>In case of an empty array return 0. You will not be tested with invalid input (input will always be an array). Order of the face (eyes, nose, mouth) elements will always be the same.</p>
+```
+
+## Note
+
+In case of an empty array return 0. You will not be tested with invalid input (input will always be an array). Order of the face (eyes, nose, mouth) elements will always be the same.
