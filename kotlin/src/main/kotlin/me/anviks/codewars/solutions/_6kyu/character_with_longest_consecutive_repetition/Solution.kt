@@ -4,7 +4,7 @@
 
 package me.anviks.codewars.solutions._6kyu.character_with_longest_consecutive_repetition
 
-object KataSolution {
+object Solution {
     fun longestRepetition(s: String): Pair<Char?,Int> {
         if (s.isEmpty()) return Pair(null, 0)
         var max = 1

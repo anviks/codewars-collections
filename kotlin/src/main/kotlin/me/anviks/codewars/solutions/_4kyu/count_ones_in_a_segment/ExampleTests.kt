@@ -9,7 +9,7 @@ import kotlin.test.assertEquals
 
 class ExampleTests {
     private fun runTest(left: Long, right: Long, sol: Long) = assertEquals(sol,
-        Kata.countOnes(left, right)
+        Solution.countOnes(left, right)
     )
 
     @Test

@@ -7,9 +7,9 @@ package me.anviks.codewars.solutions._6kyu.character_with_longest_consecutive_re
 import org.junit.Test
 import kotlin.test.assertEquals
 
-class ExampleTests {
+class SolutionTests {
     private fun runTest(s: String,sol: Pair<Char?,Int>) = assertEquals(sol,
-        me.anviks.codewars.solutions._6kyu.character_with_longest_consecutive_repetition.KataSolution.longestRepetition(
+        Solution.longestRepetition(
             s
         )
     )

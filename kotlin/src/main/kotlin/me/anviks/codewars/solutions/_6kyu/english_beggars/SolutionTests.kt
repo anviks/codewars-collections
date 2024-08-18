@@ -7,7 +7,7 @@ package me.anviks.codewars.solutions._6kyu.english_beggars
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-class BasicTests {
+class SolutionTests {
     @Test
     fun basicTests() {
         assertEquals(listOf(15), beggars(listOf(1, 2, 3, 4, 5), 1))

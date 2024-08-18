@@ -2,10 +2,11 @@
  * https://www.codewars.com/kata/511f11d355fe575d2c000001
  */
 
-package me.anviks.codewars.solutions._7kyu.two_oldest_ages
+package me.anviks.codewars.solutions._7kyu.two_oldest_ages_1
 
 import io.kotlintest.matchers.shouldBe
 import io.kotlintest.specs.StringSpec
+import me.anviks.codewars.solutions._7kyu.two_oldest_ages_1.twoOldestAges
 
 class TestTwoOldestAges : StringSpec() {
     init {

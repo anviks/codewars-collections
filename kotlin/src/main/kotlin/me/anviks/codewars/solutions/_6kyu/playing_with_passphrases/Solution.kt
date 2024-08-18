@@ -4,7 +4,7 @@
 
 package me.anviks.codewars.solutions._6kyu.playing_with_passphrases
 
-object PlayPass {
+object Solution {
     fun playPass(s: String, n: Int): String =
         s.map {
             if (it.isLetter()) ((it - 'A' + n) % 26 + 'A'.code).toChar()

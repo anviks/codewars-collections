@@ -9,7 +9,7 @@ import kotlin.math.log2
 import kotlin.math.pow
 
 
-object Kata {
+object Solution {
     private fun numberOfOnes(x: Long): Long {
         var result = 0L
         var current = x

@@ -7,7 +7,7 @@ package me.anviks.codewars.solutions._6kyu.rectangle_into_squares
 import org.junit.Assert.*
 import org.junit.Test
 
-class SquaresTest {
+class SolutionTest {
     private fun dotest(lng: Int, wdth: Int, expect: List<Int>?) {
         println("lng: " + lng.toString() + " wdth: " + wdth.toString())
         val actual = sqInRect(lng, wdth)

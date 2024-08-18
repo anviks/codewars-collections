@@ -7,7 +7,7 @@ package me.anviks.codewars.solutions._6kyu.find_the_parity_outlier
 import kotlin.test.assertEquals
 import org.junit.Test
 
-class TestExample {
+class SolutionTest {
     @Test
     fun testExample() {
         val exampleTest1 = arrayOf(2, 6, 8, -10, 3)

@@ -7,7 +7,7 @@ package me.anviks.codewars.solutions._6kyu.find_the_missing_letter
 import org.junit.Test
 import kotlin.test.assertEquals
 
-class MissingLetterTests {
+class SolutionTests {
 
     @Test
     fun exampleTests() {

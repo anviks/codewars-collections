@@ -7,7 +7,7 @@ package me.anviks.codewars.solutions._6kyu.lottery_ticket
 import kotlin.test.assertEquals
 import org.junit.Test
 
-class TestExample {
+class SolutionTests {
     @Test
     fun `Basic tests`() {
         assertEquals("Loser!", bingo(arrayOf("ABC" to 65, "HGR" to 74, "BYHT" to 74), 2))
