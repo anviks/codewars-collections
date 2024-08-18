@@ -5,7 +5,6 @@ import pytest
 from solution_4_by_4_skyscrapers import solve_puzzle
 
 
-@pytest.mark.skip("Skip incomplete kata")
 @pytest.mark.parametrize('clue, outcome', [
     ((2, 2, 1, 3,
       2, 2, 3, 1,
