@@ -2,7 +2,7 @@
  * https://www.codewars.com/kata/5935558a32fb828aad001213
  */
 
-import { f } from './solution_multi_line_task_hello_world.js';
+import { f } from './solution_multi_line_task_plus_plus_hello_world.js';
 import { assert } from 'chai';
 import fs from 'node:fs';
 import { dirname } from 'path';

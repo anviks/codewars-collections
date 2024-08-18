@@ -2,7 +2,7 @@
  * https://www.codewars.com/kata/5655c60db4c2ce0c2e000026
  */
 
-import { compose } from './solution_function_composition.js';
+import { compose } from './solution_function_composition_1.js';
 import { assert } from 'chai';
 
 const addOne = (a) => a + 1;

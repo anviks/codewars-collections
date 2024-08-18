@@ -2,7 +2,7 @@
  * https://www.codewars.com/kata/5a353a478f27f244a1000076
  */
 
-import { sayJoke } from './solution_jokes_you_ve_been_awaiting_for_promise.js';
+import { sayJoke } from './solution_jokes_youve_been_awaiting_for_dot_dot_dot_promise.js';
 import { assert } from 'chai';
 
 
