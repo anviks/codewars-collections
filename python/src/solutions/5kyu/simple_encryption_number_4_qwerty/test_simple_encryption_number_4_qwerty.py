@@ -1,27 +1,27 @@
 """https://www.codewars.com/kata/simple-encryption-number-4-qwerty"""
-import unittest
-from solution_simple_encryption_4_qwerty import encrypt, decrypt
+
+from solution_simple_encryption_number_4_qwerty import *
 
 
-class ExampleTests(unittest.TestCase):
-    def test_encryption_tests(self):
-        self.assertEqual(encrypt("A", 111), "S")
-        self.assertEqual(encrypt("Abc", 212), "Smb")
-        self.assertEqual(encrypt("Wave", 0), "Wave") # -> 000
-        self.assertEqual(encrypt("Wave", 345), "Tg.y")
-        self.assertEqual(encrypt("Ball", 134), ">fdd")
-        self.assertEqual(encrypt("Ball", 444), ">gff")
-        
-        self.assertEqual(encrypt("This is a test.", 348), "Iaqh qh g iyhi,")
-        self.assertEqual(encrypt("Do the kata Kobayashi Maru Test. Endless fun and excitement when finding a solution.", 583),                  "Sr pgi jlpl Jr,lqlage Zlow Piapc I.skiaa dw. l.s ibnepizi.p ugi. de.se.f l arkwper.c")
+def test_example_tests__encryption_tests():
+    assert encrypt('A', 111) == 'S'
+    assert encrypt('Abc', 212) == 'Smb'
+    assert encrypt('Wave', 0) == 'Wave'
+    assert encrypt('Wave', 345) == 'Tg.y'
+    assert encrypt('Ball', 134) == '>fdd'
+    assert encrypt('Ball', 444) == '>gff'
+    assert encrypt('This is a test.', 348) == 'Iaqh qh g iyhi,'
+    assert (encrypt('Do the kata Kobayashi Maru Test. Endless fun and excitement when finding a solution.', 583)
+            == 'Sr pgi jlpl Jr,lqlage Zlow Piapc I.skiaa dw. l.s ibnepizi.p ugi. de.se.f l arkwper.c')
 
-    def test_decryption_tests(self):
-        self.assertEqual(decrypt("S", 111), "A")
-        self.assertEqual(decrypt("Smb", 212), "Abc")
-        self.assertEqual(decrypt("Wave", 0), "Wave") # -> 000
-        self.assertEqual(decrypt("Tg.y", 345), "Wave")
-        self.assertEqual(decrypt(">fdd", 134), "Ball")
-        self.assertEqual(decrypt(">gff", 444), "Ball")
-        
-        self.assertEqual(decrypt("Iaqh qh g iyhi,", 348), "This is a test.")
-        self.assertEqual(decrypt("Sr pgi jlpl Jr,lqlage Zlow Piapc I.skiaa dw. l.s ibnepizi.p ugi. de.se.f l arkwper.c", 583),                  "Do the kata Kobayashi Maru Test. Endless fun and excitement when finding a solution.")
+
+def test_example_tests__decryption_tests():
+    assert decrypt('S', 111) == 'A'
+    assert decrypt('Smb', 212) == 'Abc'
+    assert decrypt('Wave', 0) == 'Wave'
+    assert decrypt('Tg.y', 345) == 'Wave'
+    assert decrypt('>fdd', 134) == 'Ball'
+    assert decrypt('>gff', 444) == 'Ball'
+    assert decrypt('Iaqh qh g iyhi,', 348) == 'This is a test.'
+    assert (decrypt('Sr pgi jlpl Jr,lqlage Zlow Piapc I.skiaa dw. l.s ibnepizi.p ugi. de.se.f l arkwper.c', 583)
+            == 'Do the kata Kobayashi Maru Test. Endless fun and excitement when finding a solution.')
