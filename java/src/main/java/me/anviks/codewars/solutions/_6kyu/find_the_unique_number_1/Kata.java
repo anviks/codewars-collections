@@ -2,7 +2,7 @@
  * https://www.codewars.com/kata/585d7d5adb20cf33cb000235
  */
 
-package me.anviks.codewars.solutions._6kyu.find_the_unique_number;
+package me.anviks.codewars.solutions._6kyu.find_the_unique_number_1;
 
 import java.util.Arrays;
 

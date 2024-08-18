@@ -2,7 +2,7 @@
  * https://www.codewars.com/kata/6411b91a5e71b915d237332d
  */
 
-package me.anviks.codewars.solutions._7kyu.valid_parentheses;
+package me.anviks.codewars.solutions._7kyu.valid_parentheses_1;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

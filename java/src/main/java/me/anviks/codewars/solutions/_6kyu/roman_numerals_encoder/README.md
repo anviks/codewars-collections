@@ -1,24 +1,32 @@
-<p>Create a function taking a positive integer between <code>1</code> and <code>3999</code> (both included) as its parameter and returning a string containing the Roman Numeral representation of that integer.</p>
-<p>Modern Roman numerals are written by expressing each digit separately starting with the leftmost digit and skipping any digit with a value of zero. There cannot be more than 3 identical symbols in a row.</p>
-<p>In Roman numerals:</p>
-<ul>
-<li><code>1990</code> is rendered: <code>1000</code>=<code>M</code> + <code>900</code>=<code>CM</code> + <code>90</code>=<code>XC</code>; resulting in <code>MCMXC</code>.</li>
-<li><code>2008</code> is written as <code>2000</code>=<code>MM</code>, <code>8</code>=<code>VIII</code>; or <code>MMVIII</code>.</li>
-<li><code>1666</code> uses each Roman symbol in descending order: <code>MDCLXVI</code>.</li>
-</ul>
-<p>Example:</p>
-<pre><code>   1 --&gt;       "I"
-1000 --&gt;       "M"
-1666 --&gt; "MDCLXVI"
-</code></pre>
-<p>Help:</p>
-<pre><code>Symbol    Value
-I          1
-V          5
-X          10
-L          50
-C          100
-D          500
-M          1,000
-</code></pre>
-<p><a href="https://en.wikipedia.org/wiki/Roman_numerals" data-turbolinks="false" target="_blank">More about roman numerals</a></p>
+# [Roman Numerals Encoder](https://www.codewars.com/kata/51b62bf6a9c58071c600001b)
+
+Create a function taking a positive integer between `1` and `3999` (both included) as its parameter and returning a string containing the Roman Numeral representation of that integer.
+
+Modern Roman numerals are written by expressing each digit separately starting with the leftmost digit and skipping any digit with a value of zero. There cannot be more than 3 identical symbols in a row.
+
+
+In Roman numerals:
+* `1990` is rendered: `1000`=`M` + `900`=`CM` + `90`=`XC`; resulting in `MCMXC`.
+* `2008` is written as `2000`=`MM`, `8`=`VIII`; or `MMVIII`.
+* `1666` uses each Roman symbol in descending order: `MDCLXVI`.
+
+Example:
+```
+   1 -->       "I"
+1000 -->       "M"
+1666 --> "MDCLXVI"
+```
+
+Help:
+```
+Symbol	Value
+I	      1
+V	      5
+X	      10
+L	      50
+C	      100
+D	      500
+M	      1,000
+```
+
+[More about roman numerals](https://en.wikipedia.org/wiki/Roman_numerals)

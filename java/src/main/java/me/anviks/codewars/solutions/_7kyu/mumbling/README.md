@@ -1,7 +1,12 @@
-<p>This time no story, no theory. The examples below show you how to write function <code>accum</code>:</p>
-<h4 id="examples">Examples:</h4>
-<pre><code>accum("abcd") -&gt; "A-Bb-Ccc-Dddd"
-accum("RqaEzty") -&gt; "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
-accum("cwAt") -&gt; "C-Ww-Aaa-Tttt"
-</code></pre>
-<p>The parameter of accum is a string which includes only letters from <code>a..z</code> and <code>A..Z</code>.</p>
+# [Mumbling](https://www.codewars.com/kata/5667e8f4e3f572a8f2000039)
+
+This time no story, no theory. The examples below show you how to write function `accum`:
+
+#### Examples:
+```
+accum("abcd") -> "A-Bb-Ccc-Dddd"
+accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+accum("cwAt") -> "C-Ww-Aaa-Tttt"
+```
+
+The parameter of accum is a string which includes only letters from `a..z` and `A..Z`.
