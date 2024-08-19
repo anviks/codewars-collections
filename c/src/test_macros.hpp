@@ -1,0 +1,6 @@
+#ifndef CODEWARS_C_TEST_MACROS_HPP
+#define CODEWARS_C_TEST_MACROS_HPP
+
+#define REQUIRE_MSG(expr, msg) INFO(msg); REQUIRE(expr);
+
+#endif //CODEWARS_C_TEST_MACROS_HPP
