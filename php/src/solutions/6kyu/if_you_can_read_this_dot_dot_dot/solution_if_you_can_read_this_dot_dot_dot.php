@@ -4,7 +4,6 @@
  * https://www.codewars.com/kata/586538146b56991861000293
  */
 
-
 function to_nato($words): string
 {
     $NATO = [
@@ -36,7 +35,7 @@ function to_nato($words): string
         'Z' => 'Zulu',
     ];
 
-    
+
     $result = '';
 
     foreach (str_split($words) as $char) {

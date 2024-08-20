@@ -5,7 +5,7 @@ use PHPUnit\Framework\TestCase;
 require 'solution_strip_comments.php';
 
 
-class SolutionTest extends TestCase
+class StripCommentsTest extends TestCase
 {
     public function testShouldReturnStringWithoutComments()
     {

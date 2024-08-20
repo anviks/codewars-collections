@@ -8,7 +8,8 @@ use PHPUnit\Framework\TestCase;
 
 require 'solution_dashatize_it.php';
 
-class MyTest extends TestCase
+
+class DashatizeItTest extends TestCase
 {
     public function testBasic() {
         $this->assertSame('2-7-4', dashatize(274));

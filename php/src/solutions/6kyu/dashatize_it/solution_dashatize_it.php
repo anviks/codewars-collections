@@ -20,9 +20,9 @@ function dashatize(int $num): string
             $chars[] = $item;
         }
     }
-    
+
     unset($chars[0]);
     if ($num % 2 == 1) unset($chars[sizeof($chars)]);
-    
+
     return implode($chars);
 }
