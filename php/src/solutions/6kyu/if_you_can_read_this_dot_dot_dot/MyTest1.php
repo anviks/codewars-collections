@@ -6,7 +6,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-require 'solution_if_you_can_read_this.php';
+require 'solution_if_you_can_read_this_dot_dot_dot.php';
 
 
 class MyTest1 extends TestCase
