@@ -19,4 +19,3 @@ bool is_prime(int num) {
     }
     return 1;
 }
-

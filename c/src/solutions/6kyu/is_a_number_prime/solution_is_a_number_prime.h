@@ -4,10 +4,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-    
-    #include <stdbool.h>
-    bool is_prime(int number);
-    
+
+#include <stdbool.h>
+bool is_prime(int num);
+
 #ifdef __cplusplus
 }
 #endif

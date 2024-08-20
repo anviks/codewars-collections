@@ -4,6 +4,9 @@
 #include <vector>
 #include <string>
 
-bool check_word(const std::vector<std::vector<char>>& board, const std::string& word);
+using namespace std;
+typedef pair<int, int> coord;
+
+bool check_word(const vector<vector<char>>& board, const string& word, coord pos = coord(-1, -1));
 
 #endif //CODEWARS_CPP_SOLUTION_BOGGLE_WORD_CHECKER_HPP
