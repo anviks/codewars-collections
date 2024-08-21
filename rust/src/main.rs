@@ -57,8 +57,8 @@ mod solutions {
             mod test_roman_numerals_decoder;
         }
         mod take_a_number_and_sum_its_digits_raised_to_the_consecutive_powers_and_eureka {
-            mod solution_take_a_number_and_sum_its_digits_raised_to_the_consecutive_powers_and_eureka;
-            mod test_take_a_number_and_sum_its_digits_raised_to_the_consecutive_powers_and_eureka;
+            mod solution_take_a_number_and_sum_its_digits_raised_to_the_consecutive_powers_and_dot_dot_dot_eureka;
+            mod test_take_a_number_and_sum_its_digits_raised_to_the_consecutive_powers_and_dot_dot_dot_eureka;
         }
         mod tribonacci_sequence {
             mod solution_tribonacci_sequence;

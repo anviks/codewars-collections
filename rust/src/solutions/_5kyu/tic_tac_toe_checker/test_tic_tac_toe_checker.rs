@@ -13,7 +13,7 @@ mod tests {
         
     fn dotest(board: &[&[u8; 3]; 3], expected: i8) {
         let actual = is_solved(board);
-        assert!(actual == expected, "With board = {board:?}\nExpected {expected} but got {actual}")
+        assert_eq!(actual, expected, "With board = {board:?}\nExpected {expected} but got {actual}")
     }
 
     #[test]

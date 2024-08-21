@@ -2,7 +2,7 @@
  * https://www.codewars.com/kata/5626b561280a42ecc50000d1
  */
 
-use super::solution_take_a_number_and_sum_its_digits_raised_to_the_consecutive_powers_and_eureka::*;
+use super::solution_take_a_number_and_sum_its_digits_raised_to_the_consecutive_powers_and_dot_dot_dot_eureka::*;
 
 // Add your tests here.
 // See https://doc.rust-lang.org/stable/rust-by-example/testing/unit_testing.html

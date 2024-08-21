@@ -17,4 +17,3 @@ fn raise_digits(n: u64) -> u64 {
 
     result
 }
-
