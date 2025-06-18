@@ -14,6 +14,7 @@ add_library(solutions OBJECT
         src/solutions/6kyu/is_a_number_prime/solution_is_a_number_prime.c
         src/solutions/6kyu/next_smaller_pronic/solution_next_smaller_pronic.c
         src/solutions/6kyu/reverse_every_other_word_in_the_string/solution_reverse_every_other_word_in_the_string.c
+        src/solutions/6kyu/n_th_fibonacci/solution_n_th_fibonacci.c
 )
 
 add_executable(codewars_c src/main.c $<TARGET_OBJECTS:solutions>)
