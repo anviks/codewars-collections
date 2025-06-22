@@ -16,6 +16,7 @@ add_library(solutions OBJECT
         src/solutions/6kyu/reverse_every_other_word_in_the_string/solution_reverse_every_other_word_in_the_string.c
         src/solutions/6kyu/n_th_fibonacci/solution_n_th_fibonacci.c
         src/solutions/4kyu/adding_big_numbers/solution_adding_big_numbers.c
+        src/solutions/4kyu/ordered_set/solution_ordered_set.c
 )
 
 add_executable(codewars_c src/main.c $<TARGET_OBJECTS:solutions>)
@@ -27,6 +28,7 @@ add_executable(tests src/test_main.cpp
         src/solutions/6kyu/next_smaller_pronic/test_next_smaller_pronic.cpp
         src/solutions/6kyu/reverse_every_other_word_in_the_string/test_reverse_every_other_word_in_the_string.cpp
         src/solutions/4kyu/adding_big_numbers/test_adding_big_numbers.cpp
+        src/solutions/4kyu/ordered_set/test_ordered_set.cpp
 )
 
 target_link_libraries(tests PRIVATE Catch2::Catch2WithMain)
