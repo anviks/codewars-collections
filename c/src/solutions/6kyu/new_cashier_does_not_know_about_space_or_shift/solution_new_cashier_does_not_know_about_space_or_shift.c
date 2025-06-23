@@ -9,13 +9,15 @@
 #include <stdlib.h>
 
 int count_occurrences(const char* haystack, char* needle) {
+    const size_t window_size = strlen(needle);
+    const size_t haystack_len = strlen(haystack);
+    if (haystack_len < window_size) return 0;
+
     int occurrences = 0;
+
     char* lowerNeedle = malloc(strlen(needle) + 1);
     strcpy(lowerNeedle, needle);
     lowerNeedle[0] = tolower(lowerNeedle[0]);
-    size_t window_size = strlen(lowerNeedle);
-    size_t haystack_len = strlen(haystack);
-    if (haystack_len < window_size) return 0;
 
     for (size_t i = 0; i < haystack_len - window_size + 1; ++i) {
         for (int j = 0; j < window_size; ++j) {
