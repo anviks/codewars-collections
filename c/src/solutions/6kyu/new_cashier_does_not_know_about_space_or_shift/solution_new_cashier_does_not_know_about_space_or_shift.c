@@ -19,12 +19,10 @@ int count_occurrences(const char* haystack, char* needle) {
     strcpy(lowerNeedle, needle);
     lowerNeedle[0] = tolower(lowerNeedle[0]);
 
-    for (size_t i = 0; i < haystack_len - window_size + 1; ++i) {
-        for (int j = 0; j < window_size; ++j) {
-            if (haystack[i + j] != lowerNeedle[j]) goto not_found;
+    for (size_t i = 0; i <= haystack_len - window_size; ++i) {
+        if (strncmp(&haystack[i], lowerNeedle, window_size) == 0) {
+            occurrences++;
         }
-        occurrences++;
-        not_found:;
     }
 
     free(lowerNeedle);
