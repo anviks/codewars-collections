@@ -3,7 +3,7 @@
  */
 
 extern "C" {
-    #include "solution_adding_big_numbers.h"
+#include "solution_adding_big_numbers.h"
 }
 
 #include "../../../test_macros.hpp"
@@ -17,7 +17,7 @@ static void tester(const char* a, const char* b, const char* expected) {
     free(submitted);
 }
 
-TEST_CASE("Example_Tests:should_pass_all_the_tests_provided", "[Example_Tests]"){
+TEST_CASE("Example_Tests:should_pass_all_the_tests_provided", "[Example_Tests]") {
     tester("1", "1", "2");
     tester("123", "456", "579");  // 123 + 456 == 579
     tester("888", "222", "1110");
