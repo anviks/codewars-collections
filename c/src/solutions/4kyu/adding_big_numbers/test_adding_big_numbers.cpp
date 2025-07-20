@@ -9,19 +9,12 @@ extern "C" {
 #include "../../../test_macros.hpp"
 #include <catch2/catch_all.hpp>
 
-
-
-void tester(const char* ta, const char* tb, const char* expected) {
-    char* actual = add(ta, tb);
-    REQUIRE_MSG(actual != NULL, "add() returned NULL");
-    REQUIRE_MSG(strcmp(actual, expected) == 0,
-                "< Incorrect Result >\n \n"
-                "a = \"%s\"\n"
-                "b = \"%s\"\n"
-                "Submitted: \"%s\"\n"
-                "Expected:  \"%s\"\n \n",
-                ta, tb, actual, expected);
-    free(actual);
+static void tester(const char* a, const char* b, const char* expected) {
+    char* submitted = add(a, b);
+    char buffer[200];
+    snprintf(buffer, 200, "a = \"%s\"\nb = \"%s\"\nExpected:  \"%s\"\nSubmitted: \"%s\"", a, b, expected, submitted);
+    REQUIRE_MSG(strcmp(submitted, expected) == 0, buffer);
+    free(submitted);
 }
 
 TEST_CASE("Example_Tests:should_pass_all_the_tests_provided", "[Example_Tests]"){
