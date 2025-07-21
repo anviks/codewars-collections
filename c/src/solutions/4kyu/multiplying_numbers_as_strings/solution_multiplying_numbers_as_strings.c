@@ -26,6 +26,7 @@ char* multiply(const char* a, const char* b) {
 
     int carry = 0;
 
+    // Get sum of multiplication results
     for (int i = max_len - 2; i >= 0; i--) {
         int digit_sum = intermediate_values[i] + carry;
         result[i + 1] = digit_sum % 10 + '0';
@@ -38,6 +39,7 @@ char* multiply(const char* a, const char* b) {
 
     int move_result = 0;
 
+    // Count leading zeroes for removal
     for (int i = 0; i < max_len - 1; i++) {
         if (result[i] == '0') {
             move_result++;
