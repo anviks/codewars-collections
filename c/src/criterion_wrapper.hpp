@@ -59,9 +59,7 @@ std::string assert_arr_eq_impl(const T* arr1, const T* arr2, size_t count, ...) 
             ASSERT_TRUE(condition);                                                                                    \
         } else {                                                                                                       \
             std::string _msg = assert_impl(condition, ##__VA_ARGS__);                                                  \
-            if (!_msg.empty()) {                                                                                       \
-                FAIL() << _msg;                                                                                        \
-            }                                                                                                          \
+            if (!_msg.empty()) FAIL() << _msg;                                                                         \
         }                                                                                                              \
     } while (0)
 
@@ -72,9 +70,7 @@ std::string assert_arr_eq_impl(const T* arr1, const T* arr2, size_t count, ...) 
             ASSERT_FALSE(condition);                                                                                   \
         } else {                                                                                                       \
             std::string _msg = assert_not_impl(condition, ##__VA_ARGS__);                                              \
-            if (!_msg.empty()) {                                                                                       \
-                FAIL() << _msg;                                                                                        \
-            }                                                                                                          \
+            if (!_msg.empty()) FAIL() << _msg;                                                                         \
         }                                                                                                              \
     } while (0)
 
@@ -85,9 +81,7 @@ std::string assert_arr_eq_impl(const T* arr1, const T* arr2, size_t count, ...) 
             ASSERT_EQ(val1, val2);                                                                                     \
         } else {                                                                                                       \
             std::string _msg = assert_eq_impl(val1, val2, ##__VA_ARGS__);                                              \
-            if (!_msg.empty()) {                                                                                       \
-                FAIL() << _msg;                                                                                        \
-            }                                                                                                          \
+            if (!_msg.empty()) FAIL() << _msg;                                                                         \
         }                                                                                                              \
     } while (0)
 
@@ -98,9 +92,7 @@ std::string assert_arr_eq_impl(const T* arr1, const T* arr2, size_t count, ...) 
             ASSERT_STREQ(s1, s2);                                                                                      \
         } else {                                                                                                       \
             std::string _msg = assert_str_eq_impl(s1, s2, ##__VA_ARGS__);                                              \
-            if (!_msg.empty()) {                                                                                       \
-                FAIL() << _msg;                                                                                        \
-            }                                                                                                          \
+            if (!_msg.empty()) FAIL() << _msg;                                                                         \
         }                                                                                                              \
     } while (0)
 
@@ -114,9 +106,7 @@ std::string assert_arr_eq_impl(const T* arr1, const T* arr2, size_t count, ...) 
                         ::testing::ElementsAreArray(expected, _count));                                                \
         } else {                                                                                                       \
             std::string _msg = assert_arr_eq_impl(arr1, arr2, _count, ##__VA_ARGS__);                                  \
-            if (!_msg.empty()) {                                                                                       \
-                FAIL() << _msg;                                                                                        \
-            }                                                                                                          \
+            if (!_msg.empty()) FAIL() << _msg;                                                                         \
         }                                                                                                              \
     } while (0)
 
