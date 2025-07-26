@@ -25,7 +25,8 @@ std::string assert_impl(const bool condition, ...);
 
 std::string assert_not_impl(const bool condition, ...);
 
-template <typename T> std::string assert_eq_impl(T val1, T val2, ...) {
+template <typename T>
+std::string assert_eq_impl(T val1, T val2, ...) {
     if (val1 == val2) {
         return "";  // Success
     }
@@ -36,7 +37,8 @@ template <typename T> std::string assert_eq_impl(T val1, T val2, ...) {
 
 std::string assert_str_eq_impl(const char* s1, const char* s2, ...);
 
-template <typename T> std::string assert_arr_eq_impl(const T* arr1, const T* arr2, size_t count, ...) {
+template <typename T>
+std::string assert_arr_eq_impl(const T* arr1, const T* arr2, size_t count, ...) {
     for (size_t i = 0; i < count; ++i) {
         if (arr1[i] != arr2[i]) {
             FORMAT_VARARGS_TO(msg, count);

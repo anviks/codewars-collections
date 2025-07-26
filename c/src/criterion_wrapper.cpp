@@ -1,9 +1,9 @@
+#include "criterion_wrapper.hpp"
 #include <cstdarg>
 #include <stdarg.h>
 #include <string.h>
 #include <string>
 #include <vector>
-#include "criterion_wrapper.hpp"
 
 std::string vformat(const char* fmt, va_list args) {
     va_list args_copy;
