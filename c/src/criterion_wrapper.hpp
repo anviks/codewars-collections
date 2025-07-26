@@ -21,9 +21,9 @@ std::string vformat(const char* fmt, va_list args);
     }                                                                                                                  \
     va_end(_args);
 
-std::string assert_impl(const bool condition, ...);
+std::string assert_impl(const int condition, ...);
 
-std::string assert_not_impl(const bool condition, ...);
+std::string assert_not_impl(const int condition, ...);
 
 template <typename T>
 std::string assert_eq_impl(T val1, T val2, ...) {
