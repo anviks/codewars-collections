@@ -25,8 +25,8 @@ std::string assert_impl(const int condition, ...);
 
 std::string assert_not_impl(const int condition, ...);
 
-template <typename T>
-std::string assert_eq_impl(T val1, T val2, ...) {
+template <typename T1, typename T2>
+std::string assert_eq_impl(T1 val1, T2 val2, ...) {
     if (val1 == val2) {
         return "";  // Success
     }
