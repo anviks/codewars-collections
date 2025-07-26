@@ -3,6 +3,7 @@
 #include <string.h>
 #include <string>
 #include <vector>
+#include "criterion_wrapper.hpp"
 
 std::string vformat(const char* fmt, va_list args) {
     va_list args_copy;
@@ -16,18 +17,6 @@ std::string vformat(const char* fmt, va_list args) {
     std::vsnprintf(buf.data(), buf.size(), fmt, args);
     return std::string(buf.data(), size);
 }
-
-#define FORMAT_VARARGS_TO(output_var, last_param)                                                                      \
-    va_list _args;                                                                                                     \
-    va_start(_args, last_param);                                                                                       \
-    const char* _fmt = va_arg(_args, const char*);                                                                     \
-    std::string output_var;                                                                                            \
-    if (!_fmt || _fmt[0] == '\0') {                                                                                    \
-        output_var = "Invalid format string";                                                                          \
-    } else {                                                                                                           \
-        output_var = vformat(_fmt, _args);                                                                             \
-    }                                                                                                                  \
-    va_end(_args);
 
 std::string assert_impl(const int condition, ...) {
     if (condition) {
@@ -44,15 +33,6 @@ std::string assert_not_impl(const int condition, ...) {
     }
 
     FORMAT_VARARGS_TO(msg, condition);
-    return msg;
-}
-    
-template <typename T1, typename T2> std::string assert_eq_impl(T1 val1, T2 val2, ...) {
-    if (val1 == val2) {
-        return "";  // Success
-    }
-
-    FORMAT_VARARGS_TO(msg, val2);
     return msg;
 }
 
