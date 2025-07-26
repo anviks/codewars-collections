@@ -2,7 +2,9 @@
  * https://www.codewars.com/kata/5d23d89906f92a00267bb83d
  */
 
+extern "C" {
 #include "solution_new_cashier_does_not_know_about_space_or_shift.h"
+}
 
 #include "../../../criterion_wrapper.hpp"
 

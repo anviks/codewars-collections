@@ -2,7 +2,9 @@
  * https://www.codewars.com/kata/522551eee9abb932420004a0
  */
 
+extern "C" {
 #include "solution_n_th_fibonacci.h"
+}
 
 #include "../../../criterion_wrapper.hpp"
 

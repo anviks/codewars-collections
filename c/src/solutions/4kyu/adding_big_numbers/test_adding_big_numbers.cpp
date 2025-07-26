@@ -2,7 +2,9 @@
  * https://www.codewars.com/kata/525f4206b73515bffb000b21
  */
 
+extern "C" {
 #include "solution_adding_big_numbers.h"
+}
 
 #include "../../../criterion_wrapper.hpp"
 

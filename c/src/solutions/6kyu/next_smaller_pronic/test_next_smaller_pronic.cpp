@@ -2,7 +2,9 @@
  * https://www.codewars.com/kata/5a90f6d457c5624ecc000012
  */
 
+extern "C" {
 #include "solution_next_smaller_pronic.h"
+}
 
 #include "../../../criterion_wrapper.hpp"
 

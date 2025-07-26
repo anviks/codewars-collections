@@ -2,7 +2,9 @@
  * https://www.codewars.com/kata/52bef5e3588c56132c0003bc
  */
 
+extern "C" {
 #include "solution_sort_binary_tree_by_levels.h"
+}
 
 #include "../../../criterion_wrapper.hpp"
 #include <gmock/gmock.h>

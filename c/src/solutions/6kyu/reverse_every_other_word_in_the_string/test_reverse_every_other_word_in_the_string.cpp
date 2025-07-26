@@ -2,7 +2,9 @@
  * https://www.codewars.com/kata/58d76854024c72c3e20000de
  */
 
+extern "C" {
 #include "solution_reverse_every_other_word_in_the_string.h"
+}
 
 #include "../../../criterion_wrapper.hpp"
 #include <stdlib.h>

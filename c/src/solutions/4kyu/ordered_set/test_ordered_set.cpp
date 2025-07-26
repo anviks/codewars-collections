@@ -2,7 +2,9 @@
  * https://www.codewars.com/kata/5c0c5ec84e8f1804b9000296
  */
 
+extern "C" {
 #include "solution_ordered_set.h"
+}
 
 #include "../../../criterion_wrapper.hpp"
 #include <stdio.h>
