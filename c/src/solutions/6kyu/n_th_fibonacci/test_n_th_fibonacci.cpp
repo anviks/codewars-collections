@@ -4,7 +4,7 @@
 
 #include "solution_n_th_fibonacci.h"
 
-#include <criterion/criterion.h>
+#include "../../../criterion_wrapper.hpp"
 
 typedef unsigned long long ull;
 

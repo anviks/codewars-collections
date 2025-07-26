@@ -4,7 +4,7 @@
 
 #include "solution_new_cashier_does_not_know_about_space_or_shift.h"
 
-#include <criterion/criterion.h>
+#include "../../../criterion_wrapper.hpp"
 
 char* get_order(const char* input);
 

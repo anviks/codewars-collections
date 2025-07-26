@@ -4,12 +4,10 @@
 
 #include "solution_adding_big_numbers.h"
 
-#include <criterion/criterion.h>
-#include <stdlib.h>
-#include <string.h>
+#include "../../../criterion_wrapper.hpp"
 
-char *add(const char *a, const char *b);
-static void tester(const char *ta, const char *tb, const char *expected);
+char* add(const char* a, const char* b);
+static void tester(const char* ta, const char* tb, const char* expected);
 
 Test(add, Sample_Tests)
 {
@@ -24,8 +22,8 @@ Test(add, Sample_Tests)
             "91002328220491911630239667963" );
 }
 
-static void tester(const char *a, const char *b, const char *expected) {
-    char *submitted = add(a, b);
+static void tester(const char* a, const char* b, const char* expected) {
+    char* submitted = add(a, b);
     cr_assert_str_eq(                                        submitted,         expected,
         "< Incorrect Result >\n \na = \"%s\"\nb = \"%s\"\n \nSubmitted: \"%s\"\nExpected:  \"%s\"",
                                   a,          b,             submitted,         expected);

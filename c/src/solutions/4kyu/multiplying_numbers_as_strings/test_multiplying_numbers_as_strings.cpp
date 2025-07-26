@@ -2,11 +2,12 @@
  * https://www.codewars.com/kata/55911ef14065454c75000062
  */
 
+extern "C" {
 #include "solution_multiplying_numbers_as_strings.h"
+}
 
-#include <criterion/criterion.h>
+#include "../../../criterion_wrapper.hpp"
 #include <stdlib.h>
-
 
 static void do_test(const char* a, const char* b, const char* axb);
 

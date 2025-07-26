@@ -4,7 +4,7 @@
 
 #include "solution_ordered_set.h"
 
-#include <criterion/criterion.h>
+#include "../../../criterion_wrapper.hpp"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -25,7 +25,7 @@ int int_ascending(const void* a, const void* b) {
 
 char* int_stringizer(const void* a) {
     int value = *((int*)a);
-    char* s = calloc(16, sizeof(char));
+    char* s = (char*)calloc(16, sizeof(char));
     sprintf(s, "int(%d)", value);
     return s;
 }
