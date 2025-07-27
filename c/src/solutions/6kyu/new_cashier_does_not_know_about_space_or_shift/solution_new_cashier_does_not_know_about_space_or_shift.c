@@ -8,7 +8,7 @@
 #include <ctype.h>
 #include <stdlib.h>
 
-int count_occurrences(const char* haystack, char* needle) {
+int count_occurrences(const char* haystack, const char* needle) {
     const size_t window_size = strlen(needle);
     const size_t haystack_len = strlen(haystack);
     if (haystack_len < window_size) return 0;
