@@ -2,14 +2,12 @@
  * https://www.codewars.com/kata/525caa5c1bf619d28c000335
  */
 
-use super::solution_tic_tac_toe_checker::*;
-
 // Add your tests here.
 // See https://doc.rust-lang.org/stable/rust-by-example/testing/unit_testing.html
 
 #[cfg(test)]
 mod tests {
-    use super::is_solved;
+    use super::super::solution_tic_tac_toe_checker::is_solved;
         
     fn dotest(board: &[&[u8; 3]; 3], expected: i8) {
         let actual = is_solved(board);

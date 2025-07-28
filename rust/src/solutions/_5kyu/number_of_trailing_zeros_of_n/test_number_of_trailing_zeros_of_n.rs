@@ -4,7 +4,7 @@
 
 #[cfg(test)]
 mod tests {
-    use crate::solutions::_5kyu::number_of_trailing_zeros_of_n::solution_number_of_trailing_zeros_of_n::zeros;
+    use super::super::solution_number_of_trailing_zeros_of_n::zeros;
 
     #[test]
     fn sample_tests() {

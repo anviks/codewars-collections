@@ -2,11 +2,9 @@
  * https://www.codewars.com/kata/51b6249c4612257ac0000005
  */
 
-use super::solution_roman_numerals_decoder::*;
-
 #[cfg(test)]
 mod roman_as_num_tests {
-    use super::roman_as_num;
+    use super::super::solution_roman_numerals_decoder::roman_as_num;
 
     fn test_equal(input: &str, actual: u64, expected: u64) {
         assert_eq!(actual, expected, "\nYour result (left) did not match the expected output (right) for the input \"{}\"", input);

@@ -2,10 +2,9 @@
  * https://www.codewars.com/kata/514b92a657cdc65150000006
  */
 
-use super::solution_multiples_of_3_or_5::*;
-
+#[cfg(test)]
 mod tests {
-    use super::solution;
+    use super::super::solution_multiples_of_3_or_5::solution;
 
     #[test]
     fn sample_tests() {

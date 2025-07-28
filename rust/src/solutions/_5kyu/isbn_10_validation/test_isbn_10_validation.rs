@@ -7,7 +7,7 @@
 
 #[cfg(test)]
 mod tests {
-    use crate::solutions::_5kyu::isbn_10_validation::solution_isbn_10_validation::valid_isbn10;
+    use super::super::solution_isbn_10_validation::valid_isbn10;
 
     fn dotest(isbn: &str, expected: bool) {
         let actual = valid_isbn10(isbn);

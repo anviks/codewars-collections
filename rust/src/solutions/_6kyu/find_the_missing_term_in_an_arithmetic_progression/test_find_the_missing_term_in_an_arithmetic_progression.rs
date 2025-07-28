@@ -2,14 +2,12 @@
  * https://www.codewars.com/kata/52de553ebb55d1fca3000371
  */
 
-use super::solution_find_the_missing_term_in_an_arithmetic_progression::*;
-
 // Add your tests here.
 // See https://doc.rust-lang.org/stable/rust-by-example/testing/unit_testing.html
 
 #[cfg(test)]
 mod tests {
-    use super::find_missing;
+    use super::super::solution_find_the_missing_term_in_an_arithmetic_progression::find_missing;
     
     const ERR_MSG: &str = "\nYour result (left) did not match the expected output (right)";
     

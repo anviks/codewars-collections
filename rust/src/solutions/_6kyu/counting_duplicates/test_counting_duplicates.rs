@@ -2,11 +2,9 @@
  * https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1
  */
 
-use super::solution_counting_duplicates::*;
-
 #[cfg(test)]
 mod tests {
-    use super::*;
+    use super::super::solution_counting_duplicates::*;
 
     #[test]
     fn test_abcde() {

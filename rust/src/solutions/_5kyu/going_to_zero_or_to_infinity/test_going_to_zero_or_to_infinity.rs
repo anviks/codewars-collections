@@ -5,7 +5,7 @@
 #[cfg(test)]
 mod tests {
     use float_eq::float_eq;
-    use crate::solutions::_5kyu::going_to_zero_or_to_infinity::solution_going_to_zero_or_to_infinity::going;
+    use super::super::solution_going_to_zero_or_to_infinity::going;
 
     fn dotest(n : i32, expected: f64) {
         let actual = going(n);

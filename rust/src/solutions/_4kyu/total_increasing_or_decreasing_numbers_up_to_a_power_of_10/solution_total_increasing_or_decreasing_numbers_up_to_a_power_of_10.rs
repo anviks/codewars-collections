@@ -52,8 +52,9 @@ pub fn total_inc_dec(n: u32) -> u64 {
         inc_dec.append(&mut generate_dec(i, 9));
     }
 
-    let distinct = inc_dec.into_iter()
-        .filter(|v| v.len() == 1 || v.iter().sum::<u8>() != 0)  // remove [0, 0], [0, 0, 0] and so on
+    let distinct = inc_dec
+        .into_iter()
+        .filter(|v| v.len() == 1 || v.iter().sum::<u8>() != 0) // remove [0, 0], [0, 0, 0] and so on
         .collect::<HashSet<Vec<u8>>>();
 
     distinct.len() as u64
