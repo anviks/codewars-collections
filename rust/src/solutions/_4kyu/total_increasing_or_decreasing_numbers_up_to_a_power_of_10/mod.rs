@@ -1,0 +1,2 @@
+pub mod solution_total_increasing_or_decreasing_numbers_up_to_a_power_of_10;
+pub mod test_total_increasing_or_decreasing_numbers_up_to_a_power_of_10;

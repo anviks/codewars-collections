@@ -1,0 +1,2 @@
+pub mod solution_find_the_missing_term_in_an_arithmetic_progression;
+pub mod test_find_the_missing_term_in_an_arithmetic_progression;

@@ -2,7 +2,7 @@
  * https://www.codewars.com/kata/58ee4962dc4f81d6f400001c
  */
 
-use super::solution_program_a_calculator_2_3d_vectors::*;
+use super::solution_program_a_calculator_number_2_3d_vectors::*;
 
 #[cfg(test)]
 mod tests {
