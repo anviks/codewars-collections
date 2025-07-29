@@ -1,0 +1,6 @@
+#ifndef CODEWARS_C_SOLUTION_PAGINATING_A_HUGE_BOOK_H
+#define CODEWARS_C_SOLUTION_PAGINATING_A_HUGE_BOOK_H
+
+unsigned long long page_digits(unsigned long long pages);
+
+#endif //CODEWARS_C_SOLUTION_PAGINATING_A_HUGE_BOOK_H
