@@ -2,6 +2,7 @@ pub mod counting_duplicates;
 pub mod find_the_missing_term_in_an_arithmetic_progression;
 pub mod make_the_deadfish_swim;
 pub mod multiples_of_3_or_5;
+pub mod pascals_triangle;
 pub mod roman_numerals_decoder;
 pub mod take_a_number_and_sum_its_digits_raised_to_the_consecutive_powers_and_dot_dot_dot_eureka;
 pub mod tribonacci_sequence;
