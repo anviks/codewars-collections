@@ -20,8 +20,9 @@ grouped by language and difficulty level. Each kata is stored in a separate fold
 kata's slug. Inside each folder, you will find the following files:
 
 - `README.md` - a description of the kata, including the problem statement, examples, and notes.
-- `solution_{slug}.{ext}`/`{solution_class}.{ext}` - a file containing my solution to the kata.
-- `test_{slug}.{ext}`/`{test_class}.{ext}` - a file containing the test cases for the kata.
+- `solution_{slug}.{ext}`/`{slug}_solution.{ext}`/`{solution_class}.{ext}` - a file containing my solution to the kata.
+- `test_{slug}.{ext}`/`{slug}_test.{ext}`/`{test_class}.{ext}` - a file containing the test cases for the kata.
+- Additional files depending on the language (`mod.rs` in rust solutions, header files in C and C++ solutions, etc.).
 
 Generally, I don't include solutions, that are easier than 6 kyu, because most of
 them are simple enough, that even copying them here takes more time,
