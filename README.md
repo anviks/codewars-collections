@@ -4,7 +4,7 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/anviks/codewars-collections)
 ![Total code lines](https://img.shields.io/endpoint?url=https://ghloc.vercel.app/api/anviks/codewars-collections/badge&label=Total%20code%20lines&color=red)
 
-[![Profile badge](https://www.codewars.com/users/CClairvoyant/badges/large)](https://www.codewars.com/users/CClairvoyant)
+[![Profile badge](https://www.codewars.com/users/anviks/badges/large)](https://www.codewars.com/users/anviks)
 
 [Codewars](https://www.codewars.com) is an online educational platform for computer programming.
 On the platform, users known as *code warriors* attempt to solve programming challenges, known as
